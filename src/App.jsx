@@ -7,7 +7,7 @@ import CityList from './CityList';
 import cityIconFactory from './CityIcon';
 const cityIcon = cityIconFactory(L);
 
-const YEAR_TIME = 100; // милисекунд на один год
+const YEAR_TIME = 500; // милисекунд на один год
 // крайние географические точки по городам России
 const NORTH = 69.7;
 const SOUTH = 41.18528;
@@ -31,7 +31,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setInterval(function () {
+    let interval = setInterval(function () {
+      if (this.state.index === cities.length) {
+        clearInterval(interval)
+      }
       this.setState({
         index: this.state.index + 1
       })
