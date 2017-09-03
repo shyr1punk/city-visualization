@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Map, TileLayer, Marker, Popup} from 'react-leaflet';
 import coords from './coords';
 import './App.css';
-import Timeline from './Timeline';
+import CityList from './CityList';
 import cityIconFactory from './CityIcon';
 const cityIcon = cityIconFactory(L);
 
@@ -61,6 +61,7 @@ class App extends Component {
             )
           })}
         </Map>
+        <CityList cities={founded} />
       </div>
 
     );
