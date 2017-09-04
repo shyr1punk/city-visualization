@@ -4,10 +4,13 @@ import { Map, TileLayer, Marker, Popup} from 'react-leaflet';
 import coords from './coords';
 import './App.css';
 import CityList from './CityList';
+import Year from './Year';
 import cityIconFactory from './CityIcon';
 const cityIcon = cityIconFactory(L);
 
-const YEAR_TIME = 500; // милисекунд на один год
+const YEAR_START = 1000; // год старта таймлайна
+const YEAR_END = 2016; // год конца
+const YEAR_TIME = 100; // милисекунд на один год
 // крайние географические точки по городам России
 const NORTH = 69.7;
 const SOUTH = 41.18528;
@@ -26,23 +29,23 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      index: 0
+      year: YEAR_START
     }
   }
 
   componentDidMount() {
     let interval = setInterval(function () {
-      if (this.state.index === cities.length) {
+      if (this.state.year >= YEAR_END) {
         clearInterval(interval)
       }
       this.setState({
-        index: this.state.index + 1
+        year: this.state.year + 1
       })
     }.bind(this), YEAR_TIME)
   }
 
   render() {
-    var founded = cities.filter((c, i) => i <= this.state.index);
+    var founded = cities.filter((c, i) => c.year <= this.state.year);
     return (
       <div className="container">
         <Map bounds={[[NORTH, WEST], [SOUTH, EAST]]}>
@@ -58,13 +61,14 @@ class App extends Component {
                 icon={cityIcon}
               >
                 <Popup>
-                  <span>{city.name}</span>
+                  <span>{city.name} — {city.year}</span>
                 </Popup>
               </Marker>
             )
           })}
         </Map>
         <CityList cities={founded} />
+        <Year year={this.state.year} />
       </div>
 
     );
