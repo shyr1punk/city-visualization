@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 
 function geocode(name) {
+    console.log(name)
     let data = '';
     return new Promise((resolve, reject) => {
         http.get('http://nominatim.openstreetmap.org/search?q=' + encodeURIComponent(name) + '&format=json', (res) => {
@@ -29,7 +30,7 @@ module.exports = function (cities) {
         // .filter((city, index) => index < 1)
         .map(city => {
             // страна область город
-            return geocode('россия ' + /*city[2] + ' '*/ + city[1])
+            return geocode(city[1])
                 .then(function(data) {
                     let json;
     

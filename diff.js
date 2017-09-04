@@ -8,7 +8,8 @@ const coords = readJson('./coords.json');
 let lost = [];
 
 for (i = 1; i < cities.length; i++) {
-    if (!coords[i]) {
+    if (!coords[i] || cities[i][5].includes(' век')) {
+        // console.log(cities[i])
         lost.push(cities[i])
     }
 }
@@ -16,6 +17,7 @@ for (i = 1; i < cities.length; i++) {
 lost = lost.map(city => {
     city[1] = city[1].replace('Оспаривается', '')
     city[2] = city[2].replace(' — Югра', '').replace(' АО', '')
+    // console.log(city[1])
     // Кажется тут проблема с определением века
     if((city[5].indexOf(' век') !== -1) && (city[5].indexOf(' век') === city[5].length - 4)) {
         city[5] = (parseInt(city[5]) - 1) * 100 + 50; // середина века
