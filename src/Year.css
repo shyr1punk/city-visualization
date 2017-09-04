@@ -1,0 +1,12 @@
+.Year {
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    opacity: 0.6;
+    color: #444;
+    margin-left: -100px;
+    top: 20px;
+    left: 50%;
+    width: 200px;
+    z-index: 2000;
+}

@@ -7,7 +7,7 @@ export default function({ cities }) {
         <div className="CityList">
             {cities.reverse().map(city => {
                 return (
-                    <div>{city.year} {city.name}</div>
+                    <div key={city.osmId}>{city.name} <span className='CityYear'>{city.year}</span></div>
                 );
             })}
         </div>
