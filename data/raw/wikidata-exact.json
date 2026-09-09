@@ -1,0 +1,5394 @@
+{
+  "head" : {
+    "vars" : [ "city", "cityLabel", "coord", "inception", "statement", "date", "population", "reference", "part" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-06EAF244-9023-4117-8673-82A7DA6FD171"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "80596"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2014-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-237CFBFE-B75A-4024-AA6D-05E7FBBD8CCF"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "79265"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-42C3ABC6-FA3C-423C-B751-5AE94F49C10E"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "80017"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2015-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-553BE1EA-559E-42E1-9C41-1BD84BD6AB3A"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "78440"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2020-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-854FB85E-4F6C-41D5-B619-A02A79939C90"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "79069"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2018-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-93E0F142-904A-4B1D-B8B7-E44BBD5A398E"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "91760"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-B850C75E-4A27-4D3F-820F-4470C394C457"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "81023"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2013-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-BB76C67A-1693-4DC4-A774-82D09D3F9AFB"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "76896"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-C8D8AFF3-145A-43D1-8118-97F85EE8EB51"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "78811"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2019-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-DB0013FA-2E98-4686-90AF-32F898CF7705"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "81521"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2012-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-E66531C1-4142-45DE-B85B-7DB6859C93FB"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "82164"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-F03ABC94-CF7C-44D0-87A1-9601C5DE7224"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "86503"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2009-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-F342FB35-98B1-40B4-9A7C-83BDE0A5EF0E"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "79518"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2016-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-F59F8CDD-4840-47A0-8382-E9451D7EB626"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "76434"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-11D58678-97ED-4F95-AD5E-1106A58C5DF8"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "25536"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1989-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-19221E8E-5777-4B73-BE4D-4EACBF81FFE1"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4900"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1897-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-1C1B2F14-6CFC-4977-B52F-587B7963C881"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2988"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1862-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-1F189990-F064-4EAB-A1F8-FB6B13B37D3D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "25186"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1979-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-210C8AC0-F64C-4AE3-92BB-F6AB5739559C"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16792"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-22DF462F-A206-4834-8860-A8953AD63130"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "24800"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1998-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-301AF18D-7AB0-4B6D-9857-41E644043139"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17409"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2020-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-35BF0226-D906-4E98-A09A-6310D4761499"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17665"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2019-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-47FA5FE7-9E08-4B83-887B-CFBD42C26206"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "54"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1780-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-4D283247-9733-4628-AA62-F36AFB09D4A2"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16373"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2012-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-50BD3661-8AC8-4AC9-A8C7-5B49D12B17D8"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17463"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-530725E8-B1BD-42F8-AF57-128F032A0AB0"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16605"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1959-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-613F6FFD-A411-45A3-8435-0F0A254A03E6"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17775"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-77C6E7DE-B2CF-435E-A197-9044259CC3BF"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16087"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-7B3E597A-A4BA-4912-9450-91E3319A3EA9"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23000"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1935-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-7EB275EA-7C86-492A-94B0-4AD49EC7BC15"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16366"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2013-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-9950AD50-2A4F-43BA-927B-A1028F117102"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "20969"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1970-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-A36349AC-5601-4B13-B0B7-A963A5946F37"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "17653"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2018-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-C133E3D9-76A2-41DD-9E3E-72FF2F771F82"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "30798"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1939-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-C2B801C0-CA68-461A-95F4-D6BF6EA1ECAB"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14960"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-CEDA3A18-1640-4F9B-A876-46D58900BE0F"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "25400"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1992-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-CFDE26C0-F8E0-4219-B9F4-DF7B86F6CD1D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "300"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1794-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-DC1A2977-5FA9-4F75-8EDE-8369253A232F"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16100"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2011-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-EAF85402-C012-44FF-AFA6-3AFFEE83DB21"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16525"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2016-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-F23E320C-8A40-4786-A47F-D4BA2B02B952"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16495"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2014-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q177888"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q177888-F6C5860D-95C0-4717-B664-F8B128AD686C"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16461"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2015-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.433333333 59.683333333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1777-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Павловск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-044041E2-BD7B-4C7F-AB8D-25208607DE74"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10172"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1970-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-087A9FCE-BAE3-42EC-9C09-14F1B6967420"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "50315"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2015-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-31F80E87-6446-4901-BC4E-89237F8458AB"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "22365"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1979-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-48A4651A-CD3D-4E0F-8493-F13849A4F63D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61284"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2020-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-5F65A2E5-AD87-4168-9A41-D126D0354BB3"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "71089"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-5FAC3F54-1258-44D8-A2AB-6F7F5C5FD87D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43980"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2013-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-626395A2-3894-4568-BFDE-6CA8A52F0388"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36762"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2009-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-6DD642C9-1B77-4A64-97E6-5AF2D15EA1F4"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "60924"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2018-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-774905D7-CE78-4EB1-982E-C03284981734"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5142"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1959-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-8B42E264-B19B-4C87-8AB8-4172945F0431"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "53519"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2016-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-9971F93C-440C-4E94-BE35-4C3A1836F1CC"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42232"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2012-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-A6B7E829-D408-4F82-A7D9-BE8187A39F5C"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "65043"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-AB57D569-1129-4549-B924-0CD7A5BF826E"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "47291"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2014-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-AFC49F9F-5035-4425-8047-047E385D4EE8"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "29301"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1989-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-C895F339-80F5-48DB-9CAE-E36B078B8DB1"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39873"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-D9D0B7F9-57B4-4A3B-B6BD-7D1818D578E0"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "32653"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-DD496916-11B1-4A2A-ABB1-52BB3D5215D7"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "60811"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-E8B8E719-9118-4652-ACD3-5B2E076211A3"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2042"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1939-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-ED1B1FE7-51E0-47AA-AA9C-3E3BB5F306CF"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61079"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2019-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-FE430C40-7589-4516-B54E-DF192FD7BB51"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "71615"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2024-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.309166666 55.491388888)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-044041E2-BD7B-4C7F-AB8D-25208607DE74"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10172"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1970-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-087A9FCE-BAE3-42EC-9C09-14F1B6967420"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "50315"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2015-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-31F80E87-6446-4901-BC4E-89237F8458AB"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "22365"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1979-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-48A4651A-CD3D-4E0F-8493-F13849A4F63D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61284"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2020-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-5F65A2E5-AD87-4168-9A41-D126D0354BB3"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "71089"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-5FAC3F54-1258-44D8-A2AB-6F7F5C5FD87D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43980"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2013-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-626395A2-3894-4568-BFDE-6CA8A52F0388"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36762"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2009-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-6DD642C9-1B77-4A64-97E6-5AF2D15EA1F4"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "60924"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2018-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-774905D7-CE78-4EB1-982E-C03284981734"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5142"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1959-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-8B42E264-B19B-4C87-8AB8-4172945F0431"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "53519"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2016-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-9971F93C-440C-4E94-BE35-4C3A1836F1CC"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42232"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2012-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-A6B7E829-D408-4F82-A7D9-BE8187A39F5C"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "65043"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-AB57D569-1129-4549-B924-0CD7A5BF826E"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "47291"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2014-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-AFC49F9F-5035-4425-8047-047E385D4EE8"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "29301"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1989-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-C895F339-80F5-48DB-9CAE-E36B078B8DB1"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39873"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-D9D0B7F9-57B4-4A3B-B6BD-7D1818D578E0"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "32653"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-DD496916-11B1-4A2A-ABB1-52BB3D5215D7"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "60811"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-E8B8E719-9118-4652-ACD3-5B2E076211A3"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2042"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1939-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-ED1B1FE7-51E0-47AA-AA9C-3E3BB5F306CF"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "61079"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2019-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q196691"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q196691-FE430C40-7589-4516-B54E-DF192FD7BB51"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "71615"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2024-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(37.307222222 55.485)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Троицк"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-1CAE5A62-60DD-41BC-A4CE-BB98F674EBF0"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23986"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-36441ABC-CDD9-43D8-9BA8-E4A3261BC4B1"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "4780"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1990-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-3D2A0664-959A-4FED-9154-0A1005A3C881"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13108"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-4B82A99E-E5D7-48E0-A8B2-8DD6602872E3"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "401"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1862-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-6003CDE1-67BE-4E95-AF3D-B4E95080970E"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "554"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1885-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-6D0D9922-A619-470A-9B17-64522BBC5F87"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5127"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1997-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-AA67EB26-3DA8-48D1-89F5-AE7695E45355"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5466"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2007-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-B8C2DFA5-EACB-47EB-93C0-8B6B841ABAFC"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "574"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1838-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-DCA82710-5D15-4F4E-8AA8-C517FC137246"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "5807"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-E45AF14A-4716-4960-8FFD-AB2831A7B25B"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8757"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-00EB572D-6976-45DF-9275-167A27E00332"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41705"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-12FCFE07-3FA5-4933-ACC8-27D782917774"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39150"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2019-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-1BE1FFD4-8C6E-4C64-BA96-8625AEA5B795"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "31941"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1959-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-413FDAF3-7EC8-46A6-AEF4-9262FE10D988"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "40181"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1979-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-4BAFF342-BA53-4A31-A86A-C15743251331"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "40486"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-6797DB7E-148A-4EDA-A94C-B9267188C05D"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43224"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-722A7FDC-7D5F-4078-963E-EBD0FEDD812B"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38963"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2020-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-847F2CC6-ADFE-4234-9856-B2995DD540A5"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "40984"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2016-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-8ECCE96F-7206-49C7-9415-9F0F9D53A605"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39752"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2018-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-98455012-7F45-4574-93BE-1118B733927A"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41881"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1989-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-0DB734E9-2051-4C9D-A99A-B7BF24018E49"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43400"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2005-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-0E43E6F9-6A29-4023-9986-7847D6EC4DD6"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42700"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2007-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-2346E6E2-A1B0-4554-9455-6884ACE88DA4"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42500"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2008-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-312F08EB-31ED-445A-8CC5-4F3E0D968652"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43100"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1996-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-453BF20E-A3ED-4C73-B544-D720CCEC5765"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43400"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1998-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-6AE18174-3786-4E2F-BA9F-8B901DF30F41"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "36000"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1967-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-6D4572CC-8C9D-4E95-B63F-FA1F11DD08CF"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43000"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2006-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-932AB84B-1FBF-41AF-BDFA-907B7B9F4C3B"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42500"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1992-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-A04E396A-A5B8-4A2B-9FC9-47EC8712E718"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "https://rosstat.gov.ru/storage/mediabank/Bul_MO_2023.xlsx"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38614"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-A8CDFE2C-43B9-41BF-8D94-9B1FE0FC31B2"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43100"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2001-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-BC9C1356-022D-44FC-A2E6-66F201CAC308"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41700"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2011-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-C059F88F-65A5-4D78-B168-AF5DA224C4F6"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43300"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2000-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-1E1FA49E-A03B-4614-A782-5D42C1F34CC1"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "87500"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2006-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-222DD17C-CE37-4DE5-BBC2-B6B495499E35"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "86900"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2008-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-38406B7A-F923-431E-8419-97752E48DA09"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "89200"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1996-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-4BB42B3C-D3E7-4255-9CF0-5302907A05B4"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "87500"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2000-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-6F8EE01F-382F-483D-A3C4-22709EF62382"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "87300"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2001-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-8F3BC185-DA47-486F-B46B-5ECF39522F9B"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "82200"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2011-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-B6A2488D-0126-48BA-B64F-A3E10C098F4C"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "91400"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2005-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-DF4D08B9-E18B-4B2A-9C3F-9CAFAEA7CFCA"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "87200"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2007-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-FB17EFAA-8471-42AF-A6CA-FAC62ED9226C"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/cheljab_obl/ozjorskch/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "91800"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2003-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-01D5A545-BE4B-4CFB-A9EF-AE733856BA2E"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.MojGorod.ru/kalining_obl/sovetskkl/index.html"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "43200"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2003-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-369FB957-7431-44A6-B98A-26F5B5EC36B0"
+      },
+      "reference" : {
+        "type" : "uri",
+        "value" : "http://www.terijoki.info/terijoki_ru.htm"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "2980"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1897-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q175802-576e4973-4b06-c406-9cd7-86d77cf90852"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q175802"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "75395"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2025-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(60.70278 55.75556)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1945-11-09T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Озёрск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q4353452-7e7d3663-4bff-315c-9214-978858078beb"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q4353452"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "23407"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2025-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(30.612222222 59.725555555)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "город Тельмана"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-B8DB9152-4010-4C7C-9B6A-E595793E7DA3"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41941"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2012-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-BEB37C7E-3ECF-4E28-B124-C96CE0AF1DE2"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41212"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2015-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-CAE74A8F-6CEA-42CE-B7C7-1AF8715B37B7"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38456"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1970-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-DEB47659-BB91-4E8F-BC0D-FEF14C3945F0"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41630"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2014-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-E3FA1936-E027-47C2-B8CB-F5C2231BC34B"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38910"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-e59383ef-4a41-b780-0a6c-9c2cc4306ad4"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7701"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1782-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-78f70102-459a-c405-ad99-b18de5affb84"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "7669"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1802-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-dc1c3a5a-4b08-65cc-eb9f-c98bc601960f"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "8248"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1810-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-42a3a7f3-4337-4dfd-3ea2-8ea8ea7de6d3"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "10237"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1816-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-42844fc6-4a3a-15fc-2e5b-15a8de7bb6e2"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "11248"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1821-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-62e66a64-46f3-ada3-04b9-440e93579782"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "19753"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1875-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-84c9e3bc-4d11-9412-afdd-2716d7a81785"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "21400"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1880-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-15f80218-439b-1a15-29b5-d08e8586febc"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "22422"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1885-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-c12dd101-4ded-1197-4c2e-3597cf0b1b9b"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "24545"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1890-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-93ef94c4-4a12-bfea-5897-d5c45af1f696"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "34539"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1900-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-db71fc78-4d76-150a-0852-e77f39866437"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "37148"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1905-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-48bbd9db-4fee-f2c0-03d7-90a1b4ab7b7e"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "39013"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1910-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-cc728482-411a-4d5f-dc2a-62b5e7ba0f4b"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "50834"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1925-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-d7a25240-4bad-8460-1dcf-996ecb48a5ec"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "57286"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1933-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-bb6ae06e-488a-2675-ae97-ce238d690ef7"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "56573"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1939-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-f0de4488-4fbd-8faf-5f02-785af8260bad"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "38270"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2025-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-A7E6FAE8-9370-474B-8EF7-0780AE2794DF"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "42619"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2009-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q5647-B49608F3-7127-434D-8315-A856E1D63827"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q5647"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "41802"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2013-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(21.886388888 55.080833333)"
+      },
+      "inception" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1288-01-01T00:00:00Z"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Советск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-042305E9-D27B-414E-B2AB-15F3235B4420"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15330"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2019-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-096A91A0-281E-46CC-8058-78C420DF414F"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15613"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2021-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-157EA278-0E00-413D-814D-32BC62839B50"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12527"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1959-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-36C93D2B-69E0-443C-9AF4-D69208BDC41E"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15492"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-427CEEAA-F302-4FE3-8B46-9D47E096264B"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12044"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1979-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-4C78FBEC-D40A-4876-BD1E-D34441DF1A72"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15136"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2017-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-6BBBCCB8-AFAF-4A76-B125-C376F5C4E94F"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15292"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2018-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-6E9C0979-60E4-4F18-9957-1E2E6F5687BD"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15124"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2012-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-78A935A3-55AD-4515-AEB3-1ECCCA05701B"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "16206"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1970-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-87A7557A-7073-4114-94E3-4C20666FDCC7"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14958"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2010-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-90D49FD0-983A-4AE7-9323-7230C2740C52"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14510"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2013-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-B368FAD7-0FD1-489E-B811-C2E46D59DA45"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "12074"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2002-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-C028E90A-E895-4469-883A-A64C659F23FB"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14776"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2015-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-C0FD69C3-D3B0-4710-B6AB-697BEC9732C4"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14968"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2016-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-C6A6F301-8F4A-4D58-B517-13DD8C3683AB"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "15322"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2020-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-D899CC12-F9AE-4071-862D-9962AB391C96"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "14524"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2014-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-D99BC5B4-B94F-4E90-A729-132B5B14428A"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "13032"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1989-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    }, {
+      "statement" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/statement/Q46850-DB95B9F6-1510-48DE-A50D-DC994474FD0E"
+      },
+      "city" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q46850"
+      },
+      "population" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal",
+        "type" : "literal",
+        "value" : "6700"
+      },
+      "date" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "1939-01-01T00:00:00Z"
+      },
+      "coord" : {
+        "datatype" : "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "type" : "literal",
+        "value" : "Point(29.7 60.2)"
+      },
+      "cityLabel" : {
+        "xml:lang" : "ru",
+        "type" : "literal",
+        "value" : "Зеленогорск"
+      }
+    } ]
+  }
+}

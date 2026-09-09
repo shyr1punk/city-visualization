@@ -1,0 +1,140 @@
+{
+  "retrievedAt": "2026-09-09",
+  "files": [
+    {
+      "path": "data/raw/dates-query.sparql",
+      "sha256": "0fb430f44f863993ed67103b89986b1c6232da9ec400fe1cc2d3d81a985001ee",
+      "bytes": 992
+    },
+    {
+      "path": "data/raw/exact-query.sparql",
+      "sha256": "c126a0b2b47982c4abfedda06b843898599c38dc4d90dab82d5435174dd67645",
+      "bytes": 558
+    },
+    {
+      "path": "data/raw/identities.json",
+      "sha256": "69b2580052a31b1a3a5f5a2212908ed0060dec1b1cabe546eaf4beabf17479a3",
+      "bytes": 36228
+    },
+    {
+      "path": "data/raw/legacy-coords.json",
+      "sha256": "a44de66f086f4057c3bbd3c2e2f87acbb44dde866ddf545e42c611c5f7abb1bd",
+      "bytes": 188799
+    },
+    {
+      "path": "data/raw/legacy-raw.json",
+      "sha256": "d5e1911718190ba6474e38f519eb05129871bdaf3e113c86030daba884122f33",
+      "bytes": 382289
+    },
+    {
+      "path": "data/raw/missing-query.sparql",
+      "sha256": "e3e5fc38cc9f9eb4896fdec8b353b98c8a2a4b6d4e9ab3df3bb6809b0f6f65b9",
+      "bytes": 2323
+    },
+    {
+      "path": "data/raw/stories/Великий Новгород.html",
+      "sha256": "7b713bdd4042630873e716f5fc6aa8a52e88ca337f8281661f1eb692f684df8b",
+      "bytes": 1551611
+    },
+    {
+      "path": "data/raw/stories/Дербент.html",
+      "sha256": "a2d3db167e35deef20d0be1f6c4175e8fd493d93813622a5908916754c50b389",
+      "bytes": 1368661
+    },
+    {
+      "path": "data/raw/stories/Екатеринбург.html",
+      "sha256": "e9cf9d2d9248bbfb85c5ddb8951f138cc42023ecd2ca82f6f0b16caf92244dce",
+      "bytes": 1956987
+    },
+    {
+      "path": "data/raw/stories/Казань.html",
+      "sha256": "47973263fd2efd8747c8b239fa64c2dc72b93843edc90a87416c0916aab0efba",
+      "bytes": 1415736
+    },
+    {
+      "path": "data/raw/stories/Магнитогорск.html",
+      "sha256": "7e6bfb7fd5d9ee2abb4b67074943581218085d8b64d661bcfb3210ebb9b55a61",
+      "bytes": 835173
+    },
+    {
+      "path": "data/raw/stories/Москва.html",
+      "sha256": "691a4ba3aee064eeb976bdb5c05c79e150976c0f8e017f63189d0f9fff642abe",
+      "bytes": 2133608
+    },
+    {
+      "path": "data/raw/stories/Новосибирск.html",
+      "sha256": "f3f0ed78672dec87896e1bdc9b52d9e61251b1f07a84e32190c7f0a4ecaf6265",
+      "bytes": 1984441
+    },
+    {
+      "path": "data/raw/stories/Норильск.html",
+      "sha256": "26d179389f7b5040e154795e6ccbee2ee480942f65176e24b7175406f03c3a64",
+      "bytes": 1466367
+    },
+    {
+      "path": "data/raw/stories/Обнинск.html",
+      "sha256": "d94fd055d1ea4fe2b1b65041e9e70889e74380cf94d14e83b1ff004d92a13c1a",
+      "bytes": 743595
+    },
+    {
+      "path": "data/raw/stories/Псков.html",
+      "sha256": "1a9d24575e49dadfb0242c133f5ca9f719fa7951d400c249342fa20c293d3b2b",
+      "bytes": 1589070
+    },
+    {
+      "path": "data/raw/stories/Санкт-Петербург.html",
+      "sha256": "d7b267d48b45688840b97f3537c34952c374b6225b94ec2569240eb583809239",
+      "bytes": 1991599
+    },
+    {
+      "path": "data/raw/stories/Тобольск.html",
+      "sha256": "e32c78b2cf3653c45dbce0790f930cfb93f6fd87f4537c6a52f67a789b9e326f",
+      "bytes": 956300
+    },
+    {
+      "path": "data/raw/stories/Тюмень.html",
+      "sha256": "38f6bbdc37286f71f5edc0a255eb0e4e11a7928691e093aaba2b1391b0c0ede2",
+      "bytes": 1147539
+    },
+    {
+      "path": "data/raw/stories/Якутск.html",
+      "sha256": "4be1b96179035329ec091e7d646864fb59f804fedcfca269b418efa7427232f2",
+      "bytes": 1076904
+    },
+    {
+      "path": "data/raw/wikidata-dates.json",
+      "sha256": "f7799043db16a37e10566d2aa3c31aecd6e84fe572d5d8a651ede265794e0624",
+      "bytes": 461219
+    },
+    {
+      "path": "data/raw/wikidata-exact.json",
+      "sha256": "f5951c305c3ac3992465a932c42f28ccb81f4322f7c1037381d06bea8a2ff323",
+      "bytes": 166406
+    },
+    {
+      "path": "data/raw/wikidata-missing.json",
+      "sha256": "33c629e66fd3c1a7e345c5a8be3ba99804febaba8daad7602ad13539e5d9a242",
+      "bytes": 2556800
+    },
+    {
+      "path": "data/raw/wikidata-population.json",
+      "sha256": "1b06a38ca2f41874e5af9b7322941eb7dfaf46b9b6f24a93cf9f88ca96859a38",
+      "bytes": 32828353
+    },
+    {
+      "path": "data/raw/wikidata-references.json",
+      "sha256": "4ceb463d1a56250bead845c442376b04c0bbf8b42bb275161a4b91971f2cd944",
+      "bytes": 23099529
+    },
+    {
+      "path": "data/raw/wikidata-sitelinks.json",
+      "sha256": "be67ae1e7905a355fe97422d65c1fc251c6b2e276d214352c6332f8c9c9ba674",
+      "bytes": 363422
+    },
+    {
+      "path": "data/raw/wikipedia-cities.html",
+      "sha256": "e5a6587c8a57e1ba70720c61f83c3e654b351f4a0f367c4ab7be7b3c62d781f5",
+      "bytes": 2692352
+    }
+  ]
+}

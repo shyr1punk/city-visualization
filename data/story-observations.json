@@ -1,0 +1,4851 @@
+{
+  "city-9a1afe7cbb": [
+    {
+      "year": 1782,
+      "value": 13279,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1782",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1825,
+      "value": 16994,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1825",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1833,
+      "value": 17558,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1833",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1840,
+      "value": 14246,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1840",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1847,
+      "value": 14211,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1847",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 16120,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1863,
+      "value": 18361,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1863",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1867,
+      "value": 20330,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1867",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1870,
+      "value": 18481,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1870",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1885,
+      "value": 20175,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1885",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 20425,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1912,
+      "value": 23221,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1912",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1913,
+      "value": 24500,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1913",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1920,
+      "value": 14798,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1920",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 15001,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 18519,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 23500,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 32244,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 39034,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 47000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 49260,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 51000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 61969,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 66000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 78000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 82000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 94143,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 97600,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 98000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 97200,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 97000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 97200,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 96400,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 92880,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 92900,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 92000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 101100,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 100600,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 100000,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 99800,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 99247,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 99694,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 99700,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 98287,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 98169,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 98052,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 98162,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 98434,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 98886,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 98998,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 98857,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2020,
+      "value": 98932,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2020",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2021,
+      "value": 100352,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2021",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2023,
+      "value": 99877,
+      "source": "https://ru.wikipedia.org/wiki/Тобольск#Население",
+      "date": "2023",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-2a74291ec1": [
+    {
+      "year": 1931,
+      "value": 64100,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 146000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 284000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 311101,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 333000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 357000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 364209,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 379000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 393000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 393000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 406074,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 416000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 426000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 424000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 430000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 440321,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 429000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 444000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 441000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 440000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 439000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 426000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 424000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 424000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 425000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 428100,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 427900,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 427100,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 418545,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 418500,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 415900,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 416700,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 413200,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 410500,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 409000,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 409397,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 407775,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 407895,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 409593,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 411880,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 414897,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 417039,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 417563,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 418241,
+      "source": "https://ru.wikipedia.org/wiki/Магнитогорск#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-062ebe4efb": [],
+  "city-00212211ba": [
+    {
+      "year": 1856,
+      "value": 13900,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 14600,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 23100,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 27500,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 34100,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 47318,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 52000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 59000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 57192,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 61000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 64000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 69575,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 75000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 81000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 83000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 78371,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 82000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 90000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 91100,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 93100,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 94200,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 101031,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 101000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 103100,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 104800,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 106300,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 107700,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 109000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 110659,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 119200,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 120000,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 119476,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 119813,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 120470,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 121251,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 122354,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 123162,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 123720,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 124677,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2020,
+      "value": 125832,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2020",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2021,
+      "value": 124953,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2021",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2023,
+      "value": 126078,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2023",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2024,
+      "value": 127084,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2024",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2025,
+      "value": 128141,
+      "source": "https://ru.wikipedia.org/wiki/Дербент#Население",
+      "date": "2025",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-f19686eb97": [
+    {
+      "year": 1959,
+      "value": 16334,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 38000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 48641,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 57000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 66000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 66000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 73402,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 83000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 94000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 95000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 96000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 100178,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 101000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 104000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 105000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 106000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 107000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 108000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 109000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 110000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 110000,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 108500,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 108300,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 107800,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 105706,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 105700,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 105500,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 105300,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 105400,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 105400,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 105500,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 105528,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 104739,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 104682,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 105421,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 106023,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 107319,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 109365,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 111360,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 113639,
+      "source": "https://ru.wikipedia.org/wiki/Обнинск#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-8f7487dd2c": [
+    {
+      "year": 1150,
+      "value": 15000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1150",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1325,
+      "value": 25000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1325",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1569,
+      "value": 30000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1569",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1811,
+      "value": 6300,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1811",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1825,
+      "value": 5445,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1825",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1833,
+      "value": 8634,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1833",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1840,
+      "value": 16781,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1840",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 12758,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1863,
+      "value": 17665,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1863",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1867,
+      "value": 16722,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1867",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1870,
+      "value": 17093,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1870",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1885,
+      "value": 23981,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1885",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 25736,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1910,
+      "value": 23841,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1910",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1913,
+      "value": 27500,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1913",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1914,
+      "value": 28200,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1914",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1917,
+      "value": 28807,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1917",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1920,
+      "value": 24831,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1920",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 27709,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 32764,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 36000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1937,
+      "value": 37059,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1937",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 39758,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1942,
+      "value": 3000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1942",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1944,
+      "value": 53456,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1944",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 60669,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 72000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 107000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 127944,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 150000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 170000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 186003,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 218000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 220000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 228000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 229126,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 231000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 234000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 235000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 234000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 233000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 232000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 231000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 232000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 231000,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 231700,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 229500,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 226500,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 223263,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 216900,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 213800,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 218800,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 217700,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 216700,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 216200,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 215351,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 218717,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 218700,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 219947,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 219925,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 219971,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 221954,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 221868,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 222594,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 222868,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 224297,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2020,
+      "value": 224936,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2020",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2021,
+      "value": 224286,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2021",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2023,
+      "value": 223191,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2023",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2024,
+      "value": 222340,
+      "source": "https://ru.wikipedia.org/wiki/Великий_Новгород#Население",
+      "date": "2024",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-3d26ec947c": [
+    {
+      "year": 1557,
+      "value": 7000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1557",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1800,
+      "value": 40000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1800",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1811,
+      "value": 53900,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1811",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1840,
+      "value": 41300,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1840",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 56300,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1858,
+      "value": 61000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1858",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1863,
+      "value": 63100,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1863",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 130000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1907,
+      "value": 161000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1907",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1914,
+      "value": 194200,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1914",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1917,
+      "value": 206562,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1917",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1920,
+      "value": 146495,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1920",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 157600,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 175597,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 200900,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1933,
+      "value": 258700,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1933",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1937,
+      "value": 358592,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1937",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 398014,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 565000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 646806,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 711000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1964,
+      "value": 742000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1964",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1966,
+      "value": 804000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1966",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 821000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 868537,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 919000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 959000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 959000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 992675,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 1023000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 1051000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 1060000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 1068000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 1094378,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 1094000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 1105000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 1104000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 1098000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 1092000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 1076000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 1076000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 1085000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 1078000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 1100800,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 1101000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 1090200,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 1105289,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 1105300,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 1106900,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 1110000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 1112700,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 1116000,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 1120238,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 1130717,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 1143535,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 1145424,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 1161308,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 1176187,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 1190850,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 1205651,
+      "source": "https://ru.wikipedia.org/wiki/Казань#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-310f490eba": [],
+  "city-ebd60722ab": [
+    {
+      "year": 1939,
+      "value": 13887,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1946,
+      "value": 30500,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1946",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1953,
+      "value": 77000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1953",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1954,
+      "value": 74000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1954",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1955,
+      "value": 82000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1955",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 96000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1957,
+      "value": 118300,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1957",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1958,
+      "value": 107000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1958",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 109442,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1960,
+      "value": 110000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1960",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 117000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 129000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 135487,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 150000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1974,
+      "value": 156000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1974",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 167000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 167000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 180358,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1981,
+      "value": 182329,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1981",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 183000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 185000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 179000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 181000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 174673,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 178000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 174008,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 165000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 167000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 163000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 164000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 161429,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 155000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 156000,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 144590,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 140800,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 133436,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 134832,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 134800,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 133400,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 131900,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 213200,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 209400,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 206400,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 203930,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 175365,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 175300,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 177273,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 177738,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 176559,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 176251,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 177428,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 178018,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 179554,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 180976,
+      "source": "https://ru.wikipedia.org/wiki/Норильск#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-a90035eb9e": [
+    {
+      "year": 1632,
+      "value": 200,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1632",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1681,
+      "value": 200,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1681",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1807,
+      "value": 2700,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1807",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1825,
+      "value": 2500,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1825",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1852,
+      "value": 2700,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1852",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 2800,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1860,
+      "value": 3600,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1860",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1862,
+      "value": 5649,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1862",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1865,
+      "value": 5300,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1865",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1883,
+      "value": 5800,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1883",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1885,
+      "value": 5500,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1885",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1888,
+      "value": 6300,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1888",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1890,
+      "value": 6500,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1890",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1895,
+      "value": 6200,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1895",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 6535,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1906,
+      "value": 7700,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1906",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1911,
+      "value": 9242,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1911",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1913,
+      "value": 10300,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1913",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1917,
+      "value": 7300,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1917",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 10065,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 10558,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1933,
+      "value": 23000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1933",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 52882,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1950,
+      "value": 59900,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1950",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1955,
+      "value": 67000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1955",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 63000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 74330,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1960,
+      "value": 77400,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1960",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 79000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1963,
+      "value": 82000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1963",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1964,
+      "value": 86000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1964",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1965,
+      "value": 89000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1965",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1966,
+      "value": 92000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1966",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 95000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1968,
+      "value": 98000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1968",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 107617,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1971,
+      "value": 114000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1971",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1972,
+      "value": 120000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1972",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 126000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1974,
+      "value": 133000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1974",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 137000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 137000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 152368,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 165000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1983,
+      "value": 170000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1983",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1984,
+      "value": 175000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1984",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 180000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 184000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 188000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 186626,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 192000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 193000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 198000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 196000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 194000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 193000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 192000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 194000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 196000,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 195500,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 195400,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 197800,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 210642,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 210600,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 216800,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 235610,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 239200,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 245600,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 255800,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 264069,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 269601,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 269500,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 278406,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 286456,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 294138,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 299169,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 303836,
+      "source": "https://ru.wikipedia.org/wiki/Якутск#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-96b91340f0": [
+    {
+      "year": 1724,
+      "value": 4000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1724",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1781,
+      "value": 7969,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1781",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1786,
+      "value": 9276,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1786",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1807,
+      "value": 10023,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1807",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1820,
+      "value": 13026,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1820",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1836,
+      "value": 14973,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1836",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1851,
+      "value": 15471,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1851",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 16900,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1861,
+      "value": 19832,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1861",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1877,
+      "value": 30274,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1877",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1887,
+      "value": 37399,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1887",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 43239,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1913,
+      "value": 69210,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1913",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1917,
+      "value": 71590,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1917",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1920,
+      "value": 91400,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1920",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 97400,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 134831,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 223335,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1933,
+      "value": 400800,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1933",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1937,
+      "value": 386815,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1937",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 425533,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1940,
+      "value": 436300,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1940",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1941,
+      "value": 450000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1941",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1942,
+      "value": 510000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1942",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1943,
+      "value": 548800,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1943",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1944,
+      "value": 543700,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1944",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1945,
+      "value": 487400,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1945",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 707000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 778602,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 853000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 961000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 1025045,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 1099000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 1163000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 1163000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 1211172,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 1252000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 1308000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 1310000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 1331000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1988,
+      "value": 1351000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1988",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 1364621,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 1304000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 1375000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 1371000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 1358000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 1347000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 1278000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 1276000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 1275000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 1272000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 1272900,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 1266300,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 1256900,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 1293537,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 1293500,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 1334400,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 1304300,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 1308400,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 1315100,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 1323000,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 1332264,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 1349772,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 1350100,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 1377738,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 1396074,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 1412346,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 1428042,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 1444439,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 1455904,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 1468833,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 1483119,
+      "source": "https://ru.wikipedia.org/wiki/Екатеринбург#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-df3182c21a": [
+    {
+      "year": 1897,
+      "value": 8000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 74600,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 117863,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 180067,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1933,
+      "value": 278000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1933",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1937,
+      "value": 360080,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1937",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 405297,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 731000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 885045,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 1160963,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 1221000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 1285000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1976,
+      "value": 1265000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1976",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 1312480,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 1357000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 1421000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 1396000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 1423000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 1436516,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 1427000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 1446000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 1442000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 1431000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 1418000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 1399000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 1397000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 1367000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 1399000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 1402400,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 1398800,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 1393200,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 1425508,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 1425500,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 1413000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 1405600,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 1397000,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 1391900,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 1390500,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 1397191,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 1473754,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 1473700,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 1498921,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 1523801,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 1547910,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 1567087,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 1584138,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 1602915,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 1612833,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 1618039,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2020,
+      "value": 1625631,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2020",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2021,
+      "value": 1633595,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2021",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2023,
+      "value": 1635338,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2023",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2024,
+      "value": 1633851,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2024",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2025,
+      "value": 1637266,
+      "source": "https://ru.wikipedia.org/wiki/Новосибирск#Население",
+      "date": "2025",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-224154cf29": [
+    {
+      "year": 1624,
+      "value": 479,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1624",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1741,
+      "value": 4160,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1741",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 11200,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1859,
+      "value": 13186,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1859",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1868,
+      "value": 14408,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1868",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1869,
+      "value": 13824,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1869",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 29500,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1912,
+      "value": 32236,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1912",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1913,
+      "value": 39200,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1913",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 43426,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 50252,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 57970,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1933,
+      "value": 64600,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1933",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1937,
+      "value": 76478,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1937",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 79205,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1956,
+      "value": 125000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1956",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 150195,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 174000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 240000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 268526,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 299000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 330000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 358992,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1982,
+      "value": 387000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1982",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 430000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 432000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 456000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 476869,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 486000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 494000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 496000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 493000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 491000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 492000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 495000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 499000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 500000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 503800,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 503400,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 500200,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 510719,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 510700,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 510300,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 538300,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 542500,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 549900,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 560000,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 570349,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 581907,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 581800,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 609650,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 634171,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 679861,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 697037,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2016,
+      "value": 720575,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2016",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2017,
+      "value": 744554,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2017",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2018,
+      "value": 768358,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2018",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2019,
+      "value": 788666,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2019",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2020,
+      "value": 807271,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2020",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2021,
+      "value": 847488,
+      "source": "https://ru.wikipedia.org/wiki/Тюмень#Население",
+      "date": "2021",
+      "statement": "wikipedia-table"
+    }
+  ],
+  "city-42390a6b25": [
+    {
+      "year": 1811,
+      "value": 9300,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1811",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1825,
+      "value": 8685,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1825",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1833,
+      "value": 8876,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1833",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1840,
+      "value": 10269,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1840",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1847,
+      "value": 8898,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1847",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1856,
+      "value": 16329,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1856",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1863,
+      "value": 16807,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1863",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1867,
+      "value": 12981,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1867",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1870,
+      "value": 18331,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1870",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1885,
+      "value": 21684,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1885",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1897,
+      "value": 30478,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1897",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1910,
+      "value": 32856,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1910",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1914,
+      "value": 34100,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1914",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1917,
+      "value": 60168,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1917",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1920,
+      "value": 29004,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1920",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1923,
+      "value": 36667,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1923",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1926,
+      "value": 40980,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1926",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1931,
+      "value": 39997,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1931",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1933,
+      "value": 52600,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1933",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1937,
+      "value": 55184,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1937",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1939,
+      "value": 60439,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1939",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1942,
+      "value": 15000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1942",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1944,
+      "value": 143,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1944",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1959,
+      "value": 81270,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1959",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1962,
+      "value": 98000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1962",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1967,
+      "value": 112000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1967",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1970,
+      "value": 126711,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1970",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1973,
+      "value": 141000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1973",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1975,
+      "value": 156000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1975",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1979,
+      "value": 175724,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1979",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1985,
+      "value": 194000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1985",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1986,
+      "value": 195000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1986",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1987,
+      "value": 202000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1987",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1989,
+      "value": 203789,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1989",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1990,
+      "value": 205000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1990",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1991,
+      "value": 208000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1991",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1992,
+      "value": 209000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1992",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1993,
+      "value": 208000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1993",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1994,
+      "value": 207000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1994",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1995,
+      "value": 207000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1995",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1996,
+      "value": 207000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1996",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1997,
+      "value": 206000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1997",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1998,
+      "value": 204000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1998",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 1999,
+      "value": 202900,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "1999",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2000,
+      "value": 201500,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2000",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2001,
+      "value": 200100,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2001",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2002,
+      "value": 202780,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2002",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2003,
+      "value": 202800,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2003",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2004,
+      "value": 201000,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2004",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2005,
+      "value": 200100,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2005",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2006,
+      "value": 197100,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2006",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2007,
+      "value": 194900,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2007",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2008,
+      "value": 194200,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2008",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2009,
+      "value": 193034,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2009",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2010,
+      "value": 203279,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2010",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2011,
+      "value": 202882,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2011",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2012,
+      "value": 203974,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2012",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2013,
+      "value": 206154,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2013",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2014,
+      "value": 206730,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2014",
+      "statement": "wikipedia-table"
+    },
+    {
+      "year": 2015,
+      "value": 207571,
+      "source": "https://ru.wikipedia.org/wiki/Псков#Население",
+      "date": "2015",
+      "statement": "wikipedia-table"
+    }
+  ]
+}
