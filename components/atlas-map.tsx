@@ -364,7 +364,8 @@ export default function AtlasMap(props: Props) {
           ] as const)
             x.on(event, (e) => {
               if (e.originalEvent) {
-                x.stop();
+                // MapLibre cancels camera flights when a gesture starts.
+                // Calling stop() here also resets the active gesture handlers.
                 latest.current.onInteract();
               }
             });
