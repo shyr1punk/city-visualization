@@ -21,6 +21,6 @@ for table in s.select('table.standard.sortable'):
   bc=re.search(r'(\d+)\s+год\s+до\s+н',date)
   if bc:year=-int(bc.group(1))
   link=a_tag['href']
-  rows.append(dict(id='city-'+hashlib.sha1(link.encode()).hexdigest()[:10],name=name,region=region,coordinates=[a[7],a[6]] if a and len(a)>7 and isinstance(a[7],(int,float)) and isinstance(a[6],(int,float)) else None,founded=year,dateLabel=date,dateKind='foundation-or-mention',dateSource='https://ru.wikipedia.org/wiki/Список_городов_России',statusYear=t[7].get_text(' ',strip=True),formerNames=t[8].get_text(' ',strip=True),url=link,population=[],notes=[]))
+  rows.append(dict(id='city-'+hashlib.sha1(link.encode()).hexdigest()[:10],name=name,region=region,country='Россия',coordinates=[a[7],a[6]] if a and len(a)>7 and isinstance(a[7],(int,float)) and isinstance(a[6],(int,float)) else None,founded=year,dateLabel=date,dateKind='foundation-or-mention',dateSource='https://ru.wikipedia.org/wiki/Список_городов_России',statusYear=t[7].get_text(' ',strip=True),formerNames=t[8].get_text(' ',strip=True),url=link,population=[],notes=[]))
 Path('data/catalog-base.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
 print('Catalog:',len(rows),'with coordinates:',sum(bool(r['coordinates']) for r in rows),'dates:',sum(r['founded'] is not None for r in rows))

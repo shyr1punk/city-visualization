@@ -40,6 +40,10 @@ import AtlasMap, { MapAction } from '../components/atlas-map';
 import PopulationChart from '../components/population-chart';
 import { Switch } from '../components/ui/switch';
 const normalize = (s: string) => s.toLowerCase().replaceAll('ё', 'е');
+const locationLabel = (city: City) =>
+  city.region === city.country
+    ? city.country
+    : `${city.region} · ${city.country}`;
 const assetUrl = (path: string) => import.meta.env.BASE_URL + path;
 const dateKinds: Record<string, string> = {
   foundation: 'Основание',
@@ -50,7 +54,7 @@ const dateKinds: Record<string, string> = {
 const eras = [
   { name: 'Первые поселения', range: 'до 999', color: COLORS.ancient },
   { name: 'Средневековые центры', range: '1000–1499', color: COLORS.medieval },
-  { name: 'Дальше на восток', range: '1500–1799', color: COLORS.siberia },
+  { name: 'Раннее Новое время', range: '1500–1799', color: COLORS.siberia },
   { name: 'Век большого роста', range: '1800–1899', color: COLORS.industrial },
   { name: 'Города новой эпохи', range: 'с 1900', color: COLORS.modern },
 ];
@@ -178,7 +182,7 @@ function Atlas({ cities }: { cities: City[] }) {
       : integerYear < 1500
         ? 'СРЕДНЕВЕКОВЫЕ ЦЕНТРЫ'
         : integerYear < 1800
-          ? 'ДАЛЬШЕ НА ВОСТОК'
+          ? 'РАННЕЕ НОВОЕ ВРЕМЯ'
           : integerYear < 1900
             ? 'ВЕК БОЛЬШОГО РОСТА'
             : 'ГОРОДА НОВОЙ ЭПОХИ';
@@ -187,7 +191,9 @@ function Atlas({ cities }: { cities: City[] }) {
       query
         ? cities
             .filter((c) =>
-              normalize(c.name + ' ' + c.region).includes(normalize(query)),
+              normalize(`${c.name} ${c.region} ${c.country}`).includes(
+                normalize(query),
+              ),
             )
             .sort(
               (a, b) =>
@@ -201,7 +207,9 @@ function Atlas({ cities }: { cities: City[] }) {
   const listResults = useMemo(
     () =>
       cities.filter((c) =>
-        normalize(c.name + ' ' + c.region).includes(normalize(listQuery)),
+        normalize(`${c.name} ${c.region} ${c.country}`).includes(
+          normalize(listQuery),
+        ),
       ),
     [listQuery, cities],
   );
@@ -661,7 +669,7 @@ function Atlas({ cities }: { cities: City[] }) {
                   <button key={c.id} onClick={() => chooseCity(c)}>
                     <span>
                       {c.name}
-                      <small>{c.region}</small>
+                      <small>{locationLabel(c)}</small>
                     </span>
                     <ArrowUpRight size={16} />
                   </button>
@@ -778,7 +786,7 @@ function Atlas({ cities }: { cities: City[] }) {
               <option value="100">100 лет</option>
             </select>
           </label>
-          <label
+          <div
             className="auto-focus-toggle"
             title="Показывать места появления новых городов"
           >
@@ -789,7 +797,7 @@ function Atlas({ cities }: { cities: City[] }) {
               aria-label="Автозум к новым городам"
             />
             <span>Следить за новыми</span>
-          </label>
+          </div>
         </div>
         <div className="era-legend" aria-label="Цвет — эпоха появления города">
           <span className="era-legend-title">Цвет — эпоха появления</span>
@@ -905,7 +913,7 @@ function Atlas({ cities }: { cities: City[] }) {
           >
             <X size={18} />
           </button>
-          <div className="eyebrow">{selected.region}</div>
+          <div className="eyebrow">{locationLabel(selected)}</div>
           <h2>{selected.name}</h2>
           <div className="city-date">
             <strong>
@@ -1033,7 +1041,7 @@ function Atlas({ cities }: { cities: City[] }) {
                 <input
                   className="list-search"
                   aria-label="Поиск в списке городов"
-                  placeholder="Название или регион"
+                  placeholder="Название, регион или страна"
                   value={listQuery}
                   onChange={(e) => setListQuery(e.target.value)}
                 />
@@ -1046,7 +1054,7 @@ function Atlas({ cities }: { cities: City[] }) {
                     <button key={c.id} onClick={() => chooseCity(c)}>
                       <span>
                         {c.name}
-                        <small>{c.region}</small>
+                        <small>{locationLabel(c)}</small>
                       </span>
                       <span>
                         {c.founded === null
@@ -1063,10 +1071,10 @@ function Atlas({ cities }: { cities: City[] }) {
                 <div className="eyebrow">ОТКРЫТАЯ ИСТОРИЯ</div>
                 <h2 id="modal-title">Как читать этот атлас</h2>
                 <p>
-                  Перед вами современные города из открытого справочника и
-                  история их появления. Счётчик показывает города нашего
-                  каталога, уже появившиеся к выбранному году, а не все города,
-                  существовавшие в прошлом.
+                  Перед вами современные города 15 стран бывшего СССР и история
+                  их появления. Счётчик показывает города нашего каталога, уже
+                  появившиеся к выбранному году, а не все города, существовавшие
+                  в прошлом.
                 </p>
                 <h3>Свет, размер и время</h3>
                 <p>
@@ -1142,15 +1150,15 @@ function Atlas({ cities }: { cities: City[] }) {
                 </a>
                 <h3>Территориальный охват</h3>
                 <p>
-                  Состав повторяет две таблицы «Списка городов России», включая
-                  города внутри городов федерального значения. Подложка Natural
-                  Earth отражает собственные современные картографические
-                  соглашения. В каталог источника включены города Крыма и
-                  Севастополь; их принадлежность оспаривается Россией и
-                  Украиной, большинство государств признаёт их территорией
-                  Украины. Их присутствие в каталоге не означает признания
-                  изменения границ. Исторические границы государств здесь не
-                  реконструируются.
+                  Российская часть повторяет две таблицы «Списка городов
+                  России». Остальные 14 стран представлены современными городами
+                  из воспроизводимого снимка Wikidata с координатами и хотя бы
+                  одним наблюдением населения. Подложка Natural Earth отражает
+                  собственные современные картографические соглашения. В
+                  источниках есть пересекающиеся территориальные притязания,
+                  включая Крым и Севастополь; присутствие записи и указанная
+                  страна не означают признания изменения границ. Исторические
+                  границы государств здесь не реконструируются.
                 </p>
                 <h3>Источники и права</h3>
                 <ul className="source-links">
@@ -1160,7 +1168,7 @@ function Atlas({ cities }: { cities: City[] }) {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Википедия — каталог, даты и дополнения к населению ↗
+                      Википедия — российский каталог, даты и дополнения ↗
                     </a>
                     <small>
                       CC BY-SA 4.0. Переработанный каталог распространяется на

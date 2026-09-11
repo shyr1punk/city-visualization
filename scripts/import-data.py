@@ -28,6 +28,7 @@ identities=json.loads(Path('data/raw/identities.json').read_text())
 catalog=json.loads(Path('data/catalog-base.json').read_text());report={'conflictingObservations':[],'unmatched':[],'coordinateCorrections':[],'dateCorrections':[],'excludedObservations':0}
 boundaries={'Москва':[1939,1960,1984,2012],'Норильск':[2005],'Балашиха':[2015],'Подольск':[2015],'Сочи':[1961],'Новосибирск':[1960]}
 for c in catalog:
+ if c.get('wikidata') and c['id'] not in identities:continue
  qid=identities.get(c['id']);candidates=['http://www.wikidata.org/entity/'+qid] if qid and 'http://www.wikidata.org/entity/'+qid in entities else []
  if not candidates:report['unmatched'].append(c['name']);continue
  key=candidates[0]; rs=entities[key]; qid=key.split('/')[-1];c['wikidata']=qid
@@ -73,7 +74,7 @@ for c in catalog:
  elif c['name'] in ['Тобольск','Тюмень','Якутск','Санкт-Петербург','Новосибирск','Магнитогорск','Норильск','Обнинск']:c['dateKind']='foundation';c['dateSource']=c['url']
  if c['coordinates'] and not(-180<=c['coordinates'][0]<=180 and -90<=c['coordinates'][1]<=90):c['coordinates']=None
  if c['population'] and c['population'][-1]['year']>2026:raise ValueError(c['name'])
-report.update({'snapshotDate':'2026-09-09','total':len(catalog),'withCoordinates':sum(c['coordinates'] is not None for c in catalog),'withDates':sum(c['founded'] is not None for c in catalog),'withPopulation':sum(bool(c['population']) for c in catalog),'observations':sum(len(c['population']) for c in catalog),'missingDates':[c['name'] for c in catalog if c['founded'] is None],'missingCoordinates':[c['name'] for c in catalog if c['coordinates'] is None],'missingPopulation':[c['name'] for c in catalog if not c['population']]})
+report.update({'snapshotDate':'2026-09-11','total':len(catalog),'withCoordinates':sum(c['coordinates'] is not None for c in catalog),'withDates':sum(c['founded'] is not None for c in catalog),'withPopulation':sum(bool(c['population']) for c in catalog),'observations':sum(len(c['population']) for c in catalog),'countryCounts':dict(sorted(collections.Counter(c.get('country','Россия') for c in catalog).items())),'missingDates':[c['name'] for c in catalog if c['founded'] is None],'missingCoordinates':[c['name'] for c in catalog if c['coordinates'] is None],'missingPopulation':[c['name'] for c in catalog if not c['population']]})
 Path('data/catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,separators=(',',':')))
 Path('public/catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,separators=(',',':')))
 Path('public/coverage.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))

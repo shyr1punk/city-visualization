@@ -8,6 +8,7 @@ export type City = {
   id: string;
   name: string;
   region: string;
+  country: string;
   coordinates: [number, number] | null;
   founded: number | null;
   dateLabel: string;
@@ -116,9 +117,9 @@ export type Camera = {
   pitch: number;
 };
 export const HOME_CAMERA: Camera = {
-  lng: 82,
-  lat: 57,
-  zoom: 2.25,
+  lng: 67,
+  lat: 53,
+  zoom: 2.1,
   bearing: -8,
   pitch: 35,
 };

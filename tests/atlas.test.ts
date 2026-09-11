@@ -20,6 +20,7 @@ const sample: City = {
   id: 'a',
   name: 'A',
   region: 'R',
+  country: 'Россия',
   coordinates: [30, 50],
   founded: 1800,
   dateLabel: '1800',
@@ -137,8 +138,31 @@ void test('dataset has unique exact identities and valid geography', () => {
   for (const c of data) {
     assert.ok(c.coordinates);
     assert.ok(c.coordinates![0] >= 19 && c.coordinates![0] <= 180, c.name);
-    assert.ok(c.coordinates![1] >= 41 && c.coordinates![1] <= 82, c.name);
+    assert.ok(c.coordinates![1] >= 35 && c.coordinates![1] <= 82, c.name);
+    assert.ok(c.country, c.name);
   }
+});
+void test('dataset covers all 15 former Soviet republics', () => {
+  assert.deepEqual(
+    [...new Set(data.map((c) => c.country))].sort(),
+    [
+      'Азербайджан',
+      'Армения',
+      'Беларусь',
+      'Грузия',
+      'Казахстан',
+      'Кыргызстан',
+      'Латвия',
+      'Литва',
+      'Молдова',
+      'Россия',
+      'Таджикистан',
+      'Туркменистан',
+      'Узбекистан',
+      'Украина',
+      'Эстония',
+    ].sort(),
+  );
 });
 void test('homonyms and federal city subdivisions remain distinct', () => {
   for (const n of ['Павловск', 'Троицк', 'Зеленогорск', 'Советск']) {

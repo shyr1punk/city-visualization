@@ -13,7 +13,8 @@
     "format": "oxfmt",
     "test": "node --experimental-strip-types --test tests/atlas.test.ts",
     "typecheck": "tsc --noEmit",
-    "data:import": "python3 scripts/parse-catalog.py && python3 scripts/import-data.py"
+    "data:import": "python3 scripts/parse-catalog.py && python3 scripts/import-former-ussr.py && python3 scripts/import-data.py",
+    "data:refresh-former-ussr": "python3 scripts/fetch-former-ussr.py"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

@@ -8,6 +8,12 @@
     "pnpm-lock.yaml",
     "yarn.lock",
     "bun.lock",
-    "bun.lockb"
+    "bun.lockb",
+    "data/raw/**",
+    "data/catalog*.json",
+    "data/story-observations.json",
+    "public/catalog.json",
+    "public/coverage.json",
+    "public/*.geojson"
   ]
 }
