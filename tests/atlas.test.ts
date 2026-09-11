@@ -8,6 +8,9 @@ import {
   parseView,
   serializeView,
   HOME_CAMERA,
+  focusCluster,
+  timelinePosition,
+  yearAtTimelinePosition,
 } from '../lib/atlas.ts';
 import type { City } from '../lib/atlas.ts';
 const data = JSON.parse(
@@ -86,6 +89,47 @@ void test('malformed URLs fail safely', () => {
   assert.equal(v.stop, 0);
   assert.equal(v.camera.pitch, 60);
   assert.equal(v.camera.lng, HOME_CAMERA.lng);
+});
+void test('camera URLs preserve a wrapped world position east of Kamchatka', () => {
+  const camera = { ...HOME_CAMERA, lng: 205 };
+  const view = parseView(
+    serializeView({ year: 1900, cityId: null, chapter: null, stop: 0, camera }),
+    -497,
+    2025,
+    new Set(),
+  );
+  assert.equal(view.camera.lng, 205);
+});
+void test('auto focus chooses the densest nearby city cluster', () => {
+  assert.deepEqual(
+    focusCluster([
+      [37.6, 55.7],
+      [41, 56],
+      [132, 43],
+    ]),
+    [
+      [37.6, 55.7],
+      [41, 56],
+    ],
+  );
+});
+void test('log timeline is reversible and gives recent centuries more room', () => {
+  const min = -497;
+  const max = 2025;
+  for (const year of [min, 1, 1000, 1500, 1800, 1900, max]) {
+    const restored = yearAtTimelinePosition(
+      timelinePosition(year, min, max),
+      min,
+      max,
+    );
+    assert.ok(Math.abs(restored - year) < 1e-9);
+  }
+  assert.equal(timelinePosition(min, min, max), 0);
+  assert.equal(timelinePosition(max, min, max), 1);
+  assert.ok(
+    timelinePosition(2025, min, max) - timelinePosition(1900, min, max) >
+      timelinePosition(-372, min, max) - timelinePosition(min, min, max),
+  );
 });
 void test('dataset has unique exact identities and valid geography', () => {
   assert.equal(new Set(data.map((c) => c.id)).size, data.length);

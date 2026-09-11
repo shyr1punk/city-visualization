@@ -28,6 +28,9 @@ import {
   populationAt,
   formatNumber,
   yearLabel,
+  cityColor,
+  timelinePosition,
+  yearAtTimelinePosition,
   parseView,
   serializeView,
   COLORS,
@@ -35,13 +38,22 @@ import {
 import { chapters } from '../lib/chapters';
 import AtlasMap, { MapAction } from '../components/atlas-map';
 import PopulationChart from '../components/population-chart';
+import { Switch } from '../components/ui/switch';
 const normalize = (s: string) => s.toLowerCase().replaceAll('ё', 'е');
+const assetUrl = (path: string) => import.meta.env.BASE_URL + path;
 const dateKinds: Record<string, string> = {
   foundation: 'Основание',
   'first-mention': 'Первое упоминание',
   'foundation-or-mention': 'Основание или первое упоминание',
   inception: 'Начало существования по Wikidata',
 };
+const eras = [
+  { name: 'Первые поселения', range: 'до 999', color: COLORS.ancient },
+  { name: 'Средневековые центры', range: '1000–1499', color: COLORS.medieval },
+  { name: 'Дальше на восток', range: '1500–1799', color: COLORS.siberia },
+  { name: 'Век большого роста', range: '1800–1899', color: COLORS.industrial },
+  { name: 'Города новой эпохи', range: 'с 1900', color: COLORS.modern },
+];
 function populationCaption(c: City, year: number) {
   const p = populationAt(c, year);
   return p.kind === 'not-born'
@@ -59,7 +71,7 @@ export default function Home() {
     [error, setError] = useState(false);
   useEffect(() => {
     const ac = new AbortController();
-    fetch('/catalog.json', { signal: ac.signal })
+    fetch(assetUrl('catalog.json'), { signal: ac.signal })
       .then((r) => {
         if (!r.ok) throw Error('catalog');
         return r.json();
@@ -100,14 +112,15 @@ function Atlas({ cities }: { cities: City[] }) {
     );
     const ids = new Set(cities.map((c) => c.id));
     const bins = Array.from({ length: 100 }, (_, i) => {
-      const start = MIN + (i * (MAX - MIN)) / 100;
+      const start = yearAtTimelinePosition(i / 100, MIN, MAX);
+      const end = yearAtTimelinePosition((i + 1) / 100, MIN, MAX);
       return {
         start,
         count: cities.filter(
           (c) =>
             c.founded !== null &&
             c.founded >= start &&
-            c.founded < start + (MAX - MIN) / 100,
+            (i === 99 ? c.founded <= end : c.founded < end),
         ).length,
       };
     });
@@ -120,6 +133,7 @@ function Atlas({ cities }: { cities: City[] }) {
     [query, setQuery] = useState(''),
     [selected, setSelected] = useState<City | null>(null),
     [flat, setFlat] = useState(false),
+    [autoFocus, setAutoFocus] = useState(false),
     [speed, setSpeed] = useState(1),
     [period, setPeriod] = useState(0);
   const [mapAction, setMapAction] = useState<MapAction>({
@@ -139,12 +153,25 @@ function Atlas({ cities }: { cities: City[] }) {
   const initialCamera = useRef(HOME_CAMERA),
     modalRef = useRef<HTMLDialogElement>(null),
     yearRef = useRef(year),
+    previousFocusYear = useRef(year),
+    pendingBirths = useRef<[number, number][]>([]),
+    lastAutoFocus = useRef(0),
     searchRef = useRef<HTMLInputElement>(null);
   yearRef.current = year;
   const integerYear = Math.floor(year),
     count = cities.filter((c) => visibleAt(c, integerYear)).length,
     activeChapter = chapter === null ? null : chapters[chapter],
     activeStop = activeChapter?.stops[stop];
+  const eraGradient = useMemo(() => {
+    const position = (value: number) =>
+      timelinePosition(value, MIN, MAX) * 100 + '%';
+    return `linear-gradient(90deg,
+      ${COLORS.ancient} 0%, ${COLORS.ancient} ${position(1000)},
+      ${COLORS.medieval} ${position(1000)}, ${COLORS.medieval} ${position(1500)},
+      ${COLORS.siberia} ${position(1500)}, ${COLORS.siberia} ${position(1800)},
+      ${COLORS.industrial} ${position(1800)}, ${COLORS.industrial} ${position(1900)},
+      ${COLORS.modern} ${position(1900)}, ${COLORS.modern} 100%)`;
+  }, [MIN, MAX]);
   const era =
     integerYear < 1000
       ? 'ПЕРВЫЕ ПОСЕЛЕНИЯ'
@@ -294,6 +321,35 @@ function Atlas({ cities }: { cities: City[] }) {
     }, 100);
     return () => clearInterval(id);
   }, [playing, chapter, stop, speed, goStop, MAX]);
+  useEffect(() => {
+    const previous = previousFocusYear.current;
+    previousFocusYear.current = year;
+    if (!autoFocus || !playing || chapter !== null || year <= previous) {
+      if (!playing || !autoFocus) pendingBirths.current = [];
+      return;
+    }
+    pendingBirths.current.push(
+      ...cities
+        .filter(
+          (city) =>
+            city.coordinates &&
+            city.founded !== null &&
+            city.founded > previous &&
+            city.founded <= year,
+        )
+        .map((city) => city.coordinates!),
+    );
+    const now = performance.now();
+    if (pendingBirths.current.length && now - lastAutoFocus.current >= 1200) {
+      setMapAction({
+        action: 'births',
+        seq: Date.now(),
+        points: pendingBirths.current,
+      });
+      pendingBirths.current = [];
+      lastAutoFocus.current = now;
+    }
+  }, [year, autoFocus, playing, chapter, cities]);
   function togglePlay() {
     if (!playing && integerYear >= MAX && chapter === null) setYear(MIN);
     setPlaying((p) => !p);
@@ -471,7 +527,11 @@ function Atlas({ cities }: { cities: City[] }) {
       )}
       <div className="map-vignette" />
       <header className="topbar">
-        <a className="brand" href="/" aria-label="Города во времени — начало">
+        <a
+          className="brand"
+          href={import.meta.env.BASE_URL}
+          aria-label="Города во времени — начало"
+        >
           <span className="brand-icon">
             <Compass size={23} />
           </span>
@@ -718,6 +778,28 @@ function Atlas({ cities }: { cities: City[] }) {
               <option value="100">100 лет</option>
             </select>
           </label>
+          <label
+            className="auto-focus-toggle"
+            title="Показывать места появления новых городов"
+          >
+            <Switch
+              size="sm"
+              checked={autoFocus}
+              onCheckedChange={setAutoFocus}
+              aria-label="Автозум к новым городам"
+            />
+            <span>Следить за новыми</span>
+          </label>
+        </div>
+        <div className="era-legend" aria-label="Цвет — эпоха появления города">
+          <span className="era-legend-title">Цвет — эпоха появления</span>
+          {eras.map((item) => (
+            <span key={item.name} className="era-legend-item">
+              <i style={{ background: item.color }} />
+              <span>{item.name}</span>
+              <small>{item.range}</small>
+            </span>
+          ))}
         </div>
         <div className="timeline-main">
           <button
@@ -738,18 +820,29 @@ function Atlas({ cities }: { cities: City[] }) {
                   key={i}
                   style={{
                     height: Math.max(2, (bin.count / histogramMax) * 40),
-                    background: bin.start <= year ? '#b9ab87' : '#344545',
+                    background: cityColor(bin.start),
+                    opacity: bin.start <= year ? 0.92 : 0.18,
                   }}
                 />
               ))}
             </div>
+            <div
+              className="era-track"
+              style={{ background: eraGradient }}
+              aria-hidden="true"
+            />
             <input
               type="range"
               aria-label="Год на карте"
-              min={MIN}
-              max={MAX}
-              value={integerYear}
-              onChange={(e) => changeYear(+e.target.value)}
+              aria-valuetext={yearLabel(integerYear)}
+              min={0}
+              max={10000}
+              value={Math.round(timelinePosition(year, MIN, MAX) * 10000)}
+              onChange={(e) =>
+                changeYear(
+                  yearAtTimelinePosition(+e.target.value / 10000, MIN, MAX),
+                )
+              }
             />
             <div className="ticks">
               {[MIN, 1, 500, 1000, 1500, MAX]
@@ -757,7 +850,9 @@ function Atlas({ cities }: { cities: City[] }) {
                 .map((y) => (
                   <button
                     key={y}
-                    style={{ left: ((y - MIN) / (MAX - MIN)) * 100 + '%' }}
+                    style={{
+                      left: timelinePosition(y, MIN, MAX) * 100 + '%',
+                    }}
                     onClick={() => changeYear(y)}
                   >
                     {yearLabel(y)}
@@ -982,18 +1077,10 @@ function Atlas({ cities }: { cities: City[] }) {
                   Полый маркер — население неизвестно.
                 </p>
                 <div className="color-legend">
-                  {Object.entries(COLORS).map(([k, color], i) => (
-                    <span key={k}>
-                      <i style={{ background: color }} />
-                      {
-                        [
-                          'До 1000',
-                          '1000–1499',
-                          '1500–1799',
-                          '1800–1899',
-                          'С 1900',
-                        ][i]
-                      }
+                  {eras.map((item) => (
+                    <span key={item.name}>
+                      <i style={{ background: item.color }} />
+                      {item.name} · {item.range}
                     </span>
                   ))}
                 </div>
@@ -1047,7 +1134,7 @@ function Atlas({ cities }: { cities: City[] }) {
                 </p>
                 <a
                   className="text-link"
-                  href="/coverage.json"
+                  href={assetUrl('coverage.json')}
                   target="_blank"
                   rel="noreferrer"
                 >

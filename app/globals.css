@@ -382,12 +382,19 @@ input:focus-visible {
   height: 43px;
   overflow: hidden;
   padding: 0 4px;
-  opacity: 0.62;
 }
 .histogram span {
   flex: 1;
   max-height: 40px;
   border-radius: 2px 2px 0 0;
+  transition: opacity 160ms ease;
+}
+.era-track {
+  height: 4px;
+  margin: 0 4px -3px;
+  border-radius: 999px;
+  opacity: 0.72;
+  box-shadow: 0 0 10px #0008;
 }
 .timeline-track input {
   display: block;
@@ -396,6 +403,7 @@ input:focus-visible {
   accent-color: var(--gold);
   margin: 0;
   cursor: ew-resize;
+  position: relative;
 }
 .ticks {
   display: flex;
@@ -408,6 +416,39 @@ input:focus-visible {
 .speed {
   font-size: 13px;
   color: var(--muted);
+}
+.era-legend {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  color: #a8b6b6;
+  white-space: nowrap;
+}
+.era-legend::-webkit-scrollbar {
+  display: none;
+}
+.era-legend-title {
+  color: var(--ink);
+  font-size: 11px;
+}
+.era-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+}
+.era-legend-item i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 7px currentColor;
+}
+.era-legend-item small {
+  color: #72878b;
+  font-size: 10px;
 }
 .timeline-panel footer {
   border-top: 1px solid var(--line);
@@ -882,6 +923,25 @@ input:focus-visible {
 .period-select option {
   background: #13242b;
 }
+.auto-focus-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.auto-focus-toggle [data-slot='switch'] {
+  background: #314348;
+  border: 1px solid #ffffff1f;
+}
+.auto-focus-toggle [data-slot='switch'][data-checked] {
+  background: var(--gold);
+}
+.auto-focus-toggle [data-slot='switch-thumb'] {
+  background: #eef1e8;
+}
 .ticks {
   height: 14px;
   position: relative;
@@ -1304,6 +1364,20 @@ input:focus-visible {
     font-size: 10px;
   }
   .period-select > span {
+    display: none;
+  }
+  .auto-focus-toggle span {
+    font-size: 10px;
+  }
+  .era-legend {
+    gap: 11px;
+    margin-top: 10px;
+  }
+  .era-legend-title,
+  .era-legend-item {
+    font-size: 10px;
+  }
+  .era-legend-item small {
     display: none;
   }
   .year-entry {

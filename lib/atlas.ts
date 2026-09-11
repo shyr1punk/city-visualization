@@ -55,6 +55,31 @@ export const formatNumber = (n: number) =>
   Math.round(n).toLocaleString('ru-RU');
 export const yearLabel = (n: number) =>
   n < 0 ? `${Math.abs(n)} до н. э.` : String(n);
+export function timelinePosition(year: number, min: number, max: number) {
+  if (max <= min) return 0;
+  const clamped = Math.max(min, Math.min(max, year));
+  const span = max - min;
+  const offset = Math.max(1, span / 25);
+  return (
+    Math.log((span + offset) / (max - clamped + offset)) /
+    Math.log((span + offset) / offset)
+  );
+}
+export function yearAtTimelinePosition(
+  position: number,
+  min: number,
+  max: number,
+) {
+  if (max <= min) return min;
+  const clamped = Math.max(0, Math.min(1, position));
+  const span = max - min;
+  const offset = Math.max(1, span / 25);
+  return (
+    max +
+    offset -
+    (span + offset) * Math.exp(-clamped * Math.log((span + offset) / offset))
+  );
+}
 export const COLORS = {
   ancient: '#edc68d',
   medieval: '#f3bc72',
@@ -72,6 +97,16 @@ export function cityColor(year: number) {
         : year < 1900
           ? COLORS.industrial
           : COLORS.modern;
+}
+export function focusCluster(points: [number, number][]) {
+  if (points.length < 2) return points;
+  const distance = (a: [number, number], b: [number, number]) => {
+    const meanLat = ((a[1] + b[1]) / 2) * (Math.PI / 180);
+    return Math.hypot((a[0] - b[0]) * Math.cos(meanLat), a[1] - b[1]);
+  };
+  return points
+    .map((center) => points.filter((point) => distance(center, point) <= 7))
+    .reduce((best, cluster) => (cluster.length > best.length ? cluster : best));
 }
 export type Camera = {
   lng: number;
@@ -114,7 +149,7 @@ export function parseView(
     chapter: ch !== null && /^[0-4]$/.test(ch) ? Number(ch) : null,
     stop: Math.floor(n('stop', 0, 0, 2)),
     camera: {
-      lng: n('lng', HOME_CAMERA.lng, -180, 180),
+      lng: n('lng', HOME_CAMERA.lng, -540, 540),
       lat: n('lat', HOME_CAMERA.lat, -80, 80),
       zoom: n('zoom', HOME_CAMERA.zoom, 1.5, 10),
       bearing: n('bearing', HOME_CAMERA.bearing, -180, 180),

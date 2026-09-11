@@ -11,6 +11,7 @@ import {
   populationAt,
   radiusFor,
   cityColor,
+  focusCluster,
 } from '../lib/atlas';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
@@ -18,6 +19,7 @@ export type MapAction = {
   action: string;
   seq: number;
   coordinates?: [number, number];
+  points?: [number, number][];
 };
 type Props = {
   cities: City[];
@@ -94,6 +96,7 @@ export default function AtlasMap(props: Props) {
     labels = useRef<{ city: City; marker: Marker }[]>([]);
   latest.current = props;
   const previousFlat = useRef(flat);
+  const assetUrl = (path: string) => import.meta.env.BASE_URL + path;
   const [ready, setReady] = useState(false),
     [failed, setFailed] = useState(false);
   useEffect(() => {
@@ -143,17 +146,20 @@ export default function AtlasMap(props: Props) {
             minZoom: 1.5,
             maxZoom: 10,
             maxPitch: 60,
-            renderWorldCopies: false,
+            renderWorldCopies: true,
             attributionControl: { compact: true },
             style: {
               version: 8,
               sources: {
                 world: {
                   type: 'geojson',
-                  data: '/world.geojson',
+                  data: assetUrl('world.geojson'),
                   attribution: '© Natural Earth · Public domain',
                 },
-                rivers: { type: 'geojson', data: '/rivers.geojson' },
+                rivers: {
+                  type: 'geojson',
+                  data: assetUrl('rivers.geojson'),
+                },
                 grid: { type: 'geojson', data: graticule },
               },
               layers: [
@@ -357,7 +363,6 @@ export default function AtlasMap(props: Props) {
           );
           x.on('mouseleave', 'dots', () => (x.getCanvas().style.cursor = ''));
           for (const event of [
-            'dragstart',
             'zoomstart',
             'rotatestart',
             'pitchstart',
@@ -379,9 +384,6 @@ export default function AtlasMap(props: Props) {
               pitch: x.getPitch(),
             });
           });
-          x.getCanvas().addEventListener('pointerdown', () =>
-            latest.current.onInteract(),
-          );
           x.getCanvas().addEventListener(
             'wheel',
             () => latest.current.onInteract(),
@@ -467,6 +469,30 @@ export default function AtlasMap(props: Props) {
         duration,
         padding: { left: 0, right: 0, top: 20, bottom: 100 },
       });
+    if (action.action === 'births' && action.points?.length) {
+      const cluster = focusCluster(action.points);
+      if (cluster.length === 1)
+        m.easeTo({
+          center: cluster[0],
+          zoom: Math.max(m.getZoom(), 5.1),
+          duration: reduced ? 0 : 900,
+        });
+      else {
+        const lngs = cluster.map((point) => point[0]);
+        const lats = cluster.map((point) => point[1]);
+        m.fitBounds(
+          [
+            [Math.min(...lngs), Math.min(...lats)],
+            [Math.max(...lngs), Math.max(...lats)],
+          ],
+          {
+            padding: { left: 90, right: 90, top: 110, bottom: 250 },
+            maxZoom: 5.4,
+            duration: reduced ? 0 : 900,
+          },
+        );
+      }
+    }
   }, [action, ready]);
   return (
     <>
