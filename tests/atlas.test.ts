@@ -163,6 +163,17 @@ void test('dataset covers all 15 former Soviet republics', () => {
       'Эстония',
     ].sort(),
   );
+  assert.equal(
+    data.filter((c) => c.country !== 'Россия' && c.founded === null).length,
+    0,
+  );
+});
+void test('empty timeline bins are rendered without a minimum bar', () => {
+  const page = readFileSync(
+    new URL('../app/page.tsx', import.meta.url),
+    'utf8',
+  );
+  assert.match(page, /bin\.count === 0\s*\? 0/);
 });
 void test('homonyms and federal city subdivisions remain distinct', () => {
   for (const n of ['Павловск', 'Троицк', 'Зеленогорск', 'Советск']) {

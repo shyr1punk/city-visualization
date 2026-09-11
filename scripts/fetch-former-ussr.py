@@ -24,7 +24,7 @@ COUNTRIES = {
 
 CITY_QUERY = """
 SELECT ?city ?cityLabel ?coord ?admin ?adminLabel ?article
-       ?inception ?precision WHERE {{
+       ?inception ?precision ?mention ?mentionPrecision WHERE {{
   VALUES ?cityClass {{ wd:Q515 wd:Q7930989 }}
   ?city wdt:P17 wd:{country};
         wdt:P31/wdt:P279* ?cityClass;
@@ -35,6 +35,11 @@ SELECT ?city ?cityLabel ?coord ?admin ?adminLabel ?article
     ?city p:P571/psv:P571 ?dateNode.
     ?dateNode wikibase:timeValue ?inception;
               wikibase:timePrecision ?precision.
+  }}
+  OPTIONAL {{
+    ?city p:P1249/psv:P1249 ?mentionNode.
+    ?mentionNode wikibase:timeValue ?mention;
+                 wikibase:timePrecision ?mentionPrecision.
   }}
   OPTIONAL {{
     ?article schema:about ?city;

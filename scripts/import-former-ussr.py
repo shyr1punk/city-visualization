@@ -38,15 +38,29 @@ for qid, rows in grouped.items():
     coordinates = point(value(first, "coord"))
     if not name or not coordinates:
         continue
-    dates = {
+    inception_dates = {
         year(value(row, "inception"))
         for row in rows
         if value(row, "precision").isdigit()
         and int(value(row, "precision")) >= 9
         and year(value(row, "inception")) is not None
     }
-    dates.discard(None)
-    founded = min(dates) if dates else None
+    mention_dates = {
+        year(value(row, "mention"))
+        for row in rows
+        if value(row, "mentionPrecision").isdigit()
+        and int(value(row, "mentionPrecision")) >= 9
+        and year(value(row, "mention")) is not None
+    }
+    inception_dates.discard(None)
+    mention_dates.discard(None)
+    founded = min(inception_dates) if inception_dates else None
+    date_kind = "inception"
+    date_source = f"https://www.wikidata.org/wiki/{qid}#P571"
+    if founded is None and mention_dates:
+        founded = min(mention_dates)
+        date_kind = "first-mention"
+        date_source = f"https://www.wikidata.org/wiki/{qid}#P1249"
     country = value(first, "countryLabel")
     regions = sorted(
         {value(row, "adminLabel") for row in rows if value(row, "adminLabel")},
@@ -81,6 +95,18 @@ for qid, rows in grouped.items():
     source_url = article or f"https://www.wikidata.org/wiki/{qid}"
     if not populations:
         continue
+    if founded is None:
+        founded = min(populations)
+        date_kind = "first-observation"
+        date_source = populations[founded]["source"]
+        date_label = f"не позднее {founded} года — первое наблюдение населения"
+        date_note = (
+            "Дата основания или первого упоминания в Wikidata не указана; "
+            "на карте город появляется с первого датированного наблюдения населения."
+        )
+    else:
+        date_label = str(founded)
+        date_note = "Запись добавлена из воспроизводимого снимка Wikidata для городов бывшего СССР."
     added.append(
         {
             "id": "city-" + hashlib.sha1(qid.encode()).hexdigest()[:10],
@@ -90,16 +116,14 @@ for qid, rows in grouped.items():
             "coordinates": coordinates,
             "coordinateSource": f"https://www.wikidata.org/wiki/{qid}#P625",
             "founded": founded,
-            "dateLabel": str(founded) if founded is not None else "дата неизвестна",
-            "dateKind": "inception",
-            "dateSource": f"https://www.wikidata.org/wiki/{qid}#P571",
+            "dateLabel": date_label,
+            "dateKind": date_kind,
+            "dateSource": date_source,
             "statusYear": "",
             "formerNames": "",
             "url": source_url,
             "population": [populations[key] for key in sorted(populations)],
-            "notes": [
-                "Запись добавлена из воспроизводимого снимка Wikidata для городов бывшего СССР."
-            ],
+            "notes": [date_note],
             "wikidata": qid,
         }
     )

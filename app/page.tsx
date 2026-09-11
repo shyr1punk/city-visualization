@@ -50,6 +50,7 @@ const dateKinds: Record<string, string> = {
   'first-mention': 'Первое упоминание',
   'foundation-or-mention': 'Основание или первое упоминание',
   inception: 'Начало существования по Wikidata',
+  'first-observation': 'Первое наблюдение населения',
 };
 const eras = [
   { name: 'Первые поселения', range: 'до 999', color: COLORS.ancient },
@@ -827,7 +828,10 @@ function Atlas({ cities }: { cities: City[] }) {
                 <span
                   key={i}
                   style={{
-                    height: Math.max(2, (bin.count / histogramMax) * 40),
+                    height:
+                      bin.count === 0
+                        ? 0
+                        : Math.max(2, (bin.count / histogramMax) * 40),
                     background: cityColor(bin.start),
                     opacity: bin.start <= year ? 0.92 : 0.18,
                   }}
