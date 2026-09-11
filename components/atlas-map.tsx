@@ -178,7 +178,7 @@ export default function AtlasMap(props: Props) {
             zoom: initialCamera.zoom,
             pitch: initialCamera.pitch,
             bearing: initialCamera.bearing,
-            minZoom: 1.5,
+            minZoom: 0.6,
             maxZoom: 10,
             maxPitch: 60,
             renderWorldCopies: true,
@@ -258,10 +258,6 @@ export default function AtlasMap(props: Props) {
               ],
             },
           });
-          x.setProjection({
-            type: latest.current.globe ? 'globe' : 'mercator',
-          });
-          x.setRenderWorldCopies(!latest.current.globe);
           map.current = x;
           const fail = () => {
             if (cancelled) return;
@@ -269,7 +265,10 @@ export default function AtlasMap(props: Props) {
             latest.current.onFailure();
           };
           watchdog = setTimeout(() => {
-            if (!x.isStyleLoaded()) fail();
+            // Projection transitions can briefly make isStyleLoaded() false
+            // even though the map is usable. The city source is the reliable
+            // signal that our application layers finished initializing.
+            if (!x.getSource('cities')) fail();
           }, 20000);
           x.on('load', () => {
             clearTimeout(watchdog);
@@ -368,6 +367,7 @@ export default function AtlasMap(props: Props) {
                 .addTo(x);
               labels.current.push({ city, marker });
             }
+            setFailed(false);
             setReady(true);
             let last = 0;
             const pulse = (t: number) => {
