@@ -73,6 +73,7 @@ void test('URL roundtrip preserves view, city, chapter, stop and pitch', () => {
     cityId: 'a',
     chapter: 2,
     stop: 1,
+    projection: 'globe' as const,
     camera: { ...HOME_CAMERA, pitch: 22.5 },
   };
   assert.deepEqual(parseView(serializeView(s), -497, 2025, new Set(['a'])), s);
@@ -88,18 +89,42 @@ void test('malformed URLs fail safely', () => {
   assert.equal(v.cityId, null);
   assert.equal(v.chapter, null);
   assert.equal(v.stop, 0);
+  assert.equal(v.projection, 'globe');
   assert.equal(v.camera.pitch, 60);
   assert.equal(v.camera.lng, HOME_CAMERA.lng);
 });
 void test('camera URLs preserve a wrapped world position east of Kamchatka', () => {
   const camera = { ...HOME_CAMERA, lng: 205 };
   const view = parseView(
-    serializeView({ year: 1900, cityId: null, chapter: null, stop: 0, camera }),
+    serializeView({
+      year: 1900,
+      cityId: null,
+      chapter: null,
+      stop: 0,
+      projection: 'mercator',
+      camera,
+    }),
     -497,
     2025,
     new Set(),
   );
   assert.equal(view.camera.lng, 205);
+  assert.equal(view.projection, 'mercator');
+});
+void test('globe projection is the default and survives URL roundtrip', () => {
+  assert.equal(parseView('', -497, 2025, new Set()).projection, 'globe');
+  const url = serializeView({
+    year: 1900,
+    cityId: null,
+    chapter: null,
+    stop: 0,
+    projection: 'globe',
+    camera: HOME_CAMERA,
+  });
+  assert.equal(
+    parseView(url, -497, 2025, new Set()).projection,
+    'globe',
+  );
 });
 void test('auto focus chooses the densest nearby city cluster', () => {
   assert.deepEqual(

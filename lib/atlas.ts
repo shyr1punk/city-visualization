@@ -128,6 +128,7 @@ export type ViewState = {
   cityId: string | null;
   chapter: number | null;
   stop: number;
+  projection: 'globe' | 'mercator';
   camera: Camera;
 };
 export function parseView(
@@ -149,6 +150,7 @@ export function parseView(
     cityId: id && ids.has(id) ? id : null,
     chapter: ch !== null && /^[0-4]$/.test(ch) ? Number(ch) : null,
     stop: Math.floor(n('stop', 0, 0, 2)),
+    projection: p.get('projection') === 'mercator' ? 'mercator' : 'globe',
     camera: {
       lng: n('lng', HOME_CAMERA.lng, -540, 540),
       lat: n('lat', HOME_CAMERA.lat, -80, 80),
@@ -166,6 +168,7 @@ export function serializeView(state: ViewState) {
     zoom: state.camera.zoom.toFixed(2),
     bearing: state.camera.bearing.toFixed(1),
     pitch: state.camera.pitch.toFixed(1),
+    projection: state.projection,
   });
   if (state.cityId) p.set('city', state.cityId);
   if (state.chapter !== null) {

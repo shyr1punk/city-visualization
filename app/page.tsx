@@ -9,6 +9,7 @@ import {
   Plus,
   Minus,
   Compass,
+  Globe2,
   ArrowUpRight,
   ArrowLeft,
   ArrowRight,
@@ -138,6 +139,7 @@ function Atlas({ cities }: { cities: City[] }) {
     [query, setQuery] = useState(''),
     [selected, setSelected] = useState<City | null>(null),
     [flat, setFlat] = useState(false),
+    [globe, setGlobe] = useState(true),
     [autoFocus, setAutoFocus] = useState(false),
     [speed, setSpeed] = useState(1),
     [period, setPeriod] = useState(0);
@@ -237,6 +239,7 @@ function Atlas({ cities }: { cities: City[] }) {
     setStop(v.stop);
     initialCamera.current = v.camera;
     setCamera(v.camera);
+    setGlobe(v.projection === 'globe');
     setFlat(v.camera.pitch === 0);
     const mq = matchMedia('(prefers-reduced-motion: reduce)');
     setReduced(mq.matches);
@@ -256,12 +259,13 @@ function Atlas({ cities }: { cities: City[] }) {
           cityId: selected?.id ?? null,
           chapter,
           stop,
+          projection: globe ? 'globe' : 'mercator',
           camera,
         }),
       );
     }, 200);
     return () => clearTimeout(t);
-  }, [integerYear, selected, chapter, stop, camera, hydrated]);
+  }, [integerYear, selected, chapter, stop, globe, camera, hydrated]);
   const goStop = useCallback(
     (ch: number, index: number, play = true) => {
       const def = chapters[ch].stops[index];
@@ -434,6 +438,7 @@ function Atlas({ cities }: { cities: City[] }) {
           cityId: selected?.id ?? null,
           chapter,
           stop,
+          projection: globe ? 'globe' : 'mercator',
           camera,
         });
       history.replaceState(null, '', url);
@@ -523,6 +528,7 @@ function Atlas({ cities }: { cities: City[] }) {
           cities={cities}
           year={year}
           flat={flat}
+          globe={globe}
           selected={selected}
           onSelect={chooseCity}
           action={mapAction}
@@ -740,6 +746,17 @@ function Atlas({ cities }: { cities: City[] }) {
           }}
         >
           {flat ? '2D' : '3D'}
+        </button>
+        <button
+          aria-label={globe ? 'Показать плоскую карту' : 'Показать глобус'}
+          title={globe ? 'Плоская карта' : 'Глобус'}
+          className={globe ? 'active' : ''}
+          onClick={() => {
+            stopTravel();
+            setGlobe(!globe);
+          }}
+        >
+          <Globe2 />
         </button>
       </div>
       {!activeChapter && (

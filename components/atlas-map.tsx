@@ -25,6 +25,7 @@ type Props = {
   cities: City[];
   year: number;
   flat: boolean;
+  globe: boolean;
   selected: City | null;
   onSelect: (c: City) => void;
   action: MapAction;
@@ -117,6 +118,7 @@ export default function AtlasMap(props: Props) {
     cities,
     year,
     flat,
+    globe,
     selected,
     action,
     initialCamera,
@@ -256,6 +258,10 @@ export default function AtlasMap(props: Props) {
               ],
             },
           });
+          x.setProjection({
+            type: latest.current.globe ? 'globe' : 'mercator',
+          });
+          x.setRenderWorldCopies(!latest.current.globe);
           map.current = x;
           const fail = () => {
             if (cancelled) return;
@@ -474,6 +480,17 @@ export default function AtlasMap(props: Props) {
     }
   }, [flat, ready, reduced]);
   useEffect(() => {
+    if (!ready || !map.current) return;
+    map.current.setProjection({ type: globe ? 'globe' : 'mercator' });
+    map.current.setRenderWorldCopies(!globe);
+    map.current.easeTo({
+      zoom: globe
+        ? Math.min(map.current.getZoom(), 1.3)
+        : Math.max(map.current.getZoom(), HOME_CAMERA.zoom),
+      duration: reduced ? 0 : 900,
+    });
+  }, [globe, ready, reduced]);
+  useEffect(() => {
     if (ready && map.current?.getLayer('selected'))
       map.current.setFilter('selected', [
         '==',
@@ -491,7 +508,7 @@ export default function AtlasMap(props: Props) {
     if (action.action === 'home')
       m.flyTo({
         center: [HOME_CAMERA.lng, HOME_CAMERA.lat],
-        zoom: HOME_CAMERA.zoom,
+        zoom: latest.current.globe ? 1.3 : HOME_CAMERA.zoom,
         bearing: HOME_CAMERA.bearing,
         pitch: flat ? 0 : 35,
         duration,
