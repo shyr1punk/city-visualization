@@ -1107,7 +1107,7 @@ function Atlas({
               {selected.founded === null
                 ? 'Дата неизвестна'
                 : historicalEvidence(selected) && selected.settlement
-                  ? eventDateLabel(selected.settlement)
+                  ? eventDateLabel(selected.settlement).split(' (интервал')[0]
                   : `Не позднее ${yearLabel(selected.founded)}`}
             </strong>
             <a

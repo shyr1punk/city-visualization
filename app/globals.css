@@ -1907,3 +1907,9 @@ input:focus-visible {
     max-width: 150px;
   }
 }
+
+.city-date {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
