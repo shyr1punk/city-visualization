@@ -110,6 +110,7 @@ export default function AtlasMap(props: Props) {
     labels = useRef<{ city: City; marker: Marker }[]>([]);
   latest.current = props;
   const previousFlat = useRef(flat);
+  const previousGlobe = useRef(globe);
   const assetUrl = (path: string) => import.meta.env.BASE_URL + path;
   const [ready, setReady] = useState(false),
     [failed, setFailed] = useState(false);
@@ -508,6 +509,8 @@ export default function AtlasMap(props: Props) {
     if (!ready || !map.current) return;
     map.current.setProjection({ type: globe ? 'globe' : 'mercator' });
     map.current.setRenderWorldCopies(!globe);
+    if (previousGlobe.current === globe) return;
+    previousGlobe.current = globe;
     map.current.easeTo({
       zoom: globe
         ? Math.min(map.current.getZoom(), 1.3)
