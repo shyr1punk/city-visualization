@@ -1,10 +1,13 @@
 import importlib.util
+import sys
 import json
 import os
 import tempfile
 import unittest
 from unittest.mock import patch
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
 spec = importlib.util.spec_from_file_location('world', Path(__file__).resolve().parents[1] / 'scripts/import-world.py')
 world = importlib.util.module_from_spec(spec)
@@ -61,7 +64,7 @@ class WorldImportTests(unittest.TestCase):
         self.assertEqual(c['dateKind'], 'first-observation'); self.assertEqual(c['founded'], 2000)
 
     def test_no_population_required_for_confirmed_date(self):
-        c, _ = self.convert([row(inception='1800-01-01', precision=9)])
+        c, _ = self.convert([row(mention='1800-01-01', mentionPrecision=9)])
         self.assertEqual(c['founded'], 1800); self.assertEqual(c['population'], [])
 
     def test_imprecise_and_bce_dates_are_not_invented(self):

@@ -1,0 +1,1328 @@
+{
+  "schemaVersion": 1,
+  "selection": {
+    "catalogSha256": "e974212e4f3974033d68b24ffb5629895025b93acd9d52845b03a74ecdb32327",
+    "rule": "Hong Kong plus 50 other records ranked by latest available population descending, then QID lexicographically",
+    "qids": [
+      "Q8646",
+      "Q11725",
+      "Q1353",
+      "Q8686",
+      "Q956",
+      "Q15174",
+      "Q1354",
+      "Q406",
+      "Q1156",
+      "Q8660",
+      "Q3838",
+      "Q1490",
+      "Q1854",
+      "Q13580",
+      "Q649",
+      "Q11736",
+      "Q16572",
+      "Q5826",
+      "Q1355",
+      "Q11746",
+      "Q58584",
+      "Q11739",
+      "Q30002",
+      "Q373346",
+      "Q58401",
+      "Q42956",
+      "Q3630",
+      "Q30340",
+      "Q404763",
+      "Q8684",
+      "Q85",
+      "Q1361",
+      "Q58570",
+      "Q1865",
+      "Q60",
+      "Q84",
+      "Q1858",
+      "Q3616",
+      "Q198061",
+      "Q57719",
+      "Q363166",
+      "Q59218",
+      "Q16666",
+      "Q174091",
+      "Q1530",
+      "Q11720",
+      "Q34412",
+      "Q92161",
+      "Q1070",
+      "Q360584",
+      "Q58422"
+    ]
+  },
+  "cities": {
+    "Q8646": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 1550,
+        "end": 1550,
+        "source": "https://www.epd.gov.hk/eia/files/applications/en/pp_357/eia_5944/progress/action_172087/20250509_EIA_HTML/eia/ce80_eia_s10.htm",
+        "explanation": "Документированное поселение Хёнконвай у Абердина — один из исторических предшественников современного Гонконга. Это история названного поселения, а не всех современных границ; непрерывность каждого участка не утверждается. Раздел 10.5.8 относит его основание к 1550 году.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.epd.gov.hk/eia/files/applications/en/pp_357/eia_5944/progress/action_172087/20250509_EIA_HTML/eia/ce80_eia_s10.htm"
+      ],
+      "reviewNote": "Документированное поселение Хёнконвай у Абердина — один из исторических предшественников современного Гонконга. Это история названного поселения, а не всех современных границ; непрерывность каждого участка не утверждается. Раздел 10.5.8 относит его основание к 1550 году.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [
+        {
+          "kind": "administrative",
+          "start": 1841,
+          "end": 1841,
+          "precision": "year",
+          "source": "https://www.wikidata.org/wiki/Q8646#P571",
+          "explanation": "Дата начала существования в Wikidata относится к административной истории; не принята за начало поселения или городской статус."
+        },
+        {
+          "kind": "administrative",
+          "start": 1997,
+          "end": 1997,
+          "precision": "year",
+          "source": "https://www.wikidata.org/wiki/Q8646#P571",
+          "explanation": "Административное изменение; не начало поселения и не получение городского статуса."
+        }
+      ],
+      "name": "Гонконг",
+      "population": {
+        "year": 2021,
+        "value": 7413070,
+        "source": "https://www.censtatd.gov.hk/en/scode600.html",
+        "segment": "0"
+      },
+      "previousAppearance": 1961
+    },
+    "Q11725": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": -316,
+        "end": -316,
+        "source": "https://dfz.cq.gov.cn/zqlswh/rwby_417819/202608/t20260817_15942510.html",
+        "explanation": "Цзянчжоу у современного Чаотяньмэнь — документированный городской предшественник. Население современной административной территории шире исторического ядра.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://dfz.cq.gov.cn/zqlswh/rwby_417819/202608/t20260817_15942510.html"
+      ],
+      "reviewNote": "Цзянчжоу у современного Чаотяньмэнь — документированный городской предшественник. Население современной административной территории шире исторического ядра.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Чунцин",
+      "population": {
+        "year": 2015,
+        "value": 30170000,
+        "source": "https://www.wikidata.org/wiki/Q11725#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 1929
+    },
+    "Q1353": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1101,
+        "end": 1200,
+        "source": "https://delhiassembly.delhi.gov.in/sites/default/files/2023-06/7thassemblywhoswho.pdf",
+        "explanation": "Документированная городская история нескольких Дели к концу XII века; мифологическая Индрапрастха не преобразована в точную дату. Это верхняя граница доступного здесь свидетельства, не заявление о самом раннем поселении.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://delhiassembly.delhi.gov.in/sites/default/files/2023-06/7thassemblywhoswho.pdf"
+      ],
+      "reviewNote": "Документированная городская история нескольких Дели к концу XII века; мифологическая Индрапрастха не преобразована в точную дату. Это верхняя граница доступного здесь свидетельства, не заявление о самом раннем поселении.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Дели",
+      "population": {
+        "year": 2016,
+        "value": 26495000,
+        "source": "http://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/page.cfm?Lang=E&Geo1=POPC&Code1=0221&Geo2=PR&Code2=47&Data=Count&SearchText=Delhi&SearchType=Begins&SearchPR=01&B1=All",
+        "segment": "1"
+      },
+      "previousAppearance": 2011
+    },
+    "Q8686": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1260,
+        "end": 1274,
+        "source": "https://english.shanghai.gov.cn/en-Overview/20231209/05cfb15755fe4cea80a0d3a1d69512e2.html",
+        "explanation": "Шанхай-таун, конец Цзиндин — начало Сяньчунь: интервал правлений сохранён консервативно. 1292 — уезд, 1927 — специальный административный город, не начало поселения.",
+        "precision": "interval"
+      },
+      "cityStatus": {
+        "kind": "city-status",
+        "start": 1927,
+        "end": 1927,
+        "precision": "year",
+        "source": "https://english.shanghai.gov.cn/en-Overview/20231209/05cfb15755fe4cea80a0d3a1d69512e2.html",
+        "explanation": "Подтверждённый городской статус; не дата первого поселения."
+      },
+      "sources": [
+        "https://english.shanghai.gov.cn/en-Overview/20231209/05cfb15755fe4cea80a0d3a1d69512e2.html"
+      ],
+      "reviewNote": "Шанхай-таун, конец Цзиндин — начало Сяньчунь: интервал правлений сохранён консервативно. 1292 — уезд, 1927 — специальный административный город, не начало поселения.",
+      "statusReview": "Городской статус подтверждён источником.",
+      "events": [],
+      "name": "Шанхай",
+      "population": {
+        "year": 2015,
+        "value": 24152700,
+        "source": "http://russian.news.cn/2016-03/01/c_135145435.htm",
+        "segment": "0"
+      },
+      "previousAppearance": 2015
+    },
+    "Q956": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://english.beijing.gov.cn/specials/beijingmagazine/list/202309/P020230912605939705709.pdf"
+      ],
+      "reviewNote": "История древних Цзи и Янь требует отдельного доказательства пространственной преемственности. Лиулихэ и археология современной территории не приняты за дату нынешнего городского ядра; точная ранняя дата остаётся не подтверждённой.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Пекин",
+      "population": {
+        "year": 2017,
+        "value": 21710000,
+        "source": "http://www.ebeijing.gov.cn/BeijingInformation/BeijingNewsUpdate/t1506791.htm",
+        "segment": "0"
+      },
+      "previousAppearance": 2005
+    },
+    "Q15174": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1856,
+        "end": 1856,
+        "source": "https://www.sz.gov.cn/szstory/202212/content/post_11246530.html",
+        "explanation": "Рынок Шэньчжэнь в Дунмэне документирован в 1856. Упоминание названия при сторожевой башне в 1668 не доказывает существование поселения. Наньтоу и древняя археология территории не подменяют историю этого поселения.",
+        "precision": "year"
+      },
+      "cityStatus": {
+        "kind": "city-status",
+        "start": 1979,
+        "end": 1979,
+        "precision": "year",
+        "source": "https://www.sz.gov.cn/szstory/202212/content/post_11246530.html",
+        "explanation": "Подтверждённый городской статус; не дата первого поселения."
+      },
+      "sources": [
+        "https://www.sz.gov.cn/szstory/202212/content/post_11246530.html"
+      ],
+      "reviewNote": "Рынок Шэньчжэнь в Дунмэне документирован в 1856. Упоминание названия при сторожевой башне в 1668 не доказывает существование поселения. Наньтоу и древняя археология территории не подменяют историю этого поселения.",
+      "statusReview": "Городской статус подтверждён источником.",
+      "events": [],
+      "name": "Шэньчжэнь",
+      "population": {
+        "year": 2022,
+        "value": 17681600,
+        "source": "https://www.wikidata.org/wiki/Q15174#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 1979
+    },
+    "Q1354": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": 1610,
+        "source": "https://bn.banglapedia.org/index.php/%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE",
+        "explanation": "Домугольское поселение стало военным пунктом, а в 1610 — столицей. Раннее точное основание не установлено; существование подтверждено не позднее 1610 года.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://bn.banglapedia.org/index.php/%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE"
+      ],
+      "reviewNote": "Домугольское поселение стало военным пунктом, а в 1610 — столицей. Раннее точное основание не установлено; существование подтверждено не позднее 1610 года.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Дакка",
+      "population": {
+        "year": 2017,
+        "value": 16800000,
+        "source": "https://www.wikidata.org/wiki/Q1354#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 2011
+    },
+    "Q406": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": -800,
+        "end": -601,
+        "source": "https://ekitap.ktb.gov.tr/TR-80053/3-bin-yillik-kent.html",
+        "explanation": "Византий в Сарайбурну связан с современным Стамбулом; источник датирует греческое поселение VIII–VII веками до н. э. Лигос и пещеры окрестностей не дают проверенной точной ранней даты; 1453 — завоевание.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://ekitap.ktb.gov.tr/TR-80053/3-bin-yillik-kent.html"
+      ],
+      "reviewNote": "Византий в Сарайбурну связан с современным Стамбулом; источник датирует греческое поселение VIII–VII веками до н. э. Лигос и пещеры окрестностей не дают проверенной точной ранней даты; 1453 — завоевание.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Стамбул",
+      "population": {
+        "year": 2023,
+        "value": 15655924,
+        "source": "https://data.tuik.gov.tr/Bulten/Index?p=Adrese-Dayali-Nufus-Kayit-Sistemi-Sonuclari-2023-49684",
+        "segment": "0"
+      },
+      "previousAppearance": 1453
+    },
+    "Q1156": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1507,
+        "end": 1507,
+        "source": "https://www.gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/greater_bombay/general.html",
+        "explanation": "Манбай/Мамбе упомянут под 1507 годом. Заселение островов древнее, но источник прямо отмечает неопределённость его начала; не принимаем завоевание за основание.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/greater_bombay/general.html"
+      ],
+      "reviewNote": "Манбай/Мамбе упомянут под 1507 годом. Заселение островов древнее, но источник прямо отмечает неопределённость его начала; не принимаем завоевание за основание.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Мумбаи",
+      "population": {
+        "year": 2018,
+        "value": 15414288,
+        "source": "https://www.wikidata.org/wiki/Q1156#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 1507
+    },
+    "Q8660": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": 1725,
+        "source": "https://pu.edu.pk/images/journal/geography/pdf/Pakistan%20Geographical%20Review%201969%20Vol.%2024%20No.%201.pdf",
+        "explanation": "Деревня Дирбо на месте Карачи существовала до 1725 года; 1729 — прибытие новых поселенцев. Начальная граница неизвестна.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://pu.edu.pk/images/journal/geography/pdf/Pakistan%20Geographical%20Review%201969%20Vol.%2024%20No.%201.pdf"
+      ],
+      "reviewNote": "Деревня Дирбо на месте Карачи существовала до 1725 года; 1729 — прибытие новых поселенцев. Начальная граница неизвестна.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Карачи",
+      "population": {
+        "year": 2017,
+        "value": 14910352,
+        "source": "https://www.samaa.tv/news/2017/08/pakistans-10-populous-cities-revealed/",
+        "segment": "0"
+      },
+      "previousAppearance": 1729
+    },
+    "Q3838": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1881,
+        "end": 1881,
+        "source": "https://www.africamuseum.be/publication_docs/2010_Lateef-Kinshasa-PDF.pdf",
+        "explanation": "Леопольдвиль документирован с 1881 года. Существовавшие деревни не получили неподтверждённой ранней даты; колониальная станция не считается первым заселением всей территории.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.africamuseum.be/publication_docs/2010_Lateef-Kinshasa-PDF.pdf"
+      ],
+      "reviewNote": "Леопольдвиль документирован с 1881 года. Существовавшие деревни не получили неподтверждённой ранней даты; колониальная станция не считается первым заселением всей территории.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Киншаса",
+      "population": {
+        "year": 2020,
+        "value": 14565700,
+        "source": "http://www.citypopulation.de/de/drcongo/cities/",
+        "segment": "1"
+      },
+      "previousAppearance": 1881
+    },
+    "Q1490": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1457,
+        "end": 1457,
+        "source": "https://www.syougai.metro.tokyo.lg.jp/bunkazai/heritagemap/chiyoda/",
+        "explanation": "Замок Эдо в 1457 году — датированное свидетельство городского предшественника Токио; 1868 — переименование и изменение политической роли, не первое поселение.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.syougai.metro.tokyo.lg.jp/bunkazai/heritagemap/chiyoda/"
+      ],
+      "reviewNote": "Замок Эдо в 1457 году — датированное свидетельство городского предшественника Токио; 1868 — переименование и изменение политической роли, не первое поселение.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Токио",
+      "population": {
+        "year": 2022,
+        "value": 14264798,
+        "source": "https://www.wikidata.org/wiki/Q1490#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 1868
+    },
+    "Q1854": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1698,
+        "end": 1698,
+        "source": "https://qhkt.hochiminhcity.gov.vn/luoc-su-quy-hoach-tphcm.html",
+        "explanation": "Сайгон назван при учреждении Зядиня в 1698 году. Это свидетельство существования, не доказательство отсутствия более раннего поселения; 1976 — переименование.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://qhkt.hochiminhcity.gov.vn/luoc-su-quy-hoach-tphcm.html"
+      ],
+      "reviewNote": "Сайгон назван при учреждении Зядиня в 1698 году. Это свидетельство существования, не доказательство отсутствия более раннего поселения; 1976 — переименование.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Хошимин",
+      "population": {
+        "year": 2024,
+        "value": 14002598,
+        "source": "https://www.wikidata.org/wiki/Q1854#P1082",
+        "segment": "1"
+      },
+      "previousAppearance": 1976
+    },
+    "Q13580": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://ncr.emb.gov.ph/historicalbackground/"
+      ],
+      "reviewNote": "Metro Manila — объединение городов и муниципалитетов, учреждённое в 1975 году, не единое поселение. Население относится к региону; ранние даты Манилы не переносятся на весь регион.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Столичный регион",
+      "population": {
+        "year": 2024,
+        "value": 14001751,
+        "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+        "segment": "0"
+      },
+      "previousAppearance": 1975
+    },
+    "Q649": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1147,
+        "end": 1147,
+        "source": "https://www.mos.ru/upload/documents/files/7255/pamyatniki-moskvy.pdf",
+        "explanation": "Первое летописное упоминание Москвы — 1147; отдельная дата юридического городского статуса не выводится из упоминания.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.mos.ru/upload/documents/files/7255/pamyatniki-moskvy.pdf"
+      ],
+      "reviewNote": "Первое летописное упоминание Москвы — 1147; отдельная дата юридического городского статуса не выводится из упоминания.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Москва",
+      "population": {
+        "year": 2025,
+        "value": 13274285,
+        "source": "https://www.wikidata.org/wiki/Q649#P1082",
+        "statement": "Q649-ed32aefb-450f-e304-a878-ad92ab3f1788",
+        "date": "2025-01-01",
+        "segment": "7"
+      },
+      "previousAppearance": 1147
+    },
+    "Q11736": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1115,
+        "end": 1234,
+        "source": "https://www.tj.gov.cn/sq/tjgk/tjls/lsyg/",
+        "explanation": "Чжигучжай у слияния рек — предшественник городского ядра во время династии Цзинь (1115–1234); 1404 — гарнизон Тяньцзинь, не первое поселение.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.tj.gov.cn/sq/tjgk/tjls/lsyg/"
+      ],
+      "reviewNote": "Чжигучжай у слияния рек — предшественник городского ядра во время династии Цзинь (1115–1234); 1404 — гарнизон Тяньцзинь, не первое поселение.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Тяньцзинь",
+      "population": {
+        "year": 2016,
+        "value": 13245000,
+        "source": "http://www.demographia.com/db-worldua.pdf",
+        "segment": "0"
+      },
+      "previousAppearance": 2016
+    },
+    "Q16572": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://www.gz.gov.cn/guangzhouinternational/government/administrativeregions/content/post_9703780.html"
+      ],
+      "reviewNote": "Источник описывает уезд Паньюй, созданный в 214 году до н. э. Автоматическое отождествление границ уезда с городским поселением отклонено; раннюю дату ядра требуется подтвердить отдельно.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Гуанчжоу",
+      "population": {
+        "year": 2014,
+        "value": 13080500,
+        "source": "https://www.wikidata.org/wiki/Q16572#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 2014
+    },
+    "Q5826": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": -206,
+        "end": 220,
+        "source": "https://en.xa.gov.cn/MediaCenter/News/1691691326091415553.html",
+        "explanation": "Чанъань документирован в эпоху Хань. Предшественник современного Сианя, но его расположение и границы менялись; Фэн и Хао и вся археология региона не приравниваются к той же точке.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://en.xa.gov.cn/MediaCenter/News/1691691326091415553.html"
+      ],
+      "reviewNote": "Чанъань документирован в эпоху Хань. Предшественник современного Сианя, но его расположение и границы менялись; Фэн и Хао и вся археология региона не приравниваются к той же точке.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Сиань",
+      "population": {
+        "year": 2020,
+        "value": 12952907,
+        "source": "http://tjj.shaanxi.gov.cn/tjsj/ndsj/tjgb/qs_444/202105/t20210528_2177393.html",
+        "segment": "0"
+      },
+      "previousAppearance": 2020
+    },
+    "Q1355": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 1537,
+        "end": 1537,
+        "source": "https://www.incredibleindia.gov.in/en/karnataka/bengaluru",
+        "explanation": "Основание городского поселения Кемпеговдой в 1537 году. Надписи соседних деревень без доказанной связи не приняты за начало этого поселения.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.incredibleindia.gov.in/en/karnataka/bengaluru"
+      ],
+      "reviewNote": "Основание городского поселения Кемпеговдой в 1537 году. Надписи соседних деревень без доказанной связи не приняты за начало этого поселения.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Бангалор",
+      "population": {
+        "year": 2020,
+        "value": 12327000,
+        "source": "https://www.macrotrends.net/cities/21176/bangalore/population",
+        "segment": "0"
+      },
+      "previousAppearance": 1537
+    },
+    "Q11746": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 223,
+        "end": 223,
+        "source": "https://www.wuchang.gov.cn/zjwc/wcgk/lsyg/202005/t20200520_1324542.html",
+        "explanation": "Учaн — один из трёх городских предшественников Уханя; его городская история начинается в 223 году. Дата не относится одновременно ко всем районам современной агломерации.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.wuchang.gov.cn/zjwc/wcgk/lsyg/202005/t20200520_1324542.html"
+      ],
+      "reviewNote": "Учaн — один из трёх городских предшественников Уханя; его городская история начинается в 223 году. Дата не относится одновременно ко всем районам современной агломерации.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Ухань",
+      "population": {
+        "year": 2020,
+        "value": 12326518,
+        "source": "https://tjj.hubei.gov.cn/tjsj/tjgb/pcgb/qrp/202105/t20210525_3559343.shtml",
+        "segment": "0"
+      },
+      "previousAppearance": 1500
+    },
+    "Q58584": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 477,
+        "end": 477,
+        "source": "https://www.baoding.gov.cn/bdgklist-70-37.html",
+        "explanation": "Уездный центр Цинъюань в 477 году указан на месте современного Баодина; это свидетельство поселения, не городской статус современной территории.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.baoding.gov.cn/bdgklist-70-37.html"
+      ],
+      "reviewNote": "Уездный центр Цинъюань в 477 году указан на месте современного Баодина; это свидетельство поселения, не городской статус современной территории.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Баодин",
+      "population": {
+        "year": 2010,
+        "value": 11273644,
+        "source": "http://www.citypopulation.de/php/china-hebei-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q11739": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1,
+        "end": 700,
+        "source": "https://lahore.punjab.gov.pk/history",
+        "explanation": "Официальная история относит происхождение Лахора к I–VII векам; легендарные основатели не датируются точно.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://lahore.punjab.gov.pk/history"
+      ],
+      "reviewNote": "Официальная история относит происхождение Лахора к I–VII векам; легендарные основатели не датируются точно.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Лахор",
+      "population": {
+        "year": 2017,
+        "value": 11126285,
+        "source": "https://www.samaa.tv/news/2017/08/pakistans-10-populous-cities-revealed/",
+        "segment": "0"
+      },
+      "previousAppearance": 2010
+    },
+    "Q30002": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": -316,
+        "source": "https://www.nopss.gov.cn/n/2013/0419/c362367-21203630.html",
+        "explanation": "Чэнду — столица древнего Шу до его завоевания Цинь в 316 году до н. э. Это верхняя граница свидетельства; археология соседних столиц не переносится на город.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.nopss.gov.cn/n/2013/0419/c362367-21203630.html"
+      ],
+      "reviewNote": "Чэнду — столица древнего Шу до его завоевания Цинь в 316 году до н. э. Это верхняя граница свидетельства; археология соседних столиц не переносится на город.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Чэнду",
+      "population": {
+        "year": 2016,
+        "value": 11050000,
+        "source": "http://www.demographia.com/db-worldua.pdf",
+        "segment": "0"
+      },
+      "previousAppearance": 1953
+    },
+    "Q373346": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://www.linyi.gov.cn/sq/lygk/lsyg1.htm"
+      ],
+      "reviewNote": "1994 — образование города окружного уровня, не начало поселения. История древнего Ланъя и преемственность центра требуют уточнения; городской статус окружной администрации не выдаётся за статус поселения.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Линьи",
+      "population": {
+        "year": 2011,
+        "value": 10820000,
+        "source": "https://www.wikidata.org/wiki/Q373346#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 1994
+    },
+    "Q58401": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1535,
+        "end": 1535,
+        "source": "https://mzj.sjz.gov.cn/columns/4ad1aa25-416a-41ef-bdfb-ba7f2a8864bd/202410/12/a3af2799-2490-454a-9ba4-c2529fbfbbd6.html",
+        "explanation": "Первое упоминание деревни в надписи 1535 года; городская автономия установлена в 1925. Преемственность деревни прямо указана источником.",
+        "precision": "year"
+      },
+      "cityStatus": {
+        "kind": "city-status",
+        "start": 1925,
+        "end": 1925,
+        "precision": "year",
+        "source": "https://mzj.sjz.gov.cn/columns/4ad1aa25-416a-41ef-bdfb-ba7f2a8864bd/202410/12/a3af2799-2490-454a-9ba4-c2529fbfbbd6.html",
+        "explanation": "Подтверждённый городской статус; не дата первого поселения."
+      },
+      "sources": [
+        "https://mzj.sjz.gov.cn/columns/4ad1aa25-416a-41ef-bdfb-ba7f2a8864bd/202410/12/a3af2799-2490-454a-9ba4-c2529fbfbbd6.html"
+      ],
+      "reviewNote": "Первое упоминание деревни в надписи 1535 года; городская автономия установлена в 1925. Преемственность деревни прямо указана источником.",
+      "statusReview": "Городской статус подтверждён источником.",
+      "events": [],
+      "name": "Шицзячжуан",
+      "population": {
+        "year": 2020,
+        "value": 10640458,
+        "source": "http://tjj.hebei.gov.cn/res/hetj/upload/file/20210519/%E5%85%AC%E6%8A%A5%E4%BA%8C_101236.pdf",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q42956": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1898,
+        "end": 1898,
+        "source": "https://epress.lib.uts.edu.au/journals/index.php/mcs/article/download/3337/3619",
+        "explanation": "Железнодорожный Харбин документирован с 1898 года. Более ранние деревни требуют отдельных датированных свидетельств; древние поселения региона не отождествлены с городом.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://epress.lib.uts.edu.au/journals/index.php/mcs/article/download/3337/3619"
+      ],
+      "reviewNote": "Железнодорожный Харбин документирован с 1898 года. Более ранние деревни требуют отдельных датированных свидетельств; древние поселения региона не отождествлены с городом.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Харбин",
+      "population": {
+        "year": 2010,
+        "value": 10635971,
+        "source": "http://www.citypopulation.de/php/china-heilongjiang-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 1898
+    },
+    "Q3630": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1522,
+        "end": 1522,
+        "source": "https://dinaskebudayaan.jakarta.go.id/content/uploads/buku_digital_2024/Buku_Tempat_Bersejarah_di_Jakarta_utara_1.pdf",
+        "explanation": "Сунда-Келапа — портовый предшественник Джакарты, документированный соглашением 1522 года. 1527 — завоевание и новое имя; это не первая жизнь поселения.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://dinaskebudayaan.jakarta.go.id/content/uploads/buku_digital_2024/Buku_Tempat_Bersejarah_di_Jakarta_utara_1.pdf"
+      ],
+      "reviewNote": "Сунда-Келапа — портовый предшественник Джакарты, документированный соглашением 1522 года. 1527 — завоевание и новое имя; это не первая жизнь поселения.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Джакарта",
+      "population": {
+        "year": 2020,
+        "value": 10562088,
+        "source": "http://www.citypopulation.de/php/indonesia-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 1527
+    },
+    "Q30340": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://mzj.zhengzhou.gov.cn/work/9468538.jhtml"
+      ],
+      "reviewNote": "Преемственность городского места и смена названий описаны, но точная ранняя дата в проверенном свидетельстве не установлена; произвольные даты по археологии региона не присваиваются.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Чжэнчжоу",
+      "population": {
+        "year": 2018,
+        "value": 10136000,
+        "source": "http://www.citypopulation.de/php/china-henan-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2018
+    },
+    "Q404763": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": -206,
+        "end": 220,
+        "source": "https://lyj.nanyang.gov.cn/2019/06-05/176162.html",
+        "explanation": "Ваньчэн эпохи Хань прямо локализован в нынешних районах Волун и Ваньчэн. Население всей современной территории не тождественно населению древнего города.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://lyj.nanyang.gov.cn/2019/06-05/176162.html"
+      ],
+      "reviewNote": "Ваньчэн эпохи Хань прямо локализован в нынешних районах Волун и Ваньчэн. Население всей современной территории не тождественно населению древнего города.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Наньян",
+      "population": {
+        "year": 2018,
+        "value": 10013600,
+        "source": "http://www.citypopulation.de/php/china-henan-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q8684": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": -18,
+        "end": -18,
+        "source": "https://english.seoul.go.kr/seoul-views/meaning-of-seoul/1-history/",
+        "explanation": "Виресон — названный предшественник в официальной истории Сеула с 18 года до н. э. Перемещения центра и перерывы в столичном статусе не скрываются; 1394/1395 — столица и дворцы, не первое поселение.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://english.seoul.go.kr/seoul-views/meaning-of-seoul/1-history/"
+      ],
+      "reviewNote": "Виресон — названный предшественник в официальной истории Сеула с 18 года до н. э. Перемещения центра и перерывы в столичном статусе не скрываются; 1394/1395 — столица и дворцы, не первое поселение.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Сеул",
+      "population": {
+        "year": 2020,
+        "value": 9668465,
+        "source": "https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B04005N&conn_path=I2",
+        "segment": "2"
+      },
+      "previousAppearance": 1395
+    },
+    "Q85": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 901,
+        "end": 1000,
+        "source": "https://whc.unesco.org/en/list/89",
+        "explanation": "ЮНЕСКО датирует основание Каира X веком. Фустат — отдельный компонент исторического города; точная ранняя дата его преемственности в этой проверке не установлена.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://whc.unesco.org/en/list/89"
+      ],
+      "reviewNote": "ЮНЕСКО датирует основание Каира X веком. Фустат — отдельный компонент исторического города; точная ранняя дата его преемственности в этой проверке не установлена.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Каир",
+      "population": {
+        "year": 2021,
+        "value": 9606916,
+        "source": "http://www.citypopulation.de/Egypt-Cities.html",
+        "segment": "0"
+      },
+      "previousAppearance": 969
+    },
+    "Q1361": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 1591,
+        "end": 1591,
+        "source": "https://hyderabad.telangana.gov.in/about-district/",
+        "explanation": "Хайдарабад основан в 1591 году вокруг Чарминара; 1978 относится к административному району.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://hyderabad.telangana.gov.in/about-district/"
+      ],
+      "reviewNote": "Хайдарабад основан в 1591 году вокруг Чарминара; 1978 относится к административному району.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Хайдарабад",
+      "population": {
+        "year": 2025,
+        "value": 9191000,
+        "source": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2025_wup2025_summary_of_results.pdf",
+        "segment": "1"
+      },
+      "previousAppearance": 1592
+    },
+    "Q58570": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": -386,
+        "source": "https://www.xiongan.gov.cn/2021-03/20/c_1211075883.htm",
+        "explanation": "Перенос столицы Чжао в Ханьдань в 386 году до н. э. подтверждает существование поселения к этому времени, но не его основание.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.xiongan.gov.cn/2021-03/20/c_1211075883.htm"
+      ],
+      "reviewNote": "Перенос столицы Чжао в Ханьдань в 386 году до н. э. подтверждает существование поселения к этому времени, но не его основание.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Ханьдань",
+      "population": {
+        "year": 2010,
+        "value": 9174683,
+        "source": "http://www.citypopulation.de/php/china-hebei-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q1865": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1857,
+        "end": 1857,
+        "source": "https://pustakailmu.arkib.gov.my/index.php/ms/pustaka-ilmu/jendela-sejarah/kuala-lumpur-merakam-sejarah-dan-pembangunan-negara",
+        "explanation": "Торговое поселение развивается с добычей олова в 1857; городской статус 1972 и федеральная территория 1974 различаются.",
+        "precision": "year"
+      },
+      "cityStatus": {
+        "kind": "city-status",
+        "start": 1972,
+        "end": 1972,
+        "precision": "year",
+        "source": "https://pustakailmu.arkib.gov.my/index.php/ms/pustaka-ilmu/jendela-sejarah/kuala-lumpur-merakam-sejarah-dan-pembangunan-negara",
+        "explanation": "Подтверждённый городской статус; не дата первого поселения."
+      },
+      "sources": [
+        "https://pustakailmu.arkib.gov.my/index.php/ms/pustaka-ilmu/jendela-sejarah/kuala-lumpur-merakam-sejarah-dan-pembangunan-negara"
+      ],
+      "reviewNote": "Торговое поселение развивается с добычей олова в 1857; городской статус 1972 и федеральная территория 1974 различаются.",
+      "statusReview": "Городской статус подтверждён источником.",
+      "events": [],
+      "name": "Куала-Лумпур",
+      "population": {
+        "year": 2025,
+        "value": 9000280,
+        "source": "https://worldpopulationreview.com/cities/malaysia/kuala-lumpur",
+        "segment": "2"
+      },
+      "previousAppearance": 1857
+    },
+    "Q60": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1613,
+        "end": 1613,
+        "source": "https://www.nyc.gov/site/dcas/about/green-book-important-nyc-dates.page",
+        "explanation": "Четыре торговых дома на Манхэттене в 1613 — датированное свидетельство предшественника Нового Амстердама. Заселение ленапе известно раньше, но конкретная дата непрерывного поселения не установлена.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.nyc.gov/site/dcas/about/green-book-important-nyc-dates.page"
+      ],
+      "reviewNote": "Четыре торговых дома на Манхэттене в 1613 — датированное свидетельство предшественника Нового Амстердама. Заселение ленапе известно раньше, но конкретная дата непрерывного поселения не установлена.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Нью-Йорк",
+      "population": {
+        "year": 2020,
+        "value": 8804190,
+        "source": "https://data.census.gov/cedsci/table?t=Populations%20and%20People&g=0100000US,%241600000&y=2020",
+        "segment": "0"
+      },
+      "previousAppearance": 1698
+    },
+    "Q84": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 47,
+        "end": 50,
+        "source": "https://www.londonmuseum.org.uk/collections/london-stories/timeline-roman-london-londinium/",
+        "explanation": "Лондиний основан между 47 и 50 годами. Интервал сохранён; изменения и перерывы городской жизни не означают точной непрерывности каждого участка.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.londonmuseum.org.uk/collections/london-stories/timeline-roman-london-londinium/"
+      ],
+      "reviewNote": "Лондиний основан между 47 и 50 годами. Интервал сохранён; изменения и перерывы городской жизни не означают точной непрерывности каждого участка.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Лондон",
+      "population": {
+        "year": 2021,
+        "value": 8799728,
+        "source": "https://www.nomisweb.co.uk/sources/census_2021/report?compare=E12000007",
+        "segment": "0"
+      },
+      "previousAppearance": 47
+    },
+    "Q1858": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 866,
+        "end": 866,
+        "source": "https://dulich.tayninh.gov.vn/tin-tuc/y-nghia-nhung-ten-goi-cua-ha-noi-qua-cac-thoi-ky-lich-su-176",
+        "explanation": "Дайла расширен в 866 году: поселение существовало не позднее этой даты; 1010 — перенос столицы и имя Тханглонг, не первое поселение.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://dulich.tayninh.gov.vn/tin-tuc/y-nghia-nhung-ten-goi-cua-ha-noi-qua-cac-thoi-ky-lich-su-176"
+      ],
+      "reviewNote": "Дайла расширен в 866 году: поселение существовало не позднее этой даты; 1010 — перенос столицы и имя Тханглонг, не первое поселение.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Ханой",
+      "population": {
+        "year": 2024,
+        "value": 8717600,
+        "source": "https://www.pwc.com/vn/en/publications/2025/vietnam-administrative-reform.pdf",
+        "segment": "0"
+      },
+      "previousAppearance": 1010
+    },
+    "Q3616": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1101,
+        "end": 1300,
+        "source": "https://www.iranicaonline.org/articles/tehran-i/",
+        "explanation": "Деревня Тегеран описана в письменных текстах XII–XIII веков; соседний Рей и археология территории не подменяют её историю.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.iranicaonline.org/articles/tehran-i/"
+      ],
+      "reviewNote": "Деревня Тегеран описана в письменных текстах XII–XIII веков; соседний Рей и археология территории не подменяют её историю.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Тегеран",
+      "population": {
+        "year": 2016,
+        "value": 8693706,
+        "source": "https://citypopulation.de/en/iran/cities/",
+        "segment": "0"
+      },
+      "previousAppearance": 1794
+    },
+    "Q198061": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1408,
+        "end": 1408,
+        "source": "https://www.zhoukou.gov.cn/page_pc/zjzk/zkyx/msgj/article87763c64e23947698a535a9951e24d50.html",
+        "explanation": "Чжоуцзякоу назван транспортным пунктом в 6-й год Юнлэ (1408); создание современного округа не начало поселения.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://www.zhoukou.gov.cn/page_pc/zjzk/zkyx/msgj/article87763c64e23947698a535a9951e24d50.html"
+      ],
+      "reviewNote": "Чжоуцзякоу назван транспортным пунктом в 6-й год Юнлэ (1408); создание современного округа не начало поселения.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Чжоукоу",
+      "population": {
+        "year": 2018,
+        "value": 8677800,
+        "source": "http://www.citypopulation.de/php/china-henan-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q57719": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 583,
+        "end": 583,
+        "source": "https://authority.dila.edu.tw/place/search.php?code=PL000000009523",
+        "explanation": "Академический географический справочник связывает Пэнчэн с Сюйчжоу и указывает его административным центром в 583. Легендарное основание Пэн-цзу не принято за дату.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://authority.dila.edu.tw/place/search.php?code=PL000000009523"
+      ],
+      "reviewNote": "Академический географический справочник связывает Пэнчэн с Сюйчжоу и указывает его административным центром в 583. Легендарное основание Пэн-цзу не принято за дату.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Сюйчжоу",
+      "population": {
+        "year": 2015,
+        "value": 8669000,
+        "source": "https://www.wikidata.org/wiki/Q57719#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 2015
+    },
+    "Q363166": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": 349,
+        "end": 349,
+        "source": "https://cgj.ganzhou.gov.cn/gzscsgl/c102863/202201/609061e99f2a43bab31f884824803d79/files/966dc67d4fe244b699d5a2ff12cfa352.pdf",
+        "explanation": "Строительство города между реками Чжан и Гун в 349 году. Более ранний уезд в верховьях не автоматически то же городское поселение.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://cgj.ganzhou.gov.cn/gzscsgl/c102863/202201/609061e99f2a43bab31f884824803d79/files/966dc67d4fe244b699d5a2ff12cfa352.pdf"
+      ],
+      "reviewNote": "Строительство города между реками Чжан и Гун в 349 году. Более ранний уезд в верховьях не автоматически то же городское поселение.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Ганьчжоу",
+      "population": {
+        "year": 2010,
+        "value": 8368447,
+        "source": "https://citypopulation.de/en/china/jiangxi/admin/",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q59218": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://www.dg.gov.cn/zjdz/dzgk/jzyg/index.html"
+      ],
+      "reviewNote": "331 — учреждение уезда Баоань; его прежний центр и нынешний Дунгуань нельзя отождествить без проверки. Точная ранняя дата поселения и статус остаются неизвестными.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Дунгуань",
+      "population": {
+        "year": 2016,
+        "value": 8310000,
+        "source": "http://www.demographia.com/db-worldua.pdf",
+        "segment": "0"
+      },
+      "previousAppearance": 2010
+    },
+    "Q16666": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": -472,
+        "end": -472,
+        "source": "https://wlj.nanjing.gov.cn/ztzl/mcq/njmcq/",
+        "explanation": "Юэчэн в Чанганли — документированный городской предшественник Нанкина. Археология позднего Шан и удалённый Танъи не превращены в другую точную дату.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://wlj.nanjing.gov.cn/ztzl/mcq/njmcq/"
+      ],
+      "reviewNote": "Юэчэн в Чанганли — документированный городской предшественник Нанкина. Археология позднего Шан и удалённый Танъи не превращены в другую точную дату.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Нанкин",
+      "population": {
+        "year": 2013,
+        "value": 8187800,
+        "source": "http://www.geohive.com/cntry/cn-32.aspx",
+        "segment": "0"
+      },
+      "previousAppearance": 2013
+    },
+    "Q174091": {
+      "settlement": {
+        "kind": "settlement-foundation",
+        "start": -475,
+        "end": -221,
+        "source": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201202/wssw_15/201609/t20160905_3253666.html",
+        "explanation": "Возникновение городского поселения датировано периодом Сражающихся царств; интервал сохранён без искусственного точного года.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201202/wssw_15/201609/t20160905_3253666.html"
+      ],
+      "reviewNote": "Возникновение городского поселения датировано периодом Сражающихся царств; интервал сохранён без искусственного точного года.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Чанша",
+      "population": {
+        "year": 2018,
+        "value": 8154700,
+        "source": "http://www.citypopulation.de/php/china-henan-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2018
+    },
+    "Q1530": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": 762,
+        "source": "https://unesdoc.unesco.org/in/documentViewer.xhtml?ark=%2Fark%3A%2F48223%2Fpf0000111664%2FPDF%2F111664engo.pdf",
+        "explanation": "Перед строительством столицы в 762 году аль-Мансур выбрал уже существовавшую деревню Багдад. Начало деревни неизвестно; 762 — верхняя граница свидетельства, не её основание.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://unesdoc.unesco.org/in/documentViewer.xhtml?ark=%2Fark%3A%2F48223%2Fpf0000111664%2FPDF%2F111664engo.pdf"
+      ],
+      "reviewNote": "Перед строительством столицы в 762 году аль-Мансур выбрал уже существовавшую деревню Багдад. Начало деревни неизвестно; 762 — верхняя граница свидетельства, не её основание.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Багдад",
+      "population": {
+        "year": 2018,
+        "value": 8126755,
+        "source": "https://cosit.gov.iq/documents/population/projection/projection2015-2018.pdf",
+        "segment": "0"
+      },
+      "previousAppearance": 762
+    },
+    "Q11720": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": -300,
+        "end": -300,
+        "source": "https://mzj.shenyang.gov.cn/xxgk/mzfc/202209/P020220919596378727460.pdf",
+        "explanation": "Хоучэн — раннее укреплённое поселение в истории Шэньяна, датированное источником 300 годом до н. э.; современная административная площадь значительно шире.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://mzj.shenyang.gov.cn/xxgk/mzfc/202209/P020220919596378727460.pdf"
+      ],
+      "reviewNote": "Хоучэн — раннее укреплённое поселение в истории Шэньяна, датированное источником 300 годом до н. э.; современная административная площадь значительно шире.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Шэньян",
+      "population": {
+        "year": 2010,
+        "value": 8106171,
+        "source": "http://www.citypopulation.de/php/china-liaoning-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 2000
+    },
+    "Q34412": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://macaomagazine.net/wp-content/uploads/2021/12/Macao-Magazine-29.pdf"
+      ],
+      "reviewNote": "628 объясняет название Фошань через предание о статуях, не доказывает начало поселения. Ранняя дата и городской статус не подтверждены; легенда не превращена в основание.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Фошань",
+      "population": {
+        "year": 2018,
+        "value": 7905700,
+        "source": "https://www.wikidata.org/wiki/Q34412#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 2018
+    },
+    "Q92161": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": 1800,
+        "end": 1800,
+        "source": "https://dfz.jl.gov.cn/zsjl/201607/t20160708_5216543.html",
+        "explanation": "Синьличэн — первоначальный центр Чанчуня в 1800 году; источник объясняет последующее развитие. 1888/1889 — изменение административного ранга, не достоверная дата первого поселения.",
+        "precision": "year"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://dfz.jl.gov.cn/zsjl/201607/t20160708_5216543.html"
+      ],
+      "reviewNote": "Синьличэн — первоначальный центр Чанчуня в 1800 году; источник объясняет последующее развитие. 1888/1889 — изменение административного ранга, не достоверная дата первого поселения.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Чанчунь",
+      "population": {
+        "year": 2010,
+        "value": 7674439,
+        "source": "https://www.wikidata.org/wiki/Q92161#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 1889
+    },
+    "Q1070": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": 1074,
+        "source": "https://whc.unesco.org/document/155827",
+        "explanation": "Ашавалли существовал до завоевания Карнадевой в 1074 году; Карнавати и Ахмадабад связаны в номинационном досье. 1411 — основание нового города на месте предшественников.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://whc.unesco.org/document/155827"
+      ],
+      "reviewNote": "Ашавалли существовал до завоевания Карнадевой в 1074 году; Карнавати и Ахмадабад связаны в номинационном досье. 1411 — основание нового города на месте предшественников.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Ахмадабад",
+      "population": {
+        "year": 2016,
+        "value": 7645000,
+        "source": "https://www.wikidata.org/wiki/Q1070#P1082",
+        "segment": "1"
+      },
+      "previousAppearance": 1411
+    },
+    "Q360584": {
+      "settlement": null,
+      "cityStatus": null,
+      "sources": [
+        "https://fyxfw.gov.cn/jxd/display.php?cid=166108&id=144796"
+      ],
+      "reviewNote": "Проверено описание корпуса старых хроник Инчжоу/Фуяна. Без анализа дат и локализации старого центра точная ранняя дата не установлена; перепись не объявляется основанием.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Фуян",
+      "population": {
+        "year": 2010,
+        "value": 7599913,
+        "source": "https://www.wikidata.org/wiki/Q360584#P1082",
+        "segment": "0"
+      },
+      "previousAppearance": 2010
+    },
+    "Q58422": {
+      "settlement": {
+        "kind": "settlement-mention",
+        "start": null,
+        "end": 1878,
+        "source": "https://whly.hebei.gov.cn/c/2023-08-31/573612.html",
+        "explanation": "Цяоцзятун локализован в нынешнем центре Таншаня; деятельность Кайпинских шахт документирована в 1878. Основание деревни неизвестно; городской статус 1938/1939 не разрешён этой проверкой.",
+        "precision": "interval"
+      },
+      "cityStatus": null,
+      "sources": [
+        "https://whly.hebei.gov.cn/c/2023-08-31/573612.html"
+      ],
+      "reviewNote": "Цяоцзятун локализован в нынешнем центре Таншаня; деятельность Кайпинских шахт документирована в 1878. Основание деревни неизвестно; городской статус 1938/1939 не разрешён этой проверкой.",
+      "statusReview": "Дата отдельного юридического городского статуса не подтверждена в проверенных источниках.",
+      "events": [],
+      "name": "Таншань",
+      "population": {
+        "year": 2010,
+        "value": 7577289,
+        "source": "http://www.citypopulation.de/php/china-hebei-admin.php",
+        "segment": "0"
+      },
+      "previousAppearance": 1938
+    }
+  }
+}

@@ -1,7 +1,12 @@
 /* oxlint-disable react/react-compiler -- Imperative MapLibre lifecycle is intentionally outside React Compiler. */
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import type { Map as MapType, GeoJSONSource, Marker } from 'maplibre-gl';
+import type {
+  Map as MapType,
+  GeoJSONSource,
+  Marker,
+  ExpressionSpecification,
+} from 'maplibre-gl';
 import type { FeatureCollection } from 'geojson';
 import { features } from '../lib/map-features';
 import {
@@ -39,6 +44,20 @@ type Props = {
   reduced: boolean;
   onFailure: () => void;
 };
+// MapLibre requires zoom interpolation at the top level of each paint expression.
+const markerRadius = (
+  extra = 0,
+  multiplier = 1,
+  minimum = 0,
+): ExpressionSpecification => [
+  'interpolate',
+  ['linear'],
+  ['zoom'],
+  2,
+  ['max', minimum, ['+', extra, ['*', multiplier, ['get', 'radius']]]],
+  6,
+  ['max', minimum, ['+', extra, ['*', multiplier, ['get', 'radiusClose']]]],
+];
 const labelNames = [
   'Москва',
   'Санкт-Петербург',
@@ -240,9 +259,9 @@ export default function AtlasMap(props: Props) {
               type: 'circle',
               source: 'cities',
               paint: {
-                'circle-radius': ['*', ['get', 'radius'], 2.8],
+                'circle-radius': markerRadius(0, 1.4),
                 'circle-color': ['get', 'color'],
-                'circle-opacity': 0.19,
+                'circle-opacity': 0.08,
                 'circle-blur': 1,
               },
             });
@@ -251,9 +270,14 @@ export default function AtlasMap(props: Props) {
               type: 'circle',
               source: 'cities',
               paint: {
-                'circle-radius': ['get', 'radius'],
+                'circle-radius': markerRadius(),
                 'circle-color': ['get', 'color'],
-                'circle-opacity': ['case', ['get', 'known'], 0.8, 0.04],
+                'circle-opacity': [
+                  'case',
+                  ['==', ['get', 'status'], 'city'],
+                  0.8,
+                  0,
+                ],
                 'circle-stroke-color': ['get', 'color'],
                 'circle-stroke-width': 1,
                 'circle-stroke-opacity': 0.9,
@@ -266,7 +290,7 @@ export default function AtlasMap(props: Props) {
               source: 'cities',
               filter: ['==', ['get', 'recent'], true],
               paint: {
-                'circle-radius': ['+', ['get', 'radius'], 5],
+                'circle-radius': markerRadius(3),
                 'circle-opacity': 0,
                 'circle-stroke-width': 1,
                 'circle-stroke-color': '#fff1c7',
@@ -279,7 +303,7 @@ export default function AtlasMap(props: Props) {
               source: 'cities',
               filter: ['==', ['get', 'born'], true],
               paint: {
-                'circle-radius': 12,
+                'circle-radius': markerRadius(3),
                 'circle-opacity': 0,
                 'circle-stroke-width': 1,
                 'circle-stroke-color': '#fff1c7',
@@ -292,10 +316,30 @@ export default function AtlasMap(props: Props) {
               source: 'cities',
               filter: ['==', ['get', 'id'], latest.current.selected?.id ?? ''],
               paint: {
-                'circle-radius': ['+', ['get', 'radius'], 7],
+                'circle-radius': markerRadius(3),
                 'circle-opacity': 0,
                 'circle-stroke-color': '#fff2cb',
                 'circle-stroke-width': 1.5,
+              },
+            });
+            x.addLayer({
+              id: 'status-center',
+              type: 'circle',
+              source: 'cities',
+              filter: ['==', ['get', 'status'], 'unknown'],
+              paint: {
+                'circle-radius': 1.3,
+                'circle-color': ['get', 'color'],
+                'circle-opacity': 0.9,
+              },
+            });
+            x.addLayer({
+              id: 'city-hit',
+              type: 'circle',
+              source: 'cities',
+              paint: {
+                'circle-radius': markerRadius(0, 1, 8),
+                'circle-opacity': 0,
               },
             });
             for (const city of latest.current.labelCities.filter(
@@ -332,7 +376,7 @@ export default function AtlasMap(props: Props) {
                 x.setPaintProperty(
                   'birth',
                   'circle-radius',
-                  reduced ? 8 : 7 + ((t % 1800) / 1800) * 17,
+                  markerRadius(reduced ? 2 : 1 + ((t % 1800) / 1800) * 2),
                 );
                 x.setPaintProperty(
                   'birth',
@@ -359,7 +403,7 @@ export default function AtlasMap(props: Props) {
               l.marker.getElement().style.display =
                 x.getZoom() >= 3 && visibleIds.has(l.city.id) ? '' : 'none';
           });
-          x.on('click', 'dots', (e) => {
+          x.on('click', 'city-hit', (e) => {
             const c = latest.current.cities.find(
               (c) => c.id === e.features?.[0].properties.id,
             );
@@ -367,10 +411,14 @@ export default function AtlasMap(props: Props) {
           });
           x.on(
             'mouseenter',
-            'dots',
+            'city-hit',
             () => (x.getCanvas().style.cursor = 'pointer'),
           );
-          x.on('mouseleave', 'dots', () => (x.getCanvas().style.cursor = ''));
+          x.on(
+            'mouseleave',
+            'city-hit',
+            () => (x.getCanvas().style.cursor = ''),
+          );
           for (const event of [
             'zoomstart',
             'rotatestart',
@@ -443,7 +491,7 @@ export default function AtlasMap(props: Props) {
           : 'none';
       l.marker.setOffset([
         0,
-        radiusFor(populationAt(current ?? l.city, year).value) + 6,
+        radiusFor(populationAt(current ?? l.city, year).value, x.getZoom()) + 3,
       ]);
     }
   }, [year, period, ready, cities, showUndated]);

@@ -18,3 +18,13 @@
 - Проверена панель на 390×844: все элементы доступны через прокрутку, отдельная кнопка закрывает фильтры. В глобальном виде подписи городов скрыты до приближения, чтобы не перекрывать друг друга.
 - Проверка типов и линтер проходят. Статическая сборка успешно выполнена; предупреждение о размере пакета MapLibre сохраняется.
 - Мировой снимок пока не завершён: актуальный флаг `worldComplete` находится в `public/coverage-summary.json`. Полный мировой охват и измерение на его реальных данных нельзя считать проверенными до завершения выгрузки.
+
+## Settlement history update — 2026-09-21
+
+- 30 TypeScript and 22 Python tests pass; typecheck, lint and static GitHub Pages build pass. The existing large MapLibre bundle warning remains.
+- All 21,593 pre-change IDs and population year/value pairs survive in the 23,231-record catalog. The 51-record review cohort was checked against the pre-change population ranking; its hash, sources and unresolved questions are in `docs/history-review.md`.
+- Repeated cached import is byte-identical (7.44 seconds in this run). Unit coverage includes fresh/repeated overrides, unclassified administrative inception, conflicting mentions, century precision, ancient reviewed dates, status transitions, census-only neutral markers and no fabricated population.
+- Current catalog: Europe filtering 3.8 ms, 7,243 marker features 5.2 ms. Synthetic 100,000-record stress case: filtering 14.8 ms, 34,199 markers 20.7 ms. These are local computation timings, not network loading or GPU frame-rate measurements.
+- Browser checked the production build with the `/city-visualization/` base path: Hong Kong visible in 1900 with settlement 1550, population beginning 1961 and unknown urban status; Shenzhen 1978/1979 switches the status description; no MapLibre console errors in the initial view. Desktop world view and 390×844 mobile card inspected. Main dates fit; supporting history is expandable; marker hit targets remain independent of drawn size.
+- MapLibre interpolates clamped radius endpoints between zoom 2 and 6. At a minimum/maximum clamp crossover this differs slightly from evaluating the scalar formula at every intermediate zoom; both endpoints and the requested bounds are exact. Unknown population stays 3 px.
+- This is an incomplete world download. Historical review is limited to the fixed 51-record cohort; unknown dates are intentional and are not evidence that a settlement did not exist.

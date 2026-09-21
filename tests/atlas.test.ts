@@ -62,10 +62,10 @@ void test('administrative break never interpolates', () => {
 });
 void test('area ratio proportional away from display limits', () => {
   assert.ok(
-    Math.abs(radiusFor(400000) ** 2 / radiusFor(100000) ** 2 - 4) < 1e-9,
+    Math.abs(radiusFor(4000000) ** 2 / radiusFor(1000000) ** 2 - 4) < 1e-9,
   );
   assert.equal(radiusFor(null), 3);
-  assert.equal(radiusFor(1e12), 48);
+  assert.equal(radiusFor(1e12), 10);
 });
 void test('URL roundtrip preserves view, city, chapter, stop and pitch', () => {
   const s = {
@@ -221,7 +221,7 @@ void test('story cities have expected dates and distinct status semantics', () =
   const find = (n: string) =>
     data.find((c) => c.name === n && c.country === 'Россия')!;
   assert.equal(find('Москва').founded, 1147);
-  assert.equal(find('Москва').dateKind, 'first-mention');
+  assert.equal(find('Москва').dateKind, 'settlement-mention');
   assert.equal(find('Обнинск').founded, 1946);
   assert.match(find('Обнинск').statusYear, /1956/);
   assert.ok(find('Тюмень').population.length > 20);

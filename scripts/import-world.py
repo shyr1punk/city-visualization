@@ -7,6 +7,7 @@ import json
 import math
 import re
 from pathlib import Path
+from settlement_history import apply_history, structured_evidence, OVERRIDE_PATH
 
 ROOT = Path('data/raw/world')
 CONTINENTS = {'Q46', 'Q48', 'Q15', 'Q49', 'Q18', 'Q55643', 'Q51'}
@@ -105,21 +106,12 @@ def convert(q, rows, country_meta, report):
          'url': next((val(r, 'article') for r in rows if val(r, 'article')), f'https://www.wikidata.org/wiki/{q}'),
          'population': [], 'notes': []}
     c['continentIds'] = continents(rows, c, country_meta)
-    for key, precision, kind, prop in [('inception', 'precision', 'inception', 'P571'), ('mention', 'mentionPrecision', 'first-mention', 'P1249')]:
-        dates = {year(val(r, key)) for r in rows if val(r, precision).isdigit() and int(val(r, precision)) >= 9}
-        dates.discard(None)
-        if len(dates) == 1:
-            c.update(founded=next(iter(dates)), dateKind=kind, dateSource=f'https://www.wikidata.org/wiki/{q}#{prop}')
-            c['dateLabel'] = str(c['founded'])
-            break
-        if dates:
-            c['notes'].append('Разночтения дат в Wikidata: ' + ', '.join(map(str, sorted(dates))))
     observed = collections.defaultdict(dict)
     for r in rows:
         y = year(val(r, 'date'))
         try: population = float(val(r, 'population'))
         except ValueError: continue
-        if not y or y > 2026 or not math.isfinite(population) or population <= 0 or (c['founded'] and y < c['founded']): continue
+        if not y or y > 2026 or not math.isfinite(population) or population <= 0 : continue
         source = val(r, 'reference')
         if not source.startswith(('https://', 'http://')): source = f'https://www.wikidata.org/wiki/{q}#P1082'
         n = round(population)
@@ -134,12 +126,9 @@ def convert(q, rows, country_meta, report):
         prev = c['population'][-1] if c['population'] else None
         if prev and y - prev['year'] <= 5 and abs(n / prev['value'] - 1) > .35: segment += 1
         c['population'].append({'year': y, 'value': n, 'source': source, 'segment': str(segment)})
-    if c['founded'] is None and c['population']:
-        p = c['population'][0]
-        c.update(founded=p['year'], dateKind='first-observation', dateSource=p['source'], dateLabel=f"не позднее {p['year']} года — первое наблюдение населения")
-        c['notes'].append('Дата основания неизвестна; появление на карте привязано к первому датированному наблюдению населения.')
+    c['historyEvents'] = structured_evidence(rows, q)
     if not c['region']: c['region'] = c['country']
-    return c
+    return apply_history(c, {})
 
 
 def build(legacy_only=False, cached=False):
@@ -199,6 +188,8 @@ def build(legacy_only=False, cached=False):
             c['countryIds'] = [name_to_id.get(c['country'], 'unknown')]
             c['continentIds'] = continents([], c, country_meta)
         catalog[q] = c
+    historical_overrides = read(OVERRIDE_PATH)['cities'] if OVERRIDE_PATH.exists() else {}
+    for c in catalog.values(): apply_history(c, historical_overrides)
     cities = sorted(catalog.values(), key=lambda c: (c['country'], c['name'], c['id']))
     if len({c['id'] for c in cities}) != len(cities): raise ValueError('Duplicate city ID')
     shards = collections.defaultdict(list)
@@ -210,7 +201,8 @@ def build(legacy_only=False, cached=False):
         country_offsets[country] += 1
         c['detailKey'] = key
         shards[key].append(c)
-        index.append({k: c[k] for k in ['id', 'wikidata', 'name', 'region', 'country', 'countryIds', 'continentIds', 'coordinates', 'founded', 'dateKind', 'url', 'detailKey'] if k in c})
+        index.append({k: c[k] for k in ['id', 'wikidata', 'name', 'region', 'country', 'countryIds', 'continentIds', 'coordinates', 'founded', 'dateKind', 'url', 'detailKey', 'appearanceYear', 'appearanceBasis'] if k in c})
+        index[-1]['cityStatus'] = ({**c['cityStatus'], 'source': '', 'explanation': ''} if c['cityStatus'] else None)
     report.update(snapshotDate=manifest['snapshotDate'], total=len(cities), withCoordinates=sum(c['coordinates'] is not None for c in cities), withDates=sum(c['founded'] is not None for c in cities), withPopulation=sum(bool(c['population']) for c in cities), observations=sum(len(c['population']) for c in cities),
         countryCounts=dict(sorted(collections.Counter(c['country'] for c in cities).items())), continentCounts=dict(collections.Counter(x for c in cities for x in c['continentIds'])),
         missingDates=[c['name'] for c in cities if c['founded'] is None], missingCoordinates=[c['name'] for c in cities if c['coordinates'] is None], missingPopulation=[c['name'] for c in cities if not c['population']])

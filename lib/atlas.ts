@@ -4,7 +4,27 @@ export type Observation = {
   source: string;
   segment?: string;
 };
+export type HistoricalEvent = {
+  kind: string;
+  start: number | null;
+  end: number;
+  precision: string;
+  source: string;
+  explanation: string;
+};
 export type City = {
+  originalDate?: { founded: number | null; dateKind: string };
+  appearanceYear?: number | null;
+  appearanceBasis?: 'settlement' | 'population-observation' | 'unknown';
+  settlement?: HistoricalEvent | null;
+  cityStatus?: HistoricalEvent | null;
+  firstPopulationObservation?: HistoricalEvent | null;
+  historyEvents?: HistoricalEvent[];
+  historyReview?: {
+    reviewNote: string;
+    statusReview: string;
+    sources: string[];
+  };
   id: string;
   name: string;
   region: string;
@@ -26,7 +46,7 @@ export type City = {
 };
 export function populationAt(city: City, year: number) {
   const points = city.population;
-  if (city.founded !== null && year < city.founded)
+  if (appearanceYear(city) !== null && year < appearanceYear(city)!)
     return { value: null, kind: 'not-born' as const };
   const before = points.filter((p) => p.year <= year).at(-1);
   const after = points.find((p) => p.year > year);
@@ -50,11 +70,36 @@ export function populationAt(city: City, year: number) {
   return { value: before.value, kind: 'last' as const, year: before.year };
 }
 export const visibleAt = (c: City, year: number) =>
-  c.founded !== null && c.founded <= year;
-export const radiusFor = (population: number | null) =>
-  population === null
-    ? 3
-    : Math.max(3, Math.min(48, Math.sqrt(population / 1000) * 0.48));
+  appearanceYear(c) !== null && appearanceYear(c)! <= year;
+export const appearanceYear = (c: City) =>
+  c.appearanceYear === undefined ? c.founded : c.appearanceYear;
+export const historicalEvidence = (c: City) =>
+  c.appearanceBasis === 'settlement' ||
+  (c.appearanceBasis === undefined && c.dateKind !== 'first-observation');
+export const historicalStatus = (
+  c: City,
+  year: number,
+): 'settlement' | 'city' | 'unknown' => {
+  if (!c.cityStatus) return 'unknown';
+  if (year >= c.cityStatus.end) return 'city';
+  if (c.cityStatus.start !== null && year < c.cityStatus.start)
+    return 'settlement';
+  return 'unknown';
+};
+export function radiusFor(population: number | null, zoom = 2) {
+  if (population === null || !Number.isFinite(population) || population <= 0)
+    return 3;
+  const t = Math.max(0, Math.min(1, (zoom - 2) / 4));
+  return Math.max(
+    2,
+    Math.min(10 + 8 * t, 0.12 * Math.sqrt(population / 1000) * (1 + 0.8 * t)),
+  );
+}
+export const eventDateLabel = (event?: HistoricalEvent | null): string => {
+  if (!event) return 'Неизвестно';
+  if (event.start === event.end) return yearLabel(event.end);
+  return `Не позднее ${yearLabel(event.end)}${event.start === null ? '' : ` (интервал ${yearLabel(event.start)} — ${yearLabel(event.end)})`}`;
+};
 export const formatNumber = (n: number) =>
   Math.round(n).toLocaleString('ru-RU');
 export const yearLabel = (n: number) =>

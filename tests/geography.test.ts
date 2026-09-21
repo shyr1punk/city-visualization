@@ -174,7 +174,7 @@ void test('index and country shards cover every record and preserve all legacy c
     const updated = byId.get(legacy.id)!;
     assert.ok(updated);
     assert.deepEqual(updated.population, legacy.population);
-    assert.equal(updated.founded, legacy.founded);
+    assert.equal(updated.originalDate?.founded, legacy.founded);
     assert.equal(updated.wikidata, legacy.wikidata);
   }
   for (const c of catalog) {

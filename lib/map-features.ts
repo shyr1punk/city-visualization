@@ -5,6 +5,8 @@ import {
   populationAt,
   radiusFor,
   cityColor,
+  historicalEvidence,
+  historicalStatus,
 } from './atlas.ts';
 export function features(
   cities: City[],
@@ -29,10 +31,21 @@ export function features(
             id: c.id,
             name: c.name,
             radius: radiusFor(p.value),
+            radiusClose: radiusFor(p.value, 6),
+            status: historicalStatus(c, year),
             known: p.value !== null,
-            color: c.founded === null ? '#9aa8b2' : cityColor(c.founded),
-            recent: c.founded !== null && year - c.founded < period,
-            born: c.founded !== null && year - c.founded < 3,
+            color:
+              c.founded === null || !historicalEvidence(c)
+                ? '#9aa8b2'
+                : cityColor(c.founded),
+            recent:
+              historicalEvidence(c) &&
+              c.founded !== null &&
+              year - c.founded < period,
+            born:
+              historicalEvidence(c) &&
+              c.founded !== null &&
+              year - c.founded < 3,
           },
         };
       }),

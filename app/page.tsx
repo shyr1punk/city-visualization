@@ -34,6 +34,9 @@ import {
   City,
   HOME_CAMERA,
   visibleAt,
+  eventDateLabel,
+  historicalStatus,
+  historicalEvidence,
   populationAt,
   formatNumber,
   yearLabel,
@@ -50,11 +53,13 @@ import PopulationChart from '../components/population-chart';
 import { Switch } from '../components/ui/switch';
 const normalize = (s: string) => s.toLowerCase().replaceAll('ё', 'е');
 const locationLabel = (city: City) =>
-  city.region === city.country
+  city.region === city.country || /^Q\d+$/.test(city.region)
     ? city.country
     : `${city.region} · ${city.country}`;
 const assetUrl = (path: string) => import.meta.env.BASE_URL + path;
 const dateKinds: Record<string, string> = {
+  'settlement-foundation': 'Основание поселения',
+  'settlement-mention': 'Свидетельство о поселении',
   foundation: 'Основание',
   'first-mention': 'Первое упоминание',
   'foundation-or-mention': 'Основание или первое упоминание',
@@ -71,7 +76,7 @@ const eras = [
 function populationCaption(c: City, year: number) {
   const p = populationAt(c, year);
   return p.kind === 'not-born'
-    ? 'Город ещё не появился на ленте'
+    ? 'Запись ещё не показана на ленте'
     : p.kind === 'unknown'
       ? 'Нет наблюдений для этого времени'
       : p.kind === 'estimate'
@@ -174,6 +179,7 @@ function Atlas({
     const bins = Array.from({ length: 100 }, (_, i) => ({
       start: yearAtTimelinePosition(i / 100, MIN, MAX),
       count: 0,
+      populationOnly: 0,
     }));
     for (const c of cities) {
       if (c.founded !== null && c.founded >= MIN && c.founded <= MAX) {
@@ -182,6 +188,7 @@ function Atlas({
           Math.floor(timelinePosition(c.founded, MIN, MAX) * 100),
         );
         bins[bin].count++;
+        if (!historicalEvidence(c)) bins[bin].populationOnly++;
       }
     }
     const histogramMax = Math.max(...bins.map((b) => b.count));
@@ -852,7 +859,7 @@ function Atlas({
         </div>
         <span className="year-rule" />
         <p>
-          <b>{formatNumber(count)}</b> городов появились
+          <b>{formatNumber(count)}</b> населённых пунктов показано
         </p>
         <small>из {formatNumber(cities.length)} в каталоге</small>
         {geography.showUndated && (
@@ -974,7 +981,10 @@ function Atlas({
             <span>Следить за новыми</span>
           </div>
         </div>
-        <div className="era-legend" aria-label="Цвет — эпоха появления города">
+        <div
+          className="era-legend"
+          aria-label="Цвет — эпоха свидетельства о поселении"
+        >
           <span className="era-legend-title">Цвет — эпоха появления</span>
           {eras.map((item) => (
             <span key={item.name} className="era-legend-item">
@@ -1006,7 +1016,7 @@ function Atlas({
                       bin.count === 0
                         ? 0
                         : Math.max(2, (bin.count / histogramMax) * 40),
-                    background: cityColor(bin.start),
+                    background: `linear-gradient(to top, #9aa8b2 ${(bin.populationOnly / (bin.count || 1)) * 100}%, ${cityColor(bin.start)} ${(bin.populationOnly / (bin.count || 1)) * 100}%)`,
                     opacity: bin.start <= year ? 0.92 : 0.18,
                   }}
                 />
@@ -1065,9 +1075,8 @@ function Atlas({
               setModal('about');
             }}
           >
-            <i className="legend-dot" /> Размер — население{' '}
-            <span className="muted">·</span> <i className="legend-hollow" /> Нет
-            данных <Info size={12} />
+            ● город · ○ до статуса · ⊙ статус неизвестен · Размер — население
+            (ограничен) <Info size={12} />
           </button>
           <button
             onClick={() => {
@@ -1097,19 +1106,92 @@ function Atlas({
             <strong>
               {selected.founded === null
                 ? 'Дата неизвестна'
-                : yearLabel(selected.founded)}
+                : historicalEvidence(selected) && selected.settlement
+                  ? eventDateLabel(selected.settlement)
+                  : `Не позднее ${yearLabel(selected.founded)}`}
             </strong>
             <a
               href={selected.dateSource ?? selected.url}
               target="_blank"
               rel="noreferrer"
             >
-              {dateKinds[selected.dateKind]} <ArrowUpRight size={12} />
+              {dateKinds[selected.dateKind] || 'Основание показа'}{' '}
+              <ArrowUpRight size={12} />
             </a>
           </div>
           <p className="status-year">
-            Статус города: {selected.statusYear || 'не указан'}
+            {dataPending
+              ? 'Загрузка исторических сведений…'
+              : selected.appearanceBasis === 'population-observation'
+                ? selected.settlement
+                  ? 'Известен не позднее первого наблюдения населения; это не основание поселения.'
+                  : selected.dateLabel
+                : ''}
           </p>
+          {!dataPending && (
+            <>
+              <dl className="history-facts">
+                {(
+                  [
+                    ['Поселение известно с', selected.settlement],
+                    ['Статус города', selected.cityStatus],
+                    [
+                      'Первое наблюдение населения',
+                      selected.firstPopulationObservation,
+                    ],
+                  ] as const
+                ).map(([label, event]) => (
+                  <div key={label}>
+                    <dt>{label}</dt>
+                    <dd>
+                      {event ? (
+                        <a href={event.source} target="_blank" rel="noreferrer">
+                          {eventDateLabel(event)} ↗
+                        </a>
+                      ) : (
+                        'Неизвестно'
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="status-year">
+                На {yearLabel(integerYear)}:{' '}
+                {!visibleAt(selected, integerYear)
+                  ? 'запись ещё не показана'
+                  : historicalStatus(selected, integerYear) === 'city'
+                    ? 'подтверждён городской статус'
+                    : historicalStatus(selected, integerYear) === 'settlement'
+                      ? 'поселение; городской статус ещё не получен'
+                      : 'исторический статус неизвестен'}
+                .
+              </p>
+              <details>
+                <summary>Исторические свидетельства и неопределённость</summary>
+                {selected.historyReview && (
+                  <p>
+                    {selected.historyReview.reviewNote}{' '}
+                    {selected.historyReview.statusReview}
+                  </p>
+                )}
+                {selected.historyEvents?.map((event, i) => (
+                  <p key={i}>
+                    <a href={event.source} target="_blank" rel="noreferrer">
+                      {eventDateLabel(event)} ↗
+                    </a>{' '}
+                    — {event.explanation}
+                  </p>
+                ))}
+                {selected.historyReview?.sources.map((source, i) => (
+                  <p key={source}>
+                    <a href={source} target="_blank" rel="noreferrer">
+                      Источник ручной проверки {i + 1} ↗
+                    </a>
+                  </p>
+                ))}
+              </details>
+            </>
+          )}
           <div className="population-number">
             {dataPending
               ? '…'
@@ -1293,11 +1375,12 @@ function Atlas({
                 </p>
                 <h3>Свет, размер и время</h3>
                 <p>
-                  Площадь круга пропорциональна населению: радиус равен 0,48 ×
-                  √(население / 1000) пикселей, с минимумом 3 и максимумом 48
-                  пикселей для читаемости. На этих пределах пропорция
-                  ограничена. Декоративное свечение не обозначает численность.
-                  Полый маркер — население неизвестно.
+                  Размер отражает население с ограничением для читаемости:
+                  радиус 2–10 px на мировом масштабе и 2–18 px при приближении,
+                  плавный переход между ними. Без наблюдений — 3 px. Свечение не
+                  означает дополнительное население. ● — подтверждён городской
+                  статус; ○ — до его получения; ⊙ — исторический статус
+                  неизвестен.
                 </p>
                 <div className="color-legend">
                   {eras.map((item) => (
@@ -1308,10 +1391,36 @@ function Atlas({
                   ))}
                 </div>
                 <p>
-                  Цвет означает эпоху появления. Импульс отмечает первые три
-                  года; кольцо подсвечивает города выбранного периода. Площадь
-                  карты и государственные границы не меняются вместе с годом.
+                  Цвет означает эпоху свидетельства о поселении. Серые точки и
+                  серые части гистограммы — первое наблюдение населения, а не
+                  основание; у них нет импульса. Цветные части гистограммы
+                  показывают добавление записей по историческим свидетельствам.
+                  Для интервала используется верхняя граница с подписью «не
+                  позднее». Современные координаты не реконструируют перемещение
+                  поселений или границ.
                 </p>
+                <h3>История поселений</h3>
+                <p>
+                  Начало поселения, городской статус и наблюдения населения
+                  разделены. Неуточнённое «начало существования» Wikidata не
+                  считается основанием. При отсутствии раннего свидетельства:
+                  «Известен не позднее …; начало поселения неизвестно».
+                  Археология окрестностей сама по себе не доказывает
+                  преемственность современного населённого пункта.
+                </p>
+                <p>
+                  Вручную рассмотрена 51 запись: Гонконг и 50 крупнейших по
+                  последнему населению зафиксированного каталога.
+                  Неподтверждённые даты оставлены неизвестными; остальные записи
+                  обработаны по структурированным данным.
+                </p>
+                <a
+                  href="https://github.com/shyr1punk/city-visualization/blob/main/docs/history-review.md"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Отчёт ручной проверки ↗
+                </a>
                 <h3>Наблюдения и оценки</h3>
                 <p>
                   Между сопоставимыми наблюдениями используется линейная
@@ -1331,10 +1440,10 @@ function Atlas({
                 <h3>Полнота данных</h3>
                 {!coverage.worldComplete && (
                   <p>
-                    Мировая выгрузка ещё не завершена. Сейчас доступны
-                    все уже скачанные города и проверенные записи прежнего каталога.
-                    Фильтры показывают фактический охват; отсутствие города
-                    не означает, что его нет в источнике.
+                    Мировая выгрузка ещё не завершена. Сейчас доступны все уже
+                    скачанные города и проверенные записи прежнего каталога.
+                    Фильтры показывают фактический охват; отсутствие города не
+                    означает, что его нет в источнике.
                   </p>
                 )}
                 <p>
