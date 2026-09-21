@@ -37,3 +37,15 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+
+# Python import caches
+__pycache__/
+*.pyc
+.sites-runtime/
+
+# Transient world download coordinator state
+data/raw/world/download.log
+data/raw/world/download.lock
+
+# Resumable world downloads stay local; snapshots are released separately
+/data/raw/world/

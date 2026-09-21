@@ -9,6 +9,9 @@ export type City = {
   name: string;
   region: string;
   country: string;
+  countryIds?: string[];
+  continentIds?: string[];
+  detailKey?: string;
   coordinates: [number, number] | null;
   founded: number | null;
   dateLabel: string;
@@ -105,7 +108,9 @@ export function focusCluster(points: [number, number][]) {
     const meanLat = ((a[1] + b[1]) / 2) * (Math.PI / 180);
     return Math.hypot((a[0] - b[0]) * Math.cos(meanLat), a[1] - b[1]);
   };
-  return points
+  const stride = Math.max(1, Math.ceil(points.length / 128));
+  const centers = points.filter((_, i) => i % stride === 0);
+  return centers
     .map((center) => points.filter((point) => distance(center, point) <= 7))
     .reduce((best, cluster) => (cluster.length > best.length ? cluster : best));
 }
@@ -117,13 +122,16 @@ export type Camera = {
   pitch: number;
 };
 export const HOME_CAMERA: Camera = {
-  lng: 67,
-  lat: 53,
-  zoom: 2.1,
-  bearing: -8,
-  pitch: 35,
+  lng: 15,
+  lat: 22,
+  zoom: 1.3,
+  bearing: 0,
+  pitch: 0,
 };
 export type ViewState = {
+  continents?: string[];
+  countries?: string[];
+  showUndated?: boolean;
   year: number;
   cityId: string | null;
   chapter: number | null;
@@ -146,6 +154,9 @@ export function parseView(
   const id = p.get('city');
   const ch = p.get('chapter');
   return {
+    continents: (p.get('continents') ?? '').split(',').filter(Boolean),
+    countries: (p.get('countries') ?? '').split(',').filter(Boolean),
+    showUndated: p.get('undated') === '1',
     year: n('year', 1897, min, max),
     cityId: id && ids.has(id) ? id : null,
     chapter: ch !== null && /^[0-4]$/.test(ch) ? Number(ch) : null,
@@ -154,7 +165,7 @@ export function parseView(
     camera: {
       lng: n('lng', HOME_CAMERA.lng, -540, 540),
       lat: n('lat', HOME_CAMERA.lat, -80, 80),
-      zoom: n('zoom', HOME_CAMERA.zoom, 1.5, 10),
+      zoom: n('zoom', HOME_CAMERA.zoom, 0.6, 10),
       bearing: n('bearing', HOME_CAMERA.bearing, -180, 180),
       pitch: n('pitch', HOME_CAMERA.pitch, 0, 60),
     },
@@ -170,6 +181,11 @@ export function serializeView(state: ViewState) {
     pitch: state.camera.pitch.toFixed(1),
     projection: state.projection,
   });
+  if (state.continents?.length)
+    p.set('continents', [...state.continents].sort().join(','));
+  if (state.countries?.length)
+    p.set('countries', [...state.countries].sort().join(','));
+  if (state.showUndated) p.set('undated', '1');
   if (state.cityId) p.set('city', state.cityId);
   if (state.chapter !== null) {
     p.set('chapter', String(state.chapter));

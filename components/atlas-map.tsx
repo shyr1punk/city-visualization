@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Map as MapType, GeoJSONSource, Marker } from 'maplibre-gl';
 import type { FeatureCollection } from 'geojson';
+import { features } from '../lib/map-features';
 import {
   Camera,
   City,
@@ -10,9 +11,9 @@ import {
   visibleAt,
   populationAt,
   radiusFor,
-  cityColor,
   focusCluster,
 } from '../lib/atlas';
+import { geographicBounds } from '../lib/geography';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 export type MapAction = {
@@ -23,6 +24,8 @@ export type MapAction = {
 };
 type Props = {
   cities: City[];
+  labelCities: City[];
+  showUndated: boolean;
   year: number;
   flat: boolean;
   globe: boolean;
@@ -36,33 +39,6 @@ type Props = {
   reduced: boolean;
   onFailure: () => void;
 };
-function features(
-  cities: City[],
-  year: number,
-  period: number,
-): FeatureCollection {
-  return {
-    type: 'FeatureCollection',
-    features: cities
-      .filter((c) => c.coordinates && visibleAt(c, year))
-      .map((c) => {
-        const p = populationAt(c, year);
-        return {
-          type: 'Feature',
-          geometry: { type: 'Point', coordinates: c.coordinates! },
-          properties: {
-            id: c.id,
-            name: c.name,
-            radius: radiusFor(p.value),
-            known: p.value !== null,
-            color: cityColor(c.founded!),
-            recent: year - c.founded! < period,
-            born: year - c.founded! < 3,
-          },
-        };
-      }),
-  };
-}
 const labelNames = [
   'Москва',
   'Санкт-Петербург',
@@ -96,26 +72,10 @@ const labelNames = [
   'Ашхабад',
   'Ташкент',
 ];
-const formerUssrCountryCodes = [
-  'ARM',
-  'AZE',
-  'BLR',
-  'EST',
-  'GEO',
-  'KAZ',
-  'KGZ',
-  'LVA',
-  'LTU',
-  'MDA',
-  'RUS',
-  'TJK',
-  'TKM',
-  'UKR',
-  'UZB',
-];
 export default function AtlasMap(props: Props) {
   const {
     cities,
+    showUndated,
     year,
     flat,
     globe,
@@ -208,13 +168,7 @@ export default function AtlasMap(props: Props) {
                   type: 'fill',
                   source: 'world',
                   paint: {
-                    'fill-color': [
-                      'match',
-                      ['get', 'ADM0_A3'],
-                      formerUssrCountryCodes,
-                      '#233a40',
-                      '#14262d',
-                    ],
+                    'fill-color': '#233a40',
                   },
                 },
                 {
@@ -276,7 +230,7 @@ export default function AtlasMap(props: Props) {
             x.addSource('cities', {
               type: 'geojson',
               data: features(
-                cities,
+                latest.current.cities,
                 latest.current.year,
                 latest.current.period,
               ),
@@ -344,7 +298,7 @@ export default function AtlasMap(props: Props) {
                 'circle-stroke-width': 1.5,
               },
             });
-            for (const city of cities.filter(
+            for (const city of latest.current.labelCities.filter(
               (c) => labelNames.includes(c.name) && c.coordinates,
             )) {
               const el = document.createElement('button');
@@ -355,9 +309,10 @@ export default function AtlasMap(props: Props) {
                 e.stopPropagation();
                 latest.current.onSelect(city);
               });
-              el.style.display = visibleAt(city, latest.current.year)
-                ? ''
-                : 'none';
+              el.style.display =
+                x.getZoom() >= 3 && visibleAt(city, latest.current.year)
+                  ? ''
+                  : 'none';
               const marker = new m.Marker({
                 element: el,
                 anchor: 'top',
@@ -390,8 +345,22 @@ export default function AtlasMap(props: Props) {
             };
             frame = requestAnimationFrame(pulse);
           });
+          x.on('zoomend', () => {
+            const visibleIds = new Set(
+              latest.current.cities
+                .filter(
+                  (c) =>
+                    visibleAt(c, latest.current.year) ||
+                    (latest.current.showUndated && c.founded === null),
+                )
+                .map((c) => c.id),
+            );
+            for (const l of labels.current)
+              l.marker.getElement().style.display =
+                x.getZoom() >= 3 && visibleIds.has(l.city.id) ? '' : 'none';
+          });
           x.on('click', 'dots', (e) => {
-            const c = cities.find(
+            const c = latest.current.cities.find(
               (c) => c.id === e.features?.[0].properties.id,
             );
             if (c) latest.current.onSelect(c);
@@ -455,21 +424,29 @@ export default function AtlasMap(props: Props) {
       map.current?.remove();
       map.current = null;
     };
-  }, [cities, initialCamera]);
+  }, [initialCamera]);
   useEffect(() => {
     if (!ready || !map.current?.getSource('cities')) return;
     const x = map.current;
     void (x.getSource('cities') as GeoJSONSource)?.setData(
-      features(cities, year, period),
+      features(cities, year, period, showUndated),
     );
     x.setPaintProperty('period', 'circle-stroke-opacity', period ? 0.55 : 0);
+    const byId = new Map(cities.map((c) => [c.id, c]));
     for (const l of labels.current) {
-      l.marker.getElement().style.display = visibleAt(l.city, year)
-        ? ''
-        : 'none';
-      l.marker.setOffset([0, radiusFor(populationAt(l.city, year).value) + 6]);
+      const current = byId.get(l.city.id);
+      l.marker.getElement().style.display =
+        current &&
+        x.getZoom() >= 3 &&
+        (visibleAt(current, year) || (showUndated && current.founded === null))
+          ? ''
+          : 'none';
+      l.marker.setOffset([
+        0,
+        radiusFor(populationAt(current ?? l.city, year).value) + 6,
+      ]);
     }
-  }, [year, period, ready, cities]);
+  }, [year, period, ready, cities, showUndated]);
   useEffect(() => {
     if (ready && previousFlat.current !== flat) {
       previousFlat.current = flat;
@@ -520,6 +497,17 @@ export default function AtlasMap(props: Props) {
         duration,
         padding: { left: 0, right: 0, top: 20, bottom: 100 },
       });
+    if (action.action === 'geography') {
+      const bounds = geographicBounds(action.points ?? []);
+      if (bounds)
+        m.fitBounds(bounds, {
+          padding: { left: 60, right: 60, top: 100, bottom: 220 },
+          maxZoom: 5.1,
+          duration,
+          bearing: 0,
+          pitch: 0,
+        });
+    }
     if (action.action === 'births' && action.points?.length) {
       const cluster = focusCluster(action.points);
       if (cluster.length === 1)
@@ -529,19 +517,12 @@ export default function AtlasMap(props: Props) {
           duration: reduced ? 0 : 900,
         });
       else {
-        const lngs = cluster.map((point) => point[0]);
-        const lats = cluster.map((point) => point[1]);
-        m.fitBounds(
-          [
-            [Math.min(...lngs), Math.min(...lats)],
-            [Math.max(...lngs), Math.max(...lats)],
-          ],
-          {
-            padding: { left: 90, right: 90, top: 110, bottom: 250 },
-            maxZoom: 5.4,
-            duration: reduced ? 0 : 900,
-          },
-        );
+        const bounds = geographicBounds(cluster)!;
+        m.fitBounds(bounds, {
+          padding: { left: 90, right: 90, top: 110, bottom: 250 },
+          maxZoom: 5.4,
+          duration: reduced ? 0 : 900,
+        });
       }
     }
   }, [action, ready]);

@@ -69,6 +69,9 @@ void test('area ratio proportional away from display limits', () => {
 });
 void test('URL roundtrip preserves view, city, chapter, stop and pitch', () => {
   const s = {
+    continents: [],
+    countries: [],
+    showUndated: false,
     year: 1587,
     cityId: 'a',
     chapter: 2,
@@ -121,10 +124,7 @@ void test('globe projection is the default and survives URL roundtrip', () => {
     projection: 'globe',
     camera: HOME_CAMERA,
   });
-  assert.equal(
-    parseView(url, -497, 2025, new Set()).projection,
-    'globe',
-  );
+  assert.equal(parseView(url, -497, 2025, new Set()).projection, 'globe');
 });
 void test('auto focus chooses the densest nearby city cluster', () => {
   assert.deepEqual(
@@ -161,37 +161,33 @@ void test('dataset has unique exact identities and valid geography', () => {
   assert.equal(new Set(data.map((c) => c.id)).size, data.length);
   assert.equal(new Set(data.map((c) => c.wikidata)).size, data.length);
   for (const c of data) {
-    assert.ok(c.coordinates);
-    assert.ok(c.coordinates![0] >= 19 && c.coordinates![0] <= 180, c.name);
-    assert.ok(c.coordinates![1] >= 35 && c.coordinates![1] <= 82, c.name);
+    if (c.coordinates) {
+      assert.ok(c.coordinates[0] >= -180 && c.coordinates[0] <= 180, c.name);
+      assert.ok(c.coordinates[1] >= -90 && c.coordinates[1] <= 90, c.name);
+    }
     assert.ok(c.country, c.name);
   }
 });
-void test('dataset covers all 15 former Soviet republics', () => {
-  assert.deepEqual(
-    [...new Set(data.map((c) => c.country))].sort(),
-    [
-      'Азербайджан',
-      'Армения',
-      'Беларусь',
-      'Грузия',
-      'Казахстан',
-      'Кыргызстан',
-      'Латвия',
-      'Литва',
-      'Молдова',
-      'Россия',
-      'Таджикистан',
-      'Туркменистан',
-      'Узбекистан',
-      'Украина',
-      'Эстония',
-    ].sort(),
-  );
-  assert.equal(
-    data.filter((c) => c.country !== 'Россия' && c.founded === null).length,
-    0,
-  );
+void test('world catalog retains all 15 former Soviet republics', () => {
+  const countries = new Set(data.map((c) => c.country));
+  for (const country of [
+    'Азербайджан',
+    'Армения',
+    'Беларусь',
+    'Грузия',
+    'Казахстан',
+    'Кыргызстан',
+    'Латвия',
+    'Литва',
+    'Молдова',
+    'Россия',
+    'Таджикистан',
+    'Туркменистан',
+    'Узбекистан',
+    'Украина',
+    'Эстония',
+  ])
+    assert.ok(countries.has(country), country);
 });
 void test('empty timeline bins are rendered without a minimum bar', () => {
   const page = readFileSync(
@@ -222,7 +218,8 @@ void test('population observations are ordered, sourced, finite and after foundi
   }
 });
 void test('story cities have expected dates and distinct status semantics', () => {
-  const find = (n: string) => data.find((c) => c.name === n)!;
+  const find = (n: string) =>
+    data.find((c) => c.name === n && c.country === 'Россия')!;
   assert.equal(find('Москва').founded, 1147);
   assert.equal(find('Москва').dateKind, 'first-mention');
   assert.equal(find('Обнинск').founded, 1946);

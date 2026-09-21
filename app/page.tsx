@@ -20,7 +20,15 @@ import {
   Check,
   ChevronRight,
 } from 'lucide-react';
-import coverage from '../public/coverage.json';
+import coverage from '../public/coverage-summary.json';
+import GeographyFilters from '../components/geography-filters';
+import {
+  EMPTY_GEOGRAPHY,
+  matchesGeography,
+  normalizeGeography,
+  type Geography,
+} from '../lib/geography';
+import { useCityDetails } from '../hooks/use-city-details';
 import {
   Camera,
   City,
@@ -73,18 +81,38 @@ function populationCaption(c: City, year: number) {
           : `Наблюдение за ${p.year} год`;
 }
 export default function Home() {
-  const [loaded, setLoaded] = useState<City[] | null>(null),
+  const [loaded, setLoaded] = useState<{
+      cities: City[];
+      countries: Record<string, string>;
+      maxYear: number;
+    } | null>(null),
     [error, setError] = useState(false);
   useEffect(() => {
     const ac = new AbortController();
-    fetch(assetUrl('catalog.json'), { signal: ac.signal })
+    fetch(assetUrl('catalog-index.json'), { signal: ac.signal })
       .then((r) => {
         if (!r.ok) throw Error('catalog');
         return r.json();
       })
-      .then((data) => {
-        if (!Array.isArray(data) || !data.length) throw Error('catalog');
-        setLoaded(data as City[]);
+      .then((raw) => {
+        const data = raw as {
+          cities: City[];
+          countries: Record<string, string>;
+          maxYear: number;
+        };
+        if (!Array.isArray(data.cities) || !data.cities.length)
+          throw Error('catalog');
+        setLoaded({
+          ...data,
+          cities: data.cities.map((c) => ({
+            ...c,
+            population: [],
+            notes: [],
+            dateLabel: c.founded === null ? '' : String(c.founded),
+            statusYear: '',
+            formerNames: '',
+          })),
+        });
       })
       .catch((e) => {
         if (e.name !== 'AbortError') setError(true);
@@ -106,38 +134,64 @@ export default function Home() {
         )}
       </main>
     );
-  return <Atlas cities={loaded} />;
+  return (
+    <Atlas
+      allCities={loaded.cities}
+      countries={loaded.countries}
+      maxYear={loaded.maxYear}
+    />
+  );
 }
-function Atlas({ cities }: { cities: City[] }) {
+function Atlas({
+  allCities,
+  countries,
+  maxYear,
+}: {
+  allCities: City[];
+  countries: Record<string, string>;
+  maxYear: number;
+}) {
+  const [geography, setGeography] = useState<Geography>(EMPTY_GEOGRAPHY);
+  const [listPage, setListPage] = useState(0);
+  const filtered = useMemo(
+    () => allCities.filter((c) => matchesGeography(c, geography)),
+    [allCities, geography],
+  );
+  const details = useCityDetails(
+    filtered.map((c) => c.detailKey!).filter(Boolean),
+  );
+  const cities = useMemo(
+    () => filtered.map((c) => details.details.get(c.id) ?? c),
+    [filtered, details.details],
+  );
   const { MIN, MAX, ids, bins, histogramMax } = useMemo(() => {
-    const MIN = Math.min(
-      ...cities.filter((c) => c.founded !== null).map((c) => c.founded!),
+    const MIN = allCities.reduce(
+      (min, c) => (c.founded === null ? min : Math.min(min, c.founded)),
+      1,
     );
-    const MAX = Math.max(
-      ...cities.flatMap((c) => c.population.map((p) => p.year)),
-    );
-    const ids = new Set(cities.map((c) => c.id));
-    const bins = Array.from({ length: 100 }, (_, i) => {
-      const start = yearAtTimelinePosition(i / 100, MIN, MAX);
-      const end = yearAtTimelinePosition((i + 1) / 100, MIN, MAX);
-      return {
-        start,
-        count: cities.filter(
-          (c) =>
-            c.founded !== null &&
-            c.founded >= start &&
-            (i === 99 ? c.founded <= end : c.founded < end),
-        ).length,
-      };
-    });
+    const MAX = maxYear;
+    const ids = new Set(allCities.map((c) => c.id));
+    const bins = Array.from({ length: 100 }, (_, i) => ({
+      start: yearAtTimelinePosition(i / 100, MIN, MAX),
+      count: 0,
+    }));
+    for (const c of cities) {
+      if (c.founded !== null && c.founded >= MIN && c.founded <= MAX) {
+        const bin = Math.min(
+          99,
+          Math.floor(timelinePosition(c.founded, MIN, MAX) * 100),
+        );
+        bins[bin].count++;
+      }
+    }
     const histogramMax = Math.max(...bins.map((b) => b.count));
 
     return { MIN, MAX, ids, bins, histogramMax };
-  }, [cities]);
+  }, [cities, allCities, maxYear]);
   const [year, setYear] = useState(1897),
     [playing, setPlaying] = useState(false),
     [query, setQuery] = useState(''),
-    [selected, setSelected] = useState<City | null>(null),
+    [selectedIndex, setSelected] = useState<City | null>(null),
     [flat, setFlat] = useState(false),
     [globe, setGlobe] = useState(true),
     [autoFocus, setAutoFocus] = useState(false),
@@ -156,6 +210,36 @@ function Atlas({ cities }: { cities: City[] }) {
     [mapFailed, setMapFailed] = useState(false),
     [copied, setCopied] = useState(false),
     [shareError, setShareError] = useState(false);
+  const selected = selectedIndex
+    ? (details.details.get(selectedIndex.id) ?? selectedIndex)
+    : null;
+  const emptyMapCities = useMemo<City[]>(() => [], []);
+  const dataPending = details.loading || details.error;
+  const changeGeography = (next: Geography) => {
+    const clean = normalizeGeography(next, allCities);
+    setPlaying(false);
+    setChapter(null);
+    setGeography(clean);
+    setListPage(0);
+    if (selected && !matchesGeography(selected, clean)) setSelected(null);
+    const geographyChanged =
+      clean.continents.join() !== geography.continents.join() ||
+      clean.countries.join() !== geography.countries.join();
+    if (geographyChanged) {
+      setFlat(true);
+      const points = allCities
+        .filter((c) => matchesGeography(c, clean) && c.coordinates)
+        .map((c) => c.coordinates!);
+      setMapAction({
+        action:
+          !clean.continents.length && !clean.countries.length
+            ? 'home'
+            : 'geography',
+        seq: Date.now(),
+        points,
+      });
+    }
+  };
   const [camera, setCamera] = useState<Camera>(HOME_CAMERA);
   const initialCamera = useRef(HOME_CAMERA),
     modalRef = useRef<HTMLDialogElement>(null),
@@ -234,7 +318,22 @@ function Atlas({ cities }: { cities: City[] }) {
   useEffect(() => {
     const v = parseView(window.location.search, MIN, MAX, ids);
     setYear(v.year);
-    setSelected(cities.find((c) => c.id === v.cityId) ?? null);
+    const clean = normalizeGeography(
+      {
+        continents: v.continents ?? [],
+        countries: v.countries ?? [],
+        showUndated: v.showUndated ?? false,
+      },
+      allCities,
+    );
+    setGeography(v.chapter === null ? clean : EMPTY_GEOGRAPHY);
+    setSelected(
+      allCities.find(
+        (c) =>
+          c.id === v.cityId &&
+          (v.chapter !== null || matchesGeography(c, clean)),
+      ) ?? null,
+    );
     setChapter(v.chapter);
     setStop(v.stop);
     initialCamera.current = v.camera;
@@ -247,7 +346,9 @@ function Atlas({ cities }: { cities: City[] }) {
     mq.addEventListener('change', change);
     setHydrated(true);
     return () => mq.removeEventListener('change', change);
-  }, [cities, MIN, MAX, ids]);
+    // Catalog bounds and IDs are stable; detail shard arrivals must not rehydrate the URL.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allCities, maxYear]);
   useEffect(() => {
     if (!hydrated) return;
     const t = setTimeout(() => {
@@ -261,15 +362,28 @@ function Atlas({ cities }: { cities: City[] }) {
           stop,
           projection: globe ? 'globe' : 'mercator',
           camera,
+          ...geography,
         }),
       );
     }, 200);
     return () => clearTimeout(t);
-  }, [integerYear, selected, chapter, stop, globe, camera, hydrated]);
+  }, [
+    integerYear,
+    selected,
+    chapter,
+    stop,
+    globe,
+    camera,
+    hydrated,
+    geography,
+  ]);
   const goStop = useCallback(
     (ch: number, index: number, play = true) => {
       const def = chapters[ch].stops[index];
-      const c = cities.find((c) => c.name === def.city)!;
+      const c = allCities.find(
+        (c) => c.name === def.city && c.country === 'Россия',
+      )!;
+      setGeography(EMPTY_GEOGRAPHY);
       setChapter(ch);
       setStop(index);
       setYear(def.year);
@@ -283,7 +397,7 @@ function Atlas({ cities }: { cities: City[] }) {
           coordinates: c.coordinates,
         });
     },
-    [cities],
+    [allCities],
   );
   function nextStop() {
     if (chapter === null) return;
@@ -302,7 +416,7 @@ function Atlas({ cities }: { cities: City[] }) {
     setMapAction({ action: 'home', seq: Date.now() });
   }
   useEffect(() => {
-    if (!playing) return;
+    if (!playing || dataPending) return;
     if (chapter !== null) {
       const c = chapters[chapter];
       const target = stop < 2 ? c.stops[stop + 1].year : c.stops[stop].year;
@@ -333,7 +447,7 @@ function Atlas({ cities }: { cities: City[] }) {
       });
     }, 100);
     return () => clearInterval(id);
-  }, [playing, chapter, stop, speed, goStop, MAX]);
+  }, [playing, chapter, stop, speed, goStop, MAX, dataPending]);
   useEffect(() => {
     const previous = previousFocusYear.current;
     previousFocusYear.current = year;
@@ -341,17 +455,15 @@ function Atlas({ cities }: { cities: City[] }) {
       if (!playing || !autoFocus) pendingBirths.current = [];
       return;
     }
-    pendingBirths.current.push(
-      ...cities
-        .filter(
-          (city) =>
-            city.coordinates &&
-            city.founded !== null &&
-            city.founded > previous &&
-            city.founded <= year,
-        )
-        .map((city) => city.coordinates!),
-    );
+    for (const city of cities) {
+      if (
+        city.coordinates &&
+        city.founded !== null &&
+        city.founded > previous &&
+        city.founded <= year
+      )
+        pendingBirths.current.push(city.coordinates);
+    }
     const now = performance.now();
     if (pendingBirths.current.length && now - lastAutoFocus.current >= 1200) {
       setMapAction({
@@ -364,6 +476,7 @@ function Atlas({ cities }: { cities: City[] }) {
     }
   }, [year, autoFocus, playing, chapter, cities]);
   function togglePlay() {
+    if (dataPending) return;
     if (!playing && integerYear >= MAX && chapter === null) setYear(MIN);
     setPlaying((p) => !p);
   }
@@ -440,6 +553,7 @@ function Atlas({ cities }: { cities: City[] }) {
           stop,
           projection: globe ? 'globe' : 'mercator',
           camera,
+          ...geography,
         });
       history.replaceState(null, '', url);
       await navigator.clipboard.writeText(url);
@@ -525,7 +639,9 @@ function Atlas({ cities }: { cities: City[] }) {
     <main className={'atlas' + (activeChapter ? ' travelling' : '')}>
       {hydrated && (
         <AtlasMap
-          cities={cities}
+          cities={dataPending ? emptyMapCities : cities}
+          labelCities={allCities}
+          showUndated={geography.showUndated}
           year={year}
           flat={flat}
           globe={globe}
@@ -541,6 +657,23 @@ function Atlas({ cities }: { cities: City[] }) {
         />
       )}
       <div className="map-vignette" />
+      {dataPending && (
+        <output className="data-status">
+          {details.error ? (
+            <>
+              Не удалось загрузить данные выбранных стран.{' '}
+              <button onClick={details.retry}>Повторить</button>
+            </>
+          ) : (
+            'Загружаем историю городов…'
+          )}
+        </output>
+      )}
+      {!cities.length && (
+        <output className="data-status">
+          Для выбранных территорий городов нет.
+        </output>
+      )}
       <header className="topbar">
         <a
           className="brand"
@@ -592,6 +725,12 @@ function Atlas({ cities }: { cities: City[] }) {
       </header>
       {activeChapter && activeStop ? (
         <section className="story-panel">
+          <GeographyFilters
+            cities={allCities}
+            countries={countries}
+            value={geography}
+            onChange={changeGeography}
+          />
           <button className="back-link" onClick={explore}>
             <ArrowLeft size={14} /> К свободной карте
           </button>
@@ -609,7 +748,11 @@ function Atlas({ cities }: { cities: City[] }) {
           <p className="story-text">{activeStop.text}</p>
           <a
             className="story-source"
-            href={cities.find((c) => c.name === activeStop.city)!.url}
+            href={
+              allCities.find(
+                (c) => c.name === activeStop.city && c.country === 'Россия',
+              )!.url
+            }
             target="_blank"
             rel="noreferrer"
           >
@@ -656,6 +799,12 @@ function Atlas({ cities }: { cities: City[] }) {
             <br />
             Смотрите, как меняется карта времени.
           </p>
+          <GeographyFilters
+            cities={allCities}
+            countries={countries}
+            value={geography}
+            onChange={changeGeography}
+          />
           <div className="search-wrap">
             <Search size={18} />
             <input
@@ -706,6 +855,14 @@ function Atlas({ cities }: { cities: City[] }) {
           <b>{formatNumber(count)}</b> городов появились
         </p>
         <small>из {formatNumber(cities.length)} в каталоге</small>
+        {geography.showUndated && (
+          <small>
+            {formatNumber(
+              cities.filter((c) => c.founded === null && c.coordinates).length,
+            )}{' '}
+            без даты · вне истории
+          </small>
+        )}
         <span className="era-label">{era}</span>
       </aside>
       <div className="map-controls">
@@ -954,10 +1111,16 @@ function Atlas({ cities }: { cities: City[] }) {
             Статус города: {selected.statusYear || 'не указан'}
           </p>
           <div className="population-number">
-            {selectedPopulation!.value === null
-              ? '—'
-              : formatNumber(selectedPopulation!.value)}
-            <small>{populationCaption(selected, integerYear)}</small>
+            {dataPending
+              ? '…'
+              : selectedPopulation!.value === null
+                ? '—'
+                : formatNumber(selectedPopulation!.value)}
+            <small>
+              {dataPending
+                ? 'История ещё не загружена'
+                : populationCaption(selected, integerYear)}
+            </small>
           </div>
           {selected.founded !== null && selected.founded > integerYear && (
             <button
@@ -967,7 +1130,15 @@ function Atlas({ cities }: { cities: City[] }) {
               Перейти к появлению <ArrowRight size={14} />
             </button>
           )}
-          <PopulationChart city={selected} year={integerYear} />
+          {dataPending ? (
+            <output>
+              {details.error
+                ? 'История не загружена — повторите загрузку.'
+                : 'Загрузка истории…'}
+            </output>
+          ) : (
+            <PopulationChart city={selected} year={integerYear} />
+          )}
           {selected.formerNames && (
             <p className="former-names">
               Прежние названия: {selected.formerNames}
@@ -984,7 +1155,7 @@ function Atlas({ cities }: { cities: City[] }) {
               ))}
             </details>
           )}
-          <details className="observation-sources">
+          <details className="observation-sources" hidden={dataPending}>
             <summary>
               Наблюдения и источники ({selected.population.length})
             </summary>
@@ -1064,27 +1235,50 @@ function Atlas({ cities }: { cities: City[] }) {
                   aria-label="Поиск в списке городов"
                   placeholder="Название, регион или страна"
                   value={listQuery}
-                  onChange={(e) => setListQuery(e.target.value)}
+                  onChange={(e) => {
+                    setListQuery(e.target.value);
+                    setListPage(0);
+                  }}
                 />
                 <p className="list-count">
                   Найдено {listResults.length} · даты без подтверждения отмечены
                   отдельно
                 </p>
+                <div className="catalog-pages">
+                  <button
+                    disabled={listPage === 0}
+                    onClick={() => setListPage((p) => p - 1)}
+                  >
+                    Назад
+                  </button>
+                  <span>
+                    {listPage + 1} /{' '}
+                    {Math.max(1, Math.ceil(listResults.length / 100))}
+                  </span>
+                  <button
+                    disabled={(listPage + 1) * 100 >= listResults.length}
+                    onClick={() => setListPage((p) => p + 1)}
+                  >
+                    Далее
+                  </button>
+                </div>
                 <div className="cities-list">
-                  {listResults.map((c) => (
-                    <button key={c.id} onClick={() => chooseCity(c)}>
-                      <span>
-                        {c.name}
-                        <small>{locationLabel(c)}</small>
-                      </span>
-                      <span>
-                        {c.founded === null
-                          ? 'Дата неизвестна'
-                          : yearLabel(c.founded)}{' '}
-                        <ChevronRight size={14} />
-                      </span>
-                    </button>
-                  ))}
+                  {listResults
+                    .slice(listPage * 100, (listPage + 1) * 100)
+                    .map((c) => (
+                      <button key={c.id} onClick={() => chooseCity(c)}>
+                        <span>
+                          {c.name}
+                          <small>{locationLabel(c)}</small>
+                        </span>
+                        <span>
+                          {c.founded === null
+                            ? 'Дата неизвестна'
+                            : yearLabel(c.founded)}{' '}
+                          <ChevronRight size={14} />
+                        </span>
+                      </button>
+                    ))}
                 </div>
               </>
             ) : (
@@ -1092,8 +1286,8 @@ function Atlas({ cities }: { cities: City[] }) {
                 <div className="eyebrow">ОТКРЫТАЯ ИСТОРИЯ</div>
                 <h2 id="modal-title">Как читать этот атлас</h2>
                 <p>
-                  Перед вами современные города 15 стран бывшего СССР и история
-                  их появления. Счётчик показывает города нашего каталога, уже
+                  Перед вами современные города мира из Wikidata и история их
+                  появления. Счётчик показывает города нашего каталога, уже
                   появившиеся к выбранному году, а не все города, существовавшие
                   в прошлом.
                 </p>
@@ -1135,6 +1329,20 @@ function Atlas({ cities }: { cities: City[] }) {
                   отдельным охватом в Wikidata исключаются.
                 </p>
                 <h3>Полнота данных</h3>
+                {!coverage.worldComplete && (
+                  <p>
+                    Мировая выгрузка ещё не завершена. Сейчас доступны
+                    сохранённые города прежнего каталога; фильтры показывают его
+                    фактический охват.
+                  </p>
+                )}
+                <p>
+                  Переключатель «Показать города без даты» добавляет нейтральные
+                  точки вне исторического счётчика. Они не означают, что город
+                  существовал в выбранном году. Континенты определяются по
+                  географии города; неразрешённые случаи доступны в группе «Не
+                  определён».
+                </p>
                 <div className="coverage-grid">
                   <div>
                     <strong>{formatNumber(coverage.total)}</strong>
@@ -1156,8 +1364,8 @@ function Atlas({ cities }: { cities: City[] }) {
                 <p>
                   Снимок источников: {coverage.snapshotDate}. Координаты есть у{' '}
                   {coverage.withCoordinates} городов. Без даты:{' '}
-                  {coverage.missingDates.length}; без численности:{' '}
-                  {coverage.missingPopulation.length}. Они остаются в поиске и
+                  {coverage.missingDates}; без численности:{' '}
+                  {coverage.missingPopulation}. Они остаются в поиске и
                   каталоге. Даты, уточнённые через Wikidata, отмечены в
                   карточках.
                 </p>
@@ -1171,15 +1379,17 @@ function Atlas({ cities }: { cities: City[] }) {
                 </a>
                 <h3>Территориальный охват</h3>
                 <p>
-                  Российская часть повторяет две таблицы «Списка городов
-                  России». Остальные 14 стран представлены современными городами
-                  из воспроизводимого снимка Wikidata с координатами и хотя бы
-                  одним наблюдением населения. Подложка Natural Earth отражает
-                  собственные современные картографические соглашения. В
-                  источниках есть пересекающиеся территориальные притязания,
-                  включая Крым и Севастополь; присутствие записи и указанная
-                  страна не означают признания изменения границ. Исторические
-                  границы государств здесь не реконструируются.
+                  Каталог объединяет сохранённые проверенные записи с мировым
+                  снимком Wikidata классов city и city/town и их подклассов.
+                  Порог населения не применяется. Отсутствие дат, населения или
+                  координат не исключает запись из каталога. Охват зависит от
+                  классификации и полноты источника, а не является переписью
+                  всех городов мира. Подложка Natural Earth отражает собственные
+                  современные картографические соглашения. В источниках есть
+                  пересекающиеся территориальные притязания, включая Крым и
+                  Севастополь; присутствие записи и указанная страна не означают
+                  признания изменения границ. Исторические границы государств
+                  здесь не реконструируются.
                 </p>
                 <h3>Источники и права</h3>
                 <ul className="source-links">

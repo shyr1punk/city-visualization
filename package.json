@@ -11,10 +11,14 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
-    "test": "node --experimental-strip-types --test tests/atlas.test.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts && python3 -m unittest discover -s tests -p \"test_*.py\"",
     "typecheck": "tsc --noEmit",
-    "data:import": "python3 scripts/parse-catalog.py && python3 scripts/import-former-ussr.py && python3 scripts/import-data.py",
-    "data:refresh-former-ussr": "python3 scripts/fetch-former-ussr.py"
+    "data:import": "python3 scripts/import-world.py",
+    "data:refresh-former-ussr": "python3 scripts/fetch-former-ussr.py",
+    "data:import-legacy": "python3 scripts/parse-catalog.py && python3 scripts/import-former-ussr.py && python3 scripts/import-data.py",
+    "data:refresh-world": "python3 scripts/resume-world.py",
+    "data:fetch-world-ids": "python3 scripts/fetch-world.py --ids-only",
+    "data:fetch-world-entities": "python3 scripts/fetch-world-entities.py"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

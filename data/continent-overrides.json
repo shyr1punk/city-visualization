@@ -1,0 +1,8 @@
+{
+  "description": "Консервативные исключения для отдельных городов. Значения P30 города и административного региона имеют приоритет. Неоднозначные границы регионов не заменяются точной линией.",
+  "cities": {
+    "Q887": { "continents": ["Q48"], "source": "https://www.wikidata.org/wiki/Q887#P30", "name": "Екатеринбург" },
+    "Q906": { "continents": ["Q48"], "source": "https://www.wikidata.org/wiki/Q906#P30", "name": "Челябинск" },
+    "Q406": { "continents": ["Q46", "Q48"], "source": "https://www.wikidata.org/wiki/Q406#P30", "name": "Стамбул" }
+  }
+}
