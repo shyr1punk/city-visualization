@@ -5,6 +5,7 @@ joins. Both services have independent persisted Retry-After handling.
 """
 import concurrent.futures
 import gzip
+import http.client
 import hashlib
 import json
 import threading
@@ -164,8 +165,12 @@ class EntityCache:
                     raise Deferred(str(error)) from error
                 if attempt == 4: raise
                 time.sleep(min(60, 5 * 2 ** attempt))
-            except (urllib.error.URLError, TimeoutError):
-                if attempt == 4: raise
+            except (urllib.error.URLError, TimeoutError, http.client.HTTPException, ConnectionError) as error:
+                if attempt == 4:
+                    with self.lock:
+                        self.blocked = True
+                        (self.root / 'api-rate-limit.json').write_text(json.dumps({'retryAt': time.time() + 120, 'error': str(error)}))
+                    raise Deferred('Temporary network failure: ' + str(error)) from error
                 time.sleep(min(60, 5 * 2 ** attempt))
 
     def ensure(self, ids):

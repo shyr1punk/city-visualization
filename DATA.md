@@ -68,3 +68,12 @@ Unresolved geographic records may be absent from this regional selection.
 The regional status and log are `eurasia/status.json` and `eurasia/download.log`.
 Regional completion does not mark the global snapshot complete or replace the
 public catalog; regional publication requires a separate validated import.
+
+### Explicit partial cache import
+
+`python3 scripts/import-world.py --cached` imports every cached city from the saved
+world census while preserving previously published records and the verified
+legacy catalog. It does not change the source manifest or claim world completion.
+The coverage report records downloaded and missing census counts. The default
+import continues to reject incomplete snapshots. Missing dates and coordinates
+remain explicit. Publication is a separate GitHub Pages deployment.

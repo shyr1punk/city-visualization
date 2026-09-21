@@ -1,4 +1,4 @@
-"""Offline world importer. A complete snapshot is mandatory unless exporting legacy UI data."""
+"""Offline world importer. Partial cache imports require explicit --cached selection."""
 import argparse
 import collections
 import hashlib
@@ -142,7 +142,7 @@ def convert(q, rows, country_meta, report):
     return c
 
 
-def build(legacy_only=False):
+def build(legacy_only=False, cached=False):
     legacy_path = Path('data/legacy-catalog.json')
     if not legacy_path.exists():
         raise ValueError('Missing preserved legacy catalog')
@@ -151,7 +151,7 @@ def build(legacy_only=False):
     if legacy_only: manifest = {**manifest, 'complete': False}
     if not legacy_only:
         manifest = read(ROOT / 'manifest.json')
-        if not manifest.get('complete'): raise ValueError('World snapshot is incomplete; public catalog unchanged')
+        if not cached and not manifest.get('complete'): raise ValueError('World snapshot is incomplete; public catalog unchanged')
         ids_path = ROOT / 'ids.json'
         if hashlib.sha256(ids_path.read_bytes()).hexdigest() != manifest['idsHash']: raise ValueError('City census hash mismatch')
     country_meta = {'unknown': {'name': 'Страна не определена', 'continent': None}}
@@ -167,7 +167,20 @@ def build(legacy_only=False):
     report['worldConflictingObservations'] = []
     report['worldSnapshot'] = manifest
     catalog = {}
-    if not legacy_only:
+    if cached:
+        from world_entities import EntityCache, rows_for
+        cache = EntityCache(ROOT)
+        census = set(read(ROOT / 'ids.json'))
+        available = census & cache.entities.keys()
+        if not available: raise ValueError('No cached city records; public catalog unchanged')
+        # An explicitly requested partial import must never discard prior records.
+        catalog = {c.get('wikidata') or c['id']: c for c in read(Path('public/catalog.json'))}
+        for q in sorted(available):
+            catalog[q] = convert(q, rows_for(q, cache.entities[q], cache.entities), country_meta, report)
+        manifest = {**manifest, 'complete': False, 'phase': 'partial-cache-import',
+                    'downloadedCities': len(available), 'missingCities': len(census - available)}
+        report['worldSnapshot'] = manifest
+    if not legacy_only and not cached:
         ids = set(read(ROOT / 'ids.json'))
         for i in range(manifest['batches']):
             grouped = collections.defaultdict(list)
@@ -217,4 +230,7 @@ def build(legacy_only=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(); parser.add_argument('--legacy-only', action='store_true')
-    build(parser.parse_args().legacy_only)
+    parser.add_argument('--cached', action='store_true', help='Explicitly import incomplete cached records, preserving the existing catalog')
+    args = parser.parse_args()
+    if args.legacy_only and args.cached: parser.error('Choose one import mode')
+    build(args.legacy_only, args.cached)

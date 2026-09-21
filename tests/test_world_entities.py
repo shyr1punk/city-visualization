@@ -47,6 +47,17 @@ class EntityRowsTests(unittest.TestCase):
         self.assertIn('Регион', [r.get('adminLabel', {}).get('value') for r in rows])
         self.assertIn(entities.ENTITY_URL + 'Q48', [r.get('adminContinent', {}).get('value') for r in rows])
 
+    def test_network_disconnect_defers_after_bounded_retries(self):
+        import http.client
+        import json
+        with tempfile.TemporaryDirectory() as tmp:
+            cache = entities.EntityCache(Path(tmp))
+            with patch.object(entities.urllib.request, 'urlopen', side_effect=http.client.RemoteDisconnected('closed')), patch.object(entities.time, 'sleep'):
+                with self.assertRaises(entities.Deferred):
+                    cache.request(['Q1'])
+            self.assertTrue(cache.blocked)
+            self.assertGreater(json.loads((Path(tmp) / 'api-rate-limit.json').read_text())['retryAt'], entities.time.time())
+
     def test_entity_cache_resumes_without_redownloading_saved_batch(self):
         with tempfile.TemporaryDirectory() as tmp:
             cache = entities.EntityCache(Path(tmp))

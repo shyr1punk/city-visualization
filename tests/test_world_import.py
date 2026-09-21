@@ -16,6 +16,38 @@ class WorldImportTests(unittest.TestCase):
         report = {'worldConflictingObservations': []}
         return world.convert('Q123', rows, {'unknown': {'name': 'Страна не определена', 'continent': None}}, report), report
 
+    def test_explicit_cache_import_preserves_existing_records_and_reports_gaps(self):
+        import hashlib
+        import types
+        old = self.convert([row(cityLabel='Existing')])[0]
+        fake_cache = types.SimpleNamespace(entities={'Q10': {}})
+        fake_module = types.SimpleNamespace(EntityCache=lambda root: fake_cache,
+            rows_for=lambda q, entity, related: [row(city='http://www.wikidata.org/entity/' + q, cityLabel='New')])
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            def save(path, value):
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(json.dumps(value))
+            save('data/raw/world/ids.json', ['Q10', 'Q20'])
+            save('data/raw/world/manifest.json', {'complete': False, 'snapshotDate': '2026-09-12', 'idsHash': hashlib.sha256((root / 'data/raw/world/ids.json').read_bytes()).hexdigest()})
+            save('data/legacy-catalog.json', [])
+            save('public/catalog.json', [old])
+            save('public/world.geojson', {'features': []})
+            save('public/coverage.json', {})
+            previous = Path.cwd()
+            try:
+                os.chdir(root)
+                with patch.dict('sys.modules', {'world_entities': fake_module}):
+                    world.build(cached=True)
+                result = json.loads(Path('public/catalog-index.json').read_text())
+                self.assertEqual({c['wikidata'] for c in result['cities']}, {'Q123', 'Q10'})
+                self.assertFalse(result['snapshotComplete'])
+                report = json.loads(Path('public/coverage.json').read_text())
+                self.assertEqual(report['worldSnapshot']['missingCities'], 1)
+            finally:
+                os.chdir(previous)
+
     def test_missing_fields_do_not_drop_city(self):
         c, _ = self.convert([row(cityLabel='No date')])
         self.assertIsNone(c['founded']); self.assertIsNone(c['coordinates']); self.assertEqual(c['population'], [])
