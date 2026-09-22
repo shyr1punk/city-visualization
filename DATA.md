@@ -77,3 +77,7 @@ legacy catalog. It does not change the source manifest or claim world completion
 The coverage report records downloaded and missing census counts. The default
 import continues to reject incomplete snapshots. Missing dates and coordinates
 remain explicit. Publication is a separate GitHub Pages deployment.
+
+### Неопределённость внутри Евразии
+
+При совместном выборе Европы и Азии фильтр включает записи России, Казахстана и Турции с неразрешённым континентом: вся возможная география этих записей покрыта выбранной областью. Это не присваивает городу оба континента. При выборе только одного из них запись остаётся в группе «Не определён». То же правило используется для списка доступных стран; фильтр стран по-прежнему пересекается с географией.

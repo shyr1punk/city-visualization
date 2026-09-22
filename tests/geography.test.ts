@@ -183,3 +183,49 @@ void test('index and country shards cover every record and preserve all legacy c
     assert.ok(c.countryIds?.every((id) => index.countries[id]));
   }
 });
+
+void test('combined Eurasia includes every Russian city without guessing its individual continent', () => {
+  const catalog = JSON.parse(
+    readFileSync(new URL('../public/catalog.json', import.meta.url), 'utf8'),
+  ) as City[];
+  const russia = catalog.filter((c) => c.countryIds?.includes('Q159'));
+  const combined = { ...EMPTY_GEOGRAPHY, continents: ['Q46', 'Q48'] };
+  assert.ok(russia.length > 1000);
+  assert.deepEqual(
+    russia.filter((c) => matchesGeography(c, combined)).map((c) => c.id),
+    russia.map((c) => c.id),
+  );
+  const unresolved = city('Ural', ['Q159'], ['unknown']);
+  for (const continents of [['Q46'], ['Q48'], ['Q15']])
+    assert.equal(
+      matchesGeography(unresolved, { ...combined, continents }),
+      false,
+    );
+  assert.equal(
+    matchesGeography(unresolved, { ...combined, continents: ['unknown'] }),
+    true,
+  );
+  assert.equal(
+    matchesGeography(unresolved, { ...combined, countries: ['Q43'] }),
+    false,
+  );
+  assert.equal(
+    matchesGeography(
+      city('Unknown country', ['unknown'], ['unknown']),
+      combined,
+    ),
+    false,
+  );
+  assert.deepEqual(
+    normalizeGeography({ ...combined, countries: ['Q159'] }, [unresolved])
+      .countries,
+    ['Q159'],
+  );
+  assert.equal(
+    matchesGeography(
+      city('Uncertain countries', ['Q159', 'unknown'], ['unknown']),
+      combined,
+    ),
+    false,
+  );
+});

@@ -19,12 +19,26 @@ export const EMPTY_GEOGRAPHY: Geography = {
   countries: [],
   showUndated: false,
 };
+// Conservative geographic extents, not a per-city assignment. A city whose
+// continent is unresolved is included only if its entire possible extent is selected.
+const COUNTRY_CONTINENT_EXTENTS: Record<string, readonly string[]> = {
+  Q159: ['Q46', 'Q48'], // Russia
+  Q232: ['Q46', 'Q48'], // Kazakhstan
+  Q43: ['Q46', 'Q48'], // Turkey
+};
+export function matchesContinents(c: City, selected: string[]) {
+  if (!selected.length) return true;
+  const continents = c.continentIds?.length ? c.continentIds : ['unknown'];
+  if (continents.some((id) => selected.includes(id))) return true;
+  if (!continents.includes('unknown') || !c.countryIds?.length) return false;
+  return c.countryIds.every((id) => {
+    const extent = COUNTRY_CONTINENT_EXTENTS[id];
+    return extent?.every((continent) => selected.includes(continent)) ?? false;
+  });
+}
 export function matchesGeography(c: City, g: Geography) {
   return (
-    (!g.continents.length ||
-      (c.continentIds ?? ['unknown']).some((id) =>
-        g.continents.includes(id),
-      )) &&
+    matchesContinents(c, g.continents) &&
     (!g.countries.length ||
       (c.countryIds ?? ['unknown']).some((id) => g.countries.includes(id)))
   );
@@ -32,11 +46,7 @@ export function matchesGeography(c: City, g: Geography) {
 export function availableCountries(cities: City[], continents: string[]) {
   return new Set(
     cities
-      .filter(
-        (c) =>
-          !continents.length ||
-          (c.continentIds ?? ['unknown']).some((id) => continents.includes(id)),
-      )
+      .filter((c) => matchesContinents(c, continents))
       .flatMap((c) => c.countryIds ?? ['unknown']),
   );
 }
