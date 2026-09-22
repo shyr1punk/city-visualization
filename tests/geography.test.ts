@@ -89,7 +89,7 @@ void test('changing continent removes incompatible selections; invalid IDs are i
       },
       sample,
     ),
-    { continents: ['Q46'], countries: ['FR'], showUndated: true },
+    { continents: ['Q5401'], countries: ['FR', 'JP'], showUndated: true },
   );
 });
 void test('unknown geography remains individually selectable', () => {
@@ -196,7 +196,7 @@ void test('combined Eurasia includes every Russian city without guessing its ind
     russia.map((c) => c.id),
   );
   const unresolved = city('Ural', ['Q159'], ['unknown']);
-  for (const continents of [['Q46'], ['Q48'], ['Q15']])
+  for (const continents of [['Q15']])
     assert.equal(
       matchesGeography(unresolved, { ...combined, continents }),
       false,
@@ -227,5 +227,42 @@ void test('combined Eurasia includes every Russian city without guessing its ind
       combined,
     ),
     false,
+  );
+});
+
+void test('Eurasia replaces both old continent IDs and keeps country intersection', () => {
+  for (const ids of [['Q46'], ['Q48'], ['Q46', 'Q48'], ['Q5401']]) {
+    const g = normalizeGeography(
+      { ...EMPTY_GEOGRAPHY, continents: ids },
+      sample,
+    );
+    assert.deepEqual(g.continents, ['Q5401']);
+    assert.deepEqual(
+      sample.filter((c) => matchesGeography(c, g)).map((c) => c.id),
+      ['Paris', 'Tokyo', 'London', 'Istanbul'],
+    );
+    assert.deepEqual(
+      sample
+        .filter((c) => matchesGeography(c, { ...g, countries: ['JP'] }))
+        .map((c) => c.id),
+      ['Tokyo'],
+    );
+  }
+  assert.deepEqual(
+    normalizeGeography(
+      { ...EMPTY_GEOGRAPHY, continents: ['Q15'], countries: ['FR', 'JP'] },
+      sample,
+    ).countries,
+    [],
+  );
+  const catalog = JSON.parse(
+    readFileSync(new URL('../public/catalog.json', import.meta.url), 'utf8'),
+  ) as City[];
+  assert.ok(
+    catalog
+      .filter((c) => c.countryIds?.includes('Q159'))
+      .every((c) =>
+        matchesGeography(c, { ...EMPTY_GEOGRAPHY, continents: ['Q5401'] }),
+      ),
   );
 });

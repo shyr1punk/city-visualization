@@ -1,11 +1,10 @@
 import type { City } from './atlas';
 export const CONTINENTS: Record<string, string> = {
-  Q46: 'Европа',
-  Q48: 'Азия',
+  Q5401: 'Евразия',
   Q15: 'Африка',
   Q49: 'Северная Америка',
   Q18: 'Южная Америка',
-  Q55643: 'Океания',
+  Q55643: 'Австралия и Океания',
   Q51: 'Антарктида',
   unknown: 'Не определён',
 };
@@ -26,7 +25,16 @@ const COUNTRY_CONTINENT_EXTENTS: Record<string, readonly string[]> = {
   Q232: ['Q46', 'Q48'], // Kazakhstan
   Q43: ['Q46', 'Q48'], // Turkey
 };
+export function normalizeContinents(ids: string[]) {
+  return [
+    ...new Set(ids.map((id) => (id === 'Q46' || id === 'Q48' ? 'Q5401' : id))),
+  ].filter((id) => id in CONTINENTS);
+}
 export function matchesContinents(c: City, selected: string[]) {
+  // Keep source geography intact; group Europe and Asia only at the filter boundary.
+  selected = selected.flatMap((id) =>
+    ['Q5401', 'Q46', 'Q48'].includes(id) ? ['Q5401', 'Q46', 'Q48'] : [id],
+  );
   if (!selected.length) return true;
   const continents = c.continentIds?.length ? c.continentIds : ['unknown'];
   if (continents.some((id) => selected.includes(id))) return true;
@@ -51,9 +59,7 @@ export function availableCountries(cities: City[], continents: string[]) {
   );
 }
 export function normalizeGeography(g: Geography, cities: City[]): Geography {
-  const continents = [...new Set(g.continents)].filter(
-    (id) => id in CONTINENTS,
-  );
+  const continents = normalizeContinents(g.continents);
   const allowed = availableCountries(cities, continents);
   return {
     continents,
